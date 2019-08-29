@@ -8,7 +8,7 @@
         <Title>net core cmdline parser</Title>
         <Description>Multi level command line parser with completions</Description>
         <Authors>Lorenzo Delana</Authors>
-        <PackageTags>netcore cmdline parser completions</PackageTags>
+        <PackageTags>netcore cmdline-parser completions</PackageTags>
         <PackageProjectUrl>https://github.com/devel0/netcore-cmdline</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
