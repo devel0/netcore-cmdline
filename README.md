@@ -41,7 +41,7 @@ namespace example_01
             CmdlineParser.Create("sample application", (parser) =>
             {
                 var xflag = parser.AddShort("x", "my first flag");
-                var yflag = parser.AddShort("y", "my second flag");
+                var yflag = parser.AddShort("y", "my second flag");                
 
                 // global flag with auto invoked action when matches that print usage for nested MatchParser
                 parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
@@ -62,6 +62,73 @@ namespace example_01
 ```
 
 ![](doc/img/quickstart-01.png)
+
+### Flags with value
+
+```csharp
+using SearchAThing;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create("sample application", (parser) =>
+            {
+                var xflag = parser.AddShort("x", "my first flag", "XVAL");
+                var yflag = parser.AddShort("y", "my second flag", "YVAL");
+                var vflag = parser.AddShortLong("v", "value", "a value flag", "VAL");
+                
+                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
+
+                parser.OnCmdlineMatch(() =>
+                {
+                    if (xflag) System.Console.WriteLine($"x flag used [{(string)xflag}]");
+                    if (yflag) System.Console.WriteLine($"y flag used [{(string)yflag}]");
+                    if (vflag) System.Console.WriteLine($"value specified [{(string)vflag}]");
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+```
+
+```sh
+devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -h
+
+Usage: example-01 FLAGS
+
+sample application
+
+Optional flags:
+  -x=XVAL          my first flag
+  -y=YVAL          my second flag
+  -v,--value=VAL   a value flag
+
+Global flags:
+  -h               show usage
+
+
+devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 -v 3
+x flag used [1]
+y flag used [2]
+value specified [3]
+devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 --value 3
+x flag used [1]
+y flag used [2]
+value specified [3]
+devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 -v=3
+x flag used [1]
+y flag used [2]
+value specified [3]
+devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 --value=3
+x flag used [1]
+y flag used [2]
+value specified [3]
+```
 
 ## API Documentation
 

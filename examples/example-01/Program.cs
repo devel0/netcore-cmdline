@@ -9,16 +9,17 @@ namespace example_01
         {
             CmdlineParser.Create("sample application", (parser) =>
             {
-                var xflag = parser.AddShort("x", "my first flag");
-                var yflag = parser.AddShort("y", "my second flag");
-                //var vflag = parser.AddShort("v", "a value flag", "VAL");
+                var xflag = parser.AddShort("x", "my first flag", "XVAL");
+                var yflag = parser.AddShort("y", "my second flag", "YVAL");
+                var vflag = parser.AddShortLong("v", "value", "a value flag", "VAL");
+                
                 parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
 
                 parser.OnCmdlineMatch(() =>
                 {
-                    if (xflag) System.Console.WriteLine($"x flag used");
-                    if (yflag) System.Console.WriteLine($"y flag used");
-                    //if (vflag) System.Console.WriteLine($"value specified [{(string)vflag}]");
+                    if (xflag) System.Console.WriteLine($"x flag used [{(string)xflag}]");
+                    if (yflag) System.Console.WriteLine($"y flag used [{(string)yflag}]");
+                    if (vflag) System.Console.WriteLine($"value specified [{(string)vflag}]");
                 });
 
                 parser.Run(args);
