@@ -1,4 +1,4 @@
-# netcore-util
+# netcore-cmdline
 
 [![NuGet Badge](https://buildstats.info/nuget/netcore-cmdline)](https://www.nuget.org/packages/netcore-cmdline/)
 
