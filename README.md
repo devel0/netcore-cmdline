@@ -79,7 +79,7 @@ namespace example_01
                 var xflag = parser.AddShort("x", "my first flag", "XVAL");
                 var yflag = parser.AddShort("y", "my second flag", "YVAL");
                 var vflag = parser.AddShortLong("v", "value", "a value flag", "VAL");
-                
+
                 parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
 
                 parser.OnCmdlineMatch(() =>
@@ -97,7 +97,7 @@ namespace example_01
 ```
 
 ```sh
-devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -h
+devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -h
 
 Usage: example-01 FLAGS
 
@@ -112,19 +112,19 @@ Global flags:
   -h               show usage
 
 
-devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 -v 3
+devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 -v 3
 x flag used [1]
 y flag used [2]
 value specified [3]
-devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 --value 3
+devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 --value 3
 x flag used [1]
 y flag used [2]
 value specified [3]
-devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 -v=3
+devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 -v=3
 x flag used [1]
 y flag used [2]
 value specified [3]
-devel0@tuf:~/Documents/opensource/netcore-cmdline$ dotnet examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll -x 1 -y 2 --value=3
+devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 --value=3
 x flag used [1]
 y flag used [2]
 value specified [3]
