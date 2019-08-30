@@ -24,4 +24,5 @@ public class CmdlineArgument
 |**Name**|**Summary**|
 |---|---|
 |[Argument](CmdlineArgument/Argument.md)|
+|[Matched](CmdlineArgument/Matched.md)|
 ## Conversions

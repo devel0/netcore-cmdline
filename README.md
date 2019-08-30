@@ -366,7 +366,7 @@ namespace example_01
 }
 ```
 
-![](doc/quickstart-03.gif)
+![](doc/img/quickstart-03.gif)
 
 ## API Documentation
 
