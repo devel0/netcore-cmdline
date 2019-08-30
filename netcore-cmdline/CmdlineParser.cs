@@ -171,9 +171,13 @@ namespace SearchAThing
             onCmdlineMatch = action;
         }
 
+        bool showCompletion;
+
         public void Run(string[] args)
         {
-            InternalRun(args.Select(w => new CmdlineArgument(w)).ToList());
+            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
+
+            InternalRun(args.Select(w => new CmdlineArgument(w)).Skip(showCompletion ? 1 : 0).ToList());
         }
 
         void PrintCompletions(IEnumerable<string> values)
@@ -183,7 +187,7 @@ namespace SearchAThing
 
         void InternalRun(List<CmdlineArgument> args)
         {
-            var showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
+
 
             CmdlineParseItem cmdToRun = null;
 
@@ -192,7 +196,7 @@ namespace SearchAThing
             #region commands
             if (Commands.Any())
             {
-                int argIdx = args.Count(w => w.MatchedItem != null);
+                int argIdx = args.Count(w => w.Matched);
 
                 if (argIdx < args.Count)
                 {
@@ -202,13 +206,11 @@ namespace SearchAThing
                     // if not found valid command checks global flags
                     if (qcmd == null)
                     {
+                        missingCommand = true;
+
                         if (showCompletion)
                         {
-                            PrintCompletions(Commands.Select(w => w.ShortName).Where(r => r.StartsWith(arg.Argument)));
-                        }
-                        else
-                        {
-                            missingCommand = true;
+                            PrintCompletions(Commands.Select(w => w.ShortName).Where(r => r.StartsWith(arg.Argument) && r != arg.Argument));
                         }
                     }
                     else
@@ -219,13 +221,11 @@ namespace SearchAThing
                 }
                 else
                 {
+                    missingCommand = true;
+
                     if (showCompletion)
                     {
                         PrintCompletions(Commands.Select(w => w.ShortName));
-                    }
-                    else
-                    {
-                        missingCommand = true;
                     }
                 }
             }
@@ -234,7 +234,7 @@ namespace SearchAThing
             #region flags
             if (AllFlags.Any())
             {
-                var argIdxBegin = args.Count(w => w.MatchedItem != null);
+                var argIdxBegin = args.Count(w => w.Matched);
 
                 for (var argIdx = argIdxBegin; argIdx < args.Count; ++argIdx)
                 {
@@ -354,6 +354,60 @@ namespace SearchAThing
             }
             #endregion
 
+            CmdlineParseItem missingParameter = null;
+
+            #region parameters
+            if (ParametersOrArray.Any())
+            {
+                foreach (var param in Parameters)
+                {
+                    var arg = args.FirstOrDefault(r => !r.Matched);
+
+                    if (arg == null)
+                    {
+                        if (showCompletion)
+                        {
+                            if (param.onCompletion != null && !missingCommand) PrintCompletions(param.onCompletion(""));
+                        }
+                        else
+                        {
+                            if (param.Mandatory)
+                                missingParameter = param;
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        if (showCompletion)
+                        {
+                            if (param.onCompletion != null && !missingCommand) PrintCompletions(param.onCompletion(arg.Argument).Where(r => r != arg.Argument));
+                        }
+                        else
+                        {
+                            param.Match(this, arg);
+                            param.SetValue(arg);
+                        }
+                    }
+                }
+
+                var parr = ParameterArrays.FirstOrDefault();
+
+                if (parr != null)
+                {
+                    var parrArgs = new List<CmdlineArgument>();
+                    while (true)
+                    {
+                        var arg = args.FirstOrDefault(r => !r.Matched);
+                        if (arg == null) break;
+
+                        parr.Match(this, arg);
+                        parrArgs.Add(arg);
+                    }
+                    parr.SetValues(parrArgs);
+                }
+            }
+            #endregion
+
             if (!showCompletion)
             {
                 var qglobal = AllFlags.Where(r => r.IsGlobal && r.Matches).ToList();
@@ -361,7 +415,16 @@ namespace SearchAThing
                 if (qglobal.Count == 0 && missingCommand)
                 {
                     ErrorColor();
-                    System.Console.WriteLine($"must specify command");
+                    System.Console.WriteLine($"missing command");
+                    ResetColors();
+                    PrintUsage();
+                    return;
+                }
+
+                if (missingParameter != null)
+                {
+                    ErrorColor();
+                    System.Console.WriteLine($"missing required parameter [{missingParameter.ShortName}]");
                     ResetColors();
                     PrintUsage();
                     return;
@@ -521,7 +584,9 @@ namespace SearchAThing
                     x.GlobalFlagAction!=null ? "X" : "",
                     x.Mandatory ? "X" : "",
                     x.Matches ? "X" : "",
-                    x.Type == CmdlineParseItemType.parameterArray ? $"[ {string.Join(",", x.ArgValues.Select(h=>$"\"{h}\""))} ]" : (string)x
+                    x.Type == CmdlineParseItemType.parameterArray ?
+                        ((x.ArgValues.Count>0) ? $"[ {string.Join(",", x.ArgValues.Select(h=>$"\"{h.Argument}\""))} ]" : "") :
+                        (string)x
                 });
             }
 
