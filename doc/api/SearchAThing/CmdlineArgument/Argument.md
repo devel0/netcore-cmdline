@@ -1,5 +1,5 @@
 # Argument property (SearchAThing.CmdlineArgument)
-_(No Description)_
+cmdline argument string
 
 ## Signature
 ```csharp

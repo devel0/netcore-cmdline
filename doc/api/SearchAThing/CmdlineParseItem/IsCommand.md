@@ -1,5 +1,5 @@
 # IsCommand property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+true if this is a command
 
 ## Signature
 ```csharp

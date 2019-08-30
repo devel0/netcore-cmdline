@@ -1,5 +1,5 @@
 # Error field (SearchAThing.CmdlineColors)
-(No Description)
+color for error reporting when parser doesn't matches
 
 ## Signature
 ```csharp

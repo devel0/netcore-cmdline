@@ -1,5 +1,5 @@
 # IsFlag property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+true if this is a flag
 
 ## Signature
 ```csharp

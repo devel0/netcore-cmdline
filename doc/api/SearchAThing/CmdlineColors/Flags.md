@@ -1,5 +1,5 @@
 # Flags field (SearchAThing.CmdlineColors)
-(No Description)
+color for flags
 
 ## Signature
 ```csharp

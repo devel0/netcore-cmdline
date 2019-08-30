@@ -1,5 +1,5 @@
 # InheritedItems property (SearchAThing.CmdlineParser)
-_(No Description)_
+only parents items
 
 ## Signature
 ```csharp

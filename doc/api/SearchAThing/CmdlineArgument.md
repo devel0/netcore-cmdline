@@ -3,7 +3,7 @@
 
 **Inheritance:** Object → CmdlineArgument
 
-(No Description)
+Encloses command line argument string and relate to matching parse item if any
 
 ## Signature
 ```csharp
@@ -12,7 +12,7 @@ public class CmdlineArgument
 ## Constructors
 |**Name**|**Summary**|
 |---|---|
-|[CmdlineArgument(string)](CmdlineArgument/ctors.md)||
+|[CmdlineArgument(string)](CmdlineArgument/ctors.md)|construct a cmdline argument from cmdline arg string|
 ## Methods
 |**Name**|**Summary**|
 |---|---|
@@ -23,6 +23,6 @@ public class CmdlineArgument
 ## Properties
 |**Name**|**Summary**|
 |---|---|
-|[Argument](CmdlineArgument/Argument.md)|
-|[Matched](CmdlineArgument/Matched.md)|
+|[Argument](CmdlineArgument/Argument.md)|cmdline argument string
+|[Matched](CmdlineArgument/Matched.md)|true if a parser item matches
 ## Conversions

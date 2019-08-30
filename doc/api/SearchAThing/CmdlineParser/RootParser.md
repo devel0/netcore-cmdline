@@ -1,5 +1,5 @@
 # RootParser property (SearchAThing.CmdlineParser)
-_(No Description)_
+topmost parser
 
 ## Signature
 ```csharp

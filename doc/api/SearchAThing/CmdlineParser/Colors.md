@@ -1,5 +1,5 @@
 # Colors property (SearchAThing.CmdlineParser)
-_(No Description)_
+colors set ( this can be changed from the Create method )
 
 ## Signature
 ```csharp

@@ -1,5 +1,5 @@
 # Description field (SearchAThing.CmdlineColors)
-(No Description)
+color for parser description
 
 ## Signature
 ```csharp

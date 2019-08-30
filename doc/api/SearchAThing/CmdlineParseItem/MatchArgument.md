@@ -1,5 +1,5 @@
 # MatchArgument property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+original argument with that this parse item matches
 
 ## Signature
 ```csharp

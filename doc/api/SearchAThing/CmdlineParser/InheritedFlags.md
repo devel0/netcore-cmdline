@@ -1,5 +1,5 @@
 # InheritedFlags property (SearchAThing.CmdlineParser)
-_(No Description)_
+only parent parsers flags
 
 ## Signature
 ```csharp

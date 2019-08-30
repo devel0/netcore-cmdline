@@ -1,5 +1,5 @@
 # AllItems property (SearchAThing.CmdlineParser)
-_(No Description)_
+parent and this items
 
 ## Signature
 ```csharp

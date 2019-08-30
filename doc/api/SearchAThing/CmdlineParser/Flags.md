@@ -1,5 +1,5 @@
 # Flags property (SearchAThing.CmdlineParser)
-_(No Description)_
+this parser flags
 
 ## Signature
 ```csharp

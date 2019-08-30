@@ -1,5 +1,5 @@
 # IsParameterArray property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+true is this is an array of parameters
 
 ## Signature
 ```csharp

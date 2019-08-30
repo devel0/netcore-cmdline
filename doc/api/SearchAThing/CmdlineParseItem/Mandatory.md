@@ -1,5 +1,5 @@
 # Mandatory property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+true if this item is mandatory
 
 ## Signature
 ```csharp

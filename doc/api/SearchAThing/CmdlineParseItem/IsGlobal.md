@@ -1,5 +1,5 @@
 # IsGlobal property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+states if this parse item is a global flag
 
 ## Signature
 ```csharp

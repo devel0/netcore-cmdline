@@ -1,5 +1,5 @@
 # SortOrder property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+helper to sort items in groups with follow order Commands, Flags, Parameters, Parameters array
 
 ## Signature
 ```csharp

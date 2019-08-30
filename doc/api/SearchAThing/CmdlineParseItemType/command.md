@@ -1,5 +1,5 @@
 # command field (SearchAThing.CmdlineParseItemType)
-(No Description)
+command if present are mandatory to match one between commands at this parser level
 
 ## Signature
 ```csharp

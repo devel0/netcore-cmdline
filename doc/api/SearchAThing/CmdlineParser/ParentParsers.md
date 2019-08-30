@@ -1,5 +1,5 @@
 # ParentParsers property (SearchAThing.CmdlineParser)
-_(No Description)_
+parent parsers enum
 
 ## Signature
 ```csharp

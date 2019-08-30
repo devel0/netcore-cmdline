@@ -1,5 +1,5 @@
 # ParametersOrArray property (SearchAThing.CmdlineParser)
-_(No Description)_
+all parameters single or array mode
 
 ## Signature
 ```csharp

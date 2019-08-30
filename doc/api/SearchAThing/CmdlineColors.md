@@ -3,7 +3,8 @@
 
 **Inheritance:** Object → CmdlineColors
 
-(No Description)
+cmdline color configurator;
+            action fields can be changed to customize if foreground, background should changed
 
 ## Signature
 ```csharp

@@ -1,5 +1,5 @@
 # HasShortName property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+true if this item has a short name ( maybe a command, parameter or a flag with short name )
 
 ## Signature
 ```csharp

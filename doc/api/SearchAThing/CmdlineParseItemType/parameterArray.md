@@ -1,5 +1,5 @@
 # parameterArray field (SearchAThing.CmdlineParseItemType)
-(No Description)
+parameter array are strings at end of cmdline
 
 ## Signature
 ```csharp

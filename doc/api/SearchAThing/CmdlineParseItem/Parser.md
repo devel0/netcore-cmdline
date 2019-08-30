@@ -1,5 +1,5 @@
 # Parser property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+parser which this item belongs to
 
 ## Signature
 ```csharp

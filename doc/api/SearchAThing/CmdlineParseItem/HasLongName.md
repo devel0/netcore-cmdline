@@ -1,5 +1,5 @@
 # HasLongName property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+states if this element has a long name ( used only for flags )
 
 ## Signature
 ```csharp

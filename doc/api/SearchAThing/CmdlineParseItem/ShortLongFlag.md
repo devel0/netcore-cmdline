@@ -1,5 +1,5 @@
 # ShortLongFlag property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+short/long flag final string ( without value if any )
 
 ## Signature
 ```csharp

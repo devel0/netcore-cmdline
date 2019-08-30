@@ -1,5 +1,5 @@
 # HasValueName property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+states if this flag requires a value
 
 ## Signature
 ```csharp

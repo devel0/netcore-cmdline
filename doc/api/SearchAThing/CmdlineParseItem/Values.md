@@ -1,5 +1,5 @@
 # Values property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+values associated to this item (may a flag with value or parameter)
 
 ## Signature
 ```csharp

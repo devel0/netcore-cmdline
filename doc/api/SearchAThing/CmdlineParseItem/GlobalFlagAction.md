@@ -1,5 +1,5 @@
 # GlobalFlagAction property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+stores actiont to execute if this global flag item matches
 
 ## Signature
 ```csharp

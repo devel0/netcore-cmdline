@@ -5,6 +5,9 @@ using static System.Math;
 namespace SearchAThing
 {
 
+    /// <summary>
+    /// cmdline parser helper
+    /// </summary>
     public class CmdlineUsage
     {
 
@@ -17,8 +20,14 @@ namespace SearchAThing
         void ResetColors() => Parser.ResetColors();
         #endregion
 
+        /// <summary>
+        /// parser which this usage belongs to
+        /// </summary>        
         public CmdlineParser Parser { get; private set; }
 
+        /// <summary>
+        /// construct a cmdline usage associated to given parser
+        /// </summary>
         public CmdlineUsage(CmdlineParser parser)
         {
             Parser = parser;
@@ -173,6 +182,9 @@ namespace SearchAThing
             }
         }
 
+        /// <summary>
+        /// print usage to console
+        /// </summary>
         public void Print()
         {
             System.Console.WriteLine();

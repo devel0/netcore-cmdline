@@ -1,5 +1,5 @@
 # Parameter field (SearchAThing.CmdlineColors)
-(No Description)
+color for parameter
 
 ## Signature
 ```csharp

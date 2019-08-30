@@ -6,10 +6,16 @@ using System.Linq;
 namespace SearchAThing
 {
 
+    /// <summary>
+    /// cmdline parser tool
+    /// </summary>
     public class CmdlineParser
     {
 
         CmdlineParser _rootParser;
+        /// <summary>
+        /// topmost parser
+        /// </summary>        
         public CmdlineParser RootParser
         {
             get
@@ -22,8 +28,14 @@ namespace SearchAThing
             }
         }
 
+        /// <summary>
+        /// parent parset ( null for topmost parser )
+        /// </summary>
         public CmdlineParser Parent { get; private set; }
 
+        /// <summary>
+        /// parent parsers enum
+        /// </summary>
         public IEnumerable<CmdlineParser> ParentParsers
         {
             get
@@ -56,10 +68,19 @@ namespace SearchAThing
 
         string _Description;
 
+        /// <summary>
+        /// description of this parser ( automatically retrieved from command if this is a subparser )
+        /// </summary>
         public string Description => _Description != null ? _Description : Command.Description;
 
+        /// <summary>
+        /// assembly friendly name ( used for Usage )
+        /// </summary>
         public string FriendlyName => AppDomain.CurrentDomain.FriendlyName;
 
+        /// <summary>
+        /// app version utility
+        /// </summary>
         public string AppVersion
         {
             get
@@ -72,6 +93,9 @@ namespace SearchAThing
 
         #region colors        
         CmdlineColors _Colors;
+        /// <summary>
+        /// colors set ( this can be changed from the Create method )
+        /// </summary>        
         public CmdlineColors Colors
         {
             get
@@ -120,19 +144,55 @@ namespace SearchAThing
         /// this (sub)parser items
         /// </summary>
         public IReadOnlyList<CmdlineParseItem> Items => items;
+
+        /// <summary>
+        /// only parents items
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> InheritedItems => ParentParsers.SelectMany(w => w.items);
+
+        /// <summary>
+        /// parent and this items
+        /// </summary>    
         public IEnumerable<CmdlineParseItem> AllItems => InheritedItems.Union(Items);
 
+        /// <summary>
+        /// this parser commands
+        /// </summary>
         public IEnumerable<CmdlineParseItem> Commands => Items.Where(r => r.IsCommand);
+
+        /// <summary>
+        /// this parser flags
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> Flags => Items.Where(r => r.IsFlag);
+
+        /// <summary>
+        /// only parent parsers flags
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> InheritedFlags => ParentParsers.SelectMany(w => w.Flags);
+
         /// <summary>
         /// inherited and this parser flags
         /// </summary>        
         public IEnumerable<CmdlineParseItem> AllFlags => InheritedFlags.Union(Flags);
+
+        /// <summary>
+        /// global flags
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> GlobalFlags => AllFlags.Where(r => r.GlobalFlagAction != null);
+
+        /// <summary>
+        /// parameters
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> Parameters => Items.Where(r => r.IsParameter);
+
+        /// <summary>
+        /// parameter with array mode
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> ParameterArrays => Items.Where(r => r.IsParameterArray);
+
+        /// <summary>
+        /// all parameters single or array mode
+        /// </summary>        
         public IEnumerable<CmdlineParseItem> ParametersOrArray => Items.Where(r => r.IsParameterOrArray);
 
         List<CmdlineParseItem> items = new List<CmdlineParseItem>();
@@ -145,6 +205,12 @@ namespace SearchAThing
             _Description = description;
         }
 
+        /// <summary>
+        /// create main parser
+        /// </summary>
+        /// <param name="description">program description</param>
+        /// <param name="builder">action to configure and run the parser</param>
+        /// <param name="useColors">true to use colors</param>
         public static CmdlineParser Create(string description, Action<CmdlineParser> builder, bool useColors = true)
         {
             if (useColors)
@@ -153,6 +219,12 @@ namespace SearchAThing
                 return Create(description, builder, null);
         }
 
+        /// <summary>
+        /// create main parser
+        /// </summary>
+        /// <param name="description">program description</param>
+        /// <param name="builder">action to configure and run the parser</param>
+        /// <param name="colors">custom color object or null to disable</param>
         public static CmdlineParser Create(string description, Action<CmdlineParser> builder, CmdlineColors colors)
         {
             var parser = new CmdlineParser(null, description);
@@ -173,6 +245,9 @@ namespace SearchAThing
 
         bool showCompletion;
 
+        /// <summary>
+        /// execute the parser ( must called once from top parser builder )
+        /// </summary>
         public void Run(string[] args)
         {
             showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
@@ -446,6 +521,9 @@ namespace SearchAThing
         }
 
         #region print usage
+        /// <summary>
+        /// print the usage based on current parser configuration
+        /// </summary>
         public void PrintUsage()
         {
             new CmdlineUsage(this).Print();
@@ -453,7 +531,12 @@ namespace SearchAThing
         #endregion
 
         #region add command
-
+        /// <summary>
+        /// add a command item to this parser
+        /// </summary>
+        /// <param name="name">name of the command</param>
+        /// <param name="description">description of the command ( for the usage )</param>
+        /// <param name="builder">an optional builder to create a subparser from this command</param>        
         public CmdlineParseItem AddCommand(string name, string description, Action<CmdlineParser> builder = null)
         {
             var parser = new CmdlineParser(this);
@@ -533,7 +616,7 @@ namespace SearchAThing
 
         #endregion
 
-        #region add parameter
+        #region add parameter        
         CmdlineParseItem AddParameter(string name, string description, bool mandatory)
         {
             var item = new CmdlineParseItem(this, CmdlineParseItemType.parameter,
@@ -544,7 +627,18 @@ namespace SearchAThing
             return item;
         }
 
+        /// <summary>
+        /// add optional parameter item to this parser
+        /// </summary>
+        /// <param name="name">name of this parameter ( used in Usage )</param>
+        /// <param name="description">description of this parameter ( used in Usage )</param>        
         public CmdlineParseItem AddParameter(string name, string description) => AddParameter(name, description, mandatory: false);
+
+        /// <summary>
+        /// add mandatory parameter item to this parser
+        /// </summary>
+        /// <param name="name">name of this parameter ( used in Usage )</param>
+        /// <param name="description">description of this parameter ( used in Usage )</param>    
         public CmdlineParseItem AddMandatoryParameter(string name, string description) => AddParameter(name, description, mandatory: true);
 
         #endregion
@@ -561,11 +655,25 @@ namespace SearchAThing
             return item;
         }
 
+        /// <summary>
+        /// add optional parameter array item to this parser
+        /// </summary>
+        /// <param name="name">name of this parameter array ( used in Usage )</param>
+        /// <param name="description">description of this parameter array ( used in Usage )</param>        
         public CmdlineParseItem AddParameterArray(string name, string description) => AddParameterArray(name, description, mandatory: false);
+
+        /// <summary>
+        /// add mandatory parameter array item to this parser
+        /// </summary>
+        /// <param name="name">name of this parameter array ( used in Usage )</param>
+        /// <param name="description">description of this parameter array ( used in Usage )</param>    
         public CmdlineParseItem AddMandatoryParameterArray(string name, string description) => AddParameterArray(name, description, mandatory: true);
 
         #endregion
 
+        /// <summary>
+        /// build a table with all parser item details, matches and parsed values ( for debug purpose )
+        /// </summary>
         public override string ToString()
         {
             var rows = new List<List<string>>();

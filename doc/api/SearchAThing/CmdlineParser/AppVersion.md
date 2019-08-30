@@ -1,5 +1,5 @@
 # AppVersion property (SearchAThing.CmdlineParser)
-_(No Description)_
+app version utility
 
 ## Signature
 ```csharp

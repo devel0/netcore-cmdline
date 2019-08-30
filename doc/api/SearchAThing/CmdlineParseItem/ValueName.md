@@ -1,5 +1,5 @@
 # ValueName property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+symbolic name for the flag value to display in the usage
 
 ## Signature
 ```csharp

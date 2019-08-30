@@ -1,5 +1,5 @@
 # GlobalFlags property (SearchAThing.CmdlineParser)
-_(No Description)_
+global flags
 
 ## Signature
 ```csharp

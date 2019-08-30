@@ -1,5 +1,5 @@
 # FriendlyName property (SearchAThing.CmdlineParser)
-_(No Description)_
+assembly friendly name ( used for Usage )
 
 ## Signature
 ```csharp

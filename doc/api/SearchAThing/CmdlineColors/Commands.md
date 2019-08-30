@@ -1,5 +1,5 @@
 # Commands field (SearchAThing.CmdlineColors)
-(No Description)
+color for commands
 
 ## Signature
 ```csharp

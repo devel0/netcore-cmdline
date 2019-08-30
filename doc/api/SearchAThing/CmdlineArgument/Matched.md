@@ -1,5 +1,5 @@
 # Matched property (SearchAThing.CmdlineArgument)
-_(No Description)_
+true if a parser item matches
 
 ## Signature
 ```csharp

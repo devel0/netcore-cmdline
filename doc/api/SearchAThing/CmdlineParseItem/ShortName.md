@@ -1,5 +1,5 @@
 # ShortName property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+short name of this element
 
 ## Signature
 ```csharp

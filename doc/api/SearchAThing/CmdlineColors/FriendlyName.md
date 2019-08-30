@@ -1,5 +1,5 @@
 # FriendlyName field (SearchAThing.CmdlineColors)
-(No Description)
+color for assembly friendly name in the usage line
 
 ## Signature
 ```csharp

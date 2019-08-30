@@ -1,5 +1,5 @@
 # Description property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+description for this parse item to use in the usage or is parser description if this is a command
 
 ## Signature
 ```csharp

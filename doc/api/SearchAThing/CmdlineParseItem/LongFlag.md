@@ -1,5 +1,5 @@
 # LongFlag property (SearchAThing.CmdlineParseItem)
-_(No Description)_
+states if this item have a long name ( used only for flags )
 
 ## Signature
 ```csharp
