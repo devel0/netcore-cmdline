@@ -264,10 +264,6 @@ namespace example_01
                     return validSet.Where(r => r.StartsWith(str));
                 });
 
-                parser.OnCmdlineMatch(() =>
-                {
-                });
-
                 parser.Run(args);
             });
         }
@@ -278,10 +274,10 @@ namespace example_01
 - debugging
 
 ```sh
-devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01
 cmd1
 cmd2
-devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2
 51
 53
 55
@@ -289,22 +285,22 @@ devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2
 59
 61
 63
-devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2 5
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2 5
 51
 53
 55
 57
 59
-devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2 6
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2 6
 61
 63
-devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2 63
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2 63
 devel0@tuf:~$
 ```
 
 - apply to bash completions
 
-edit `/etc/bash_completion.d/example-01` as follow
+edit `/etc/bash_completion.d/example-01` as follow ( note SHOW_COMPLETIONS must 1 for bash to instruct skip first dummy arg that is friendly name of the program )
 
 ```sh
 _fn() {
@@ -337,8 +333,12 @@ namespace example_01
             {
                 var cmdConfig = parser.AddCommand("config", "configuration", (pConfig) =>
                 {
-                    var cmdConfigShow = pConfig.AddCommand("show", "show current config");
-                    var cmdConfigUpdate = pConfig.AddCommand("update", "update config item", (pConfigUpdate) =>
+                    pConfig.AddCommand("show", "show current config", (pConfigShow) =>
+                    {
+                        pConfigShow.OnCmdlineMatch(() => System.Console.WriteLine($"showing configuration..."));
+                    });
+
+                    pConfig.AddCommand("update", "update config item", (pConfigUpdate) =>
                     {
                         var param = pConfigUpdate.AddMandatoryParameter("var=value", "assign value to var");
                         pConfigUpdate.OnCmdlineMatch(() =>
@@ -346,18 +346,9 @@ namespace example_01
                             System.Console.WriteLine($"setting [{(string)param}]");
                         });
                     });
-
-                    pConfig.OnCmdlineMatch(() =>
-                    {
-                        if (cmdConfigShow) System.Console.WriteLine($"showing configuration...");
-                    });
-                });                
-                
-                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());                
-
-                parser.OnCmdlineMatch(() =>
-                {
                 });
+
+                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
 
                 parser.Run(args);
             });
@@ -387,7 +378,7 @@ dotnet new sln
 
 dotnet new classlib -n netcore-cmdline
 cd netcore-cmdline
-dotnet add package netcore-util --version 1.0.14
+dotnet add package netcore-util --version 1.0.28
 cd ..
 dotnet sln add netcore-cmdline
 

@@ -250,9 +250,16 @@ namespace SearchAThing
         /// </summary>
         public void Run(string[] args)
         {
-            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
+            var skipArgs = 0;
+            // SHOW_COMPLETIONS=1 ( from bash completion will include program name, so we skip first arg )
+            // SHOW_COMPLETIONS=2 ( from debug cmdline so don't skip because first arg is first arg )
+            var showCompletionEnv = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS");
+            if (showCompletionEnv != null)
+            {
+                if (showCompletionEnv == "1") skipArgs = 1;
+            }
 
-            InternalRun(args.Select(w => new CmdlineArgument(w)).Skip(showCompletion ? 1 : 0).ToList());
+            InternalRun(args.Select(w => new CmdlineArgument(w)).Skip(skipArgs).ToList());
         }
 
         void PrintCompletions(IEnumerable<string> values)
@@ -262,7 +269,7 @@ namespace SearchAThing
 
         void InternalRun(List<CmdlineArgument> args)
         {
-            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
+            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && (e == "1" || e == "2"));
 
             CmdlineParseItem cmdToRun = null;
 
@@ -483,10 +490,45 @@ namespace SearchAThing
                     while (true)
                     {
                         var arg = args.FirstOrDefault(r => !r.Matched);
-                        if (arg == null) break;
+                        if (arg == null)
+                        {
+                            if (showCompletion)
+                            {
+                                if (parr.onCompletion != null && !missingCommand)                                 
+                                    PrintCompletions(parr.onCompletion(""));                                                            
+                            }
+                            else
+                            {
+                                if (parr.Mandatory && parrArgs.Count == 0)
+                                    missingParameter = parr;                                
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            var skipCompletion = !showCompletion;
 
-                        parr.Match(this, arg);
-                        parrArgs.Add(arg);
+                            if (showCompletion)
+                            {
+                                if (parr.onCompletion != null && !missingCommand)
+                                {
+                                    var completions = parr.onCompletion(arg.Argument).Where(r => r != arg.Argument);
+                                    if (completions.Count() > 0)
+                                    {
+                                        PrintCompletions(completions);
+                                        break;
+                                    }
+                                    else
+                                        skipCompletion = true;
+                                }
+                            }
+
+                            if (skipCompletion)
+                            {
+                                parr.Match(this, arg);
+                                parrArgs.Add(arg);
+                            }
+                        }
                     }
                     parr.SetValues(parrArgs);
                 }
