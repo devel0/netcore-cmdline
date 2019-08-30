@@ -595,19 +595,19 @@ namespace SearchAThing
         #region add mandatory flag helpers
 
         /// <summary>
-        /// add optional short flag
+        /// add mandatory short flag
         /// </summary>
         public CmdlineParseItem AddMandatoryShort(string name, string description, string valueName = null) =>
             AddFlag(name, null, description, valueName, mandatory: true, globalFlagAction: null);
 
         /// <summary>
-        /// add optional long flag
+        /// add mandatory long flag
         /// </summary>
         public CmdlineParseItem AddMandatoryLong(string name, string description, string valueName = null) =>
             AddFlag(null, name, description, valueName, mandatory: true, globalFlagAction: null);
 
         /// <summary>
-        /// add optional short/long flag
+        /// add mandatory short/long flag
         /// </summary>
         public CmdlineParseItem AddMandatoryShortLong(string shortName, string longName, string description, string valueName = null) =>
             AddFlag(shortName, longName, description, valueName, mandatory: true, globalFlagAction: null);

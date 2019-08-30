@@ -14,11 +14,11 @@ public class CmdlineParser
 |---|---|
 |[AddCommand](CmdlineParser/AddCommand.md)|add a command item to this parser|
 |[AddLong](CmdlineParser/AddLong.md)|add optional long flag|
-|[AddMandatoryLong](CmdlineParser/AddMandatoryLong.md)|add optional long flag|
+|[AddMandatoryLong](CmdlineParser/AddMandatoryLong.md)|add mandatory long flag|
 |[AddMandatoryParameter](CmdlineParser/AddMandatoryParameter.md)|add mandatory parameter item to this parser|
 |[AddMandatoryParameterArray](CmdlineParser/AddMandatoryParameterArray.md)|add mandatory parameter array item to this parser|
-|[AddMandatoryShort](CmdlineParser/AddMandatoryShort.md)|add optional short flag|
-|[AddMandatoryShortLong](CmdlineParser/AddMandatoryShortLong.md)|add optional short/long flag|
+|[AddMandatoryShort](CmdlineParser/AddMandatoryShort.md)|add mandatory short flag|
+|[AddMandatoryShortLong](CmdlineParser/AddMandatoryShortLong.md)|add mandatory short/long flag|
 |[AddParameter](CmdlineParser/AddParameter.md)|add optional parameter item to this parser|
 |[AddParameterArray](CmdlineParser/AddParameterArray.md)|add optional parameter array item to this parser|
 |[AddShort](CmdlineParser/AddShort.md)|add optional short flag|

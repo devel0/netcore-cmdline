@@ -1,6 +1,6 @@
 # SearchAThing.CmdlineParser.AddMandatoryShort method
 ## AddMandatoryShort(string, string, string)
-add optional short flag
+add mandatory short flag
 
 ### Signature
 ```csharp
