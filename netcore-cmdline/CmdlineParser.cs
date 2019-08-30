@@ -453,11 +453,21 @@ namespace SearchAThing
                     }
                     else
                     {
+                        var skipCompletion = !showCompletion;
+
                         if (showCompletion)
                         {
-                            if (param.onCompletion != null && !missingCommand) PrintCompletions(param.onCompletion(arg.Argument).Where(r => r != arg.Argument));
+                            if (param.onCompletion != null && !missingCommand)
+                            {
+                                var completions = param.onCompletion(arg.Argument).Where(r => r != arg.Argument);
+                                if (completions.Count() > 0)
+                                    PrintCompletions(completions);
+                                else
+                                    skipCompletion = true;
+                            }
                         }
-                        else
+
+                        if (skipCompletion)
                         {
                             param.Match(this, arg);
                             param.SetValue(arg);
