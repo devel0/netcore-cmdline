@@ -11,7 +11,7 @@
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/examples/example-01/bin/Debug/netcoreapp3.0/example-01.dll",
-            "args": [ ],
+            "args": [ "x", "config", "sh" ],
             "env": {                
                 // set to 1 to debug completions mode
                 "SHOW_COMPLETIONS": "1"
