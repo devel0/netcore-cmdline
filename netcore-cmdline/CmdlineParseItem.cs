@@ -64,7 +64,7 @@ namespace SearchAThing
             }
         }
 
-        Func<string, IEnumerable<string>> onCompletion = null;
+        internal Func<string, IEnumerable<string>> onCompletion = null;
 
         public void OnCompletion(Func<string, IEnumerable<string>> func)
         {
@@ -87,7 +87,7 @@ namespace SearchAThing
             arg.MatchedItem = this;
             this.MatchParser = parser;
             this.Matches = true;
-            this.MatchArgument = arg;
+            this.MatchArgument = arg;            
         }
 
         public bool Matches { get; internal set; }

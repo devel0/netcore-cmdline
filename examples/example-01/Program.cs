@@ -1,4 +1,5 @@
 ﻿using SearchAThing;
+using System.Linq;
 
 namespace example_01
 {
@@ -6,23 +7,29 @@ namespace example_01
     {
         static void Main(string[] args)
         {
-            // create main parser
             CmdlineParser.Create("sample application", (parser) =>
             {
-                var xflag = parser.AddShort("x", "my first flag");
-                var yflag = parser.AddShort("y", "my second flag");                
+                var cmd1 = parser.AddCommand("cmd1", "sample command 1");
+                var cmd2 = parser.AddCommand("cmd2", "sample command 2");
 
-                // global flag with auto invoked action when matches that print usage for nested MatchParser
+                var flag1 = parser.AddShortLong("f1", "test-flag1", "sample flag 1");
+                var flag2 = parser.AddShortLong("f2", "test-flag2", "sample flag 2");
+                var flag3 = parser.AddShortLong("f3", "my-flag3", "sample flag 3");
+
                 parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
 
-                // entrypoint for parser level cmdline match
-                parser.OnCmdlineMatch(() =>
+                var param = parser.AddParameter("item", "an odd number between 51 and 63");
+                param.OnCompletion((str) =>
                 {
-                    if (xflag) System.Console.WriteLine($"x flag used");
-                    if (yflag) System.Console.WriteLine($"y flag used");
+                    var validSet = Enumerable.Range(50, 15).Where(r => r % 2 != 0).Select(w => w.ToString());
+
+                    return validSet.Where(r => r.StartsWith(str));
                 });
 
-                // call this once at toplevel parser only
+                parser.OnCmdlineMatch(() =>
+                {
+                });
+
                 parser.Run(args);
             });
         }

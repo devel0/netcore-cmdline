@@ -9,6 +9,10 @@
 - [Features](#features)
 - [Quickstart](#quickstart)
   - [Basic flags](#basic-flags)
+  - [Flags with value](#flags-with-value)
+  - [Parameters](#parameters)
+  - [Parameters array](#parameters-array)
+  - [Bash Completion](#bash-completion)
 - [API Documentation](#api-documentation)
 - [how this project was built](#how-this-project-was-built)
 
@@ -27,6 +31,8 @@
 - [nuget package](https://www.nuget.org/packages/netcore-cmdline/)
 
 ### Basic flags
+
+> to execute `example-01` from command line can set path with something like `export PATH=$PATH:~/opensource/netcore-cmdline/examples/example-01/bin/Debug/netcoreapp3.0`
 
 ```csharp
 using SearchAThing;
@@ -97,7 +103,7 @@ namespace example_01
 ```
 
 ```sh
-devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -h
+devel0@tuf:~$ example-01 -h
 
 Usage: example-01 FLAGS
 
@@ -112,23 +118,208 @@ Global flags:
   -h               show usage
 
 
-devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 -v 3
+devel0@tuf:~$ example-01 -x 1 -y 2 -v 3
 x flag used [1]
 y flag used [2]
 value specified [3]
-devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 --value 3
+devel0@tuf:~$ example-01 -x 1 -y 2 --value 3
 x flag used [1]
 y flag used [2]
 value specified [3]
-devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 -v=3
+devel0@tuf:~$ example-01 -x 1 -y 2 -v=3
 x flag used [1]
 y flag used [2]
 value specified [3]
-devel0@tuf:~/tmp/example-01$ dotnet example-01.dll -x 1 -y 2 --value=3
+devel0@tuf:~$ example-01 -x 1 -y 2 --value=3
 x flag used [1]
 y flag used [2]
 value specified [3]
 ```
+
+### Parameters
+
+```csharp
+using SearchAThing;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create("sample application", (parser) =>
+            {
+                var xflag = parser.AddShort("x", "test flag");
+                var param1 = parser.AddParameter("param1", "first parameter");
+                var param2 = parser.AddParameter("param2", "second parameter");
+
+                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
+
+                parser.OnCmdlineMatch(() =>
+                {
+                    System.Console.WriteLine(parser);
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+```
+
+```sh
+devel0@tuf:~$ example-01 -x a bcd
+TYPE        SHORT-NAME   LONG-NAME   DESCRIPTION        GLOBAL   MANDATORY   MATCHES   VALUE
+--------------------------------------------------------------------------------------------
+flag        x                        test flag                                  X           
+flag        h                        show usage           X                                 
+parameter   param1                   first parameter                            X      a    
+parameter   param2                   second parameter                           X      bcd  
+
+```
+
+### Parameters array
+
+```csharp
+using SearchAThing;
+using System.Linq;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create("sample application", (parser) =>
+            {
+                var xflag = parser.AddShort("x", "test flag");
+                var param1 = parser.AddParameter("param1", "first parameter");
+                var param2 = parser.AddParameterArray("param2", "other params");
+
+                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
+
+                parser.OnCmdlineMatch(() =>
+                {
+                    System.Console.WriteLine($"param2 count = {param2.Count()}");
+                    System.Console.WriteLine(parser);
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+```
+
+```sh
+devel0@tuf:~$ example-01 a
+param2 count = 0
+TYPE             SHORT-NAME   LONG-NAME   DESCRIPTION       GLOBAL   MANDATORY   MATCHES   VALUE
+------------------------------------------------------------------------------------------------
+flag             x                        test flag                                             
+flag             h                        show usage          X                                 
+parameter        param1                   first parameter                           X      a    
+parameterArray   param2                   other params                                          
+
+devel0@tuf:~$ example-01 a b c
+param2 count = 2
+TYPE             SHORT-NAME   LONG-NAME   DESCRIPTION       GLOBAL   MANDATORY   MATCHES   VALUE      
+------------------------------------------------------------------------------------------------------
+flag             x                        test flag                                                   
+flag             h                        show usage          X                                       
+parameter        param1                   first parameter                           X      a          
+parameterArray   param2                   other params                              X      [ "b","c" ]
+
+```
+
+### Bash completion
+
+```csharp
+using SearchAThing;
+using System.Linq;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create("sample application", (parser) =>
+            {
+                var cmd1 = parser.AddCommand("cmd1", "sample command 1");
+                var cmd2 = parser.AddCommand("cmd2", "sample command 2");
+
+                var flag1 = parser.AddShortLong("f1", "test-flag1", "sample flag 1");
+                var flag2 = parser.AddShortLong("f2", "test-flag2", "sample flag 2");
+                var flag3 = parser.AddShortLong("f3", "my-flag3", "sample flag 3");
+
+                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
+
+                var param = parser.AddParameter("item", "an odd number between 51 and 63");
+                param.OnCompletion((str) =>
+                {
+                    var validSet = Enumerable.Range(50, 15).Where(r => r % 2 != 0).Select(w => w.ToString());
+
+                    return validSet.Where(r => r.StartsWith(str));
+                });
+
+                parser.OnCmdlineMatch(() =>
+                {
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+```
+
+- debugging
+
+```sh
+devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01
+cmd1
+cmd2
+devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2
+51
+53
+55
+57
+59
+61
+63
+devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2 5
+51
+53
+55
+57
+59
+devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2 6
+61
+63
+devel0@tuf:~$ SHOW_COMPLETIONS=1 example-01 cmd2 63
+devel0@tuf:~$
+```
+
+- apply to bash completions
+
+edit `/etc/bash_completion.d/example-01` as follow
+
+```sh
+_fn() {
+        echo >> /tmp/completion-debug
+        #echo "COMP_LINE=${COMP_LINE}" >> /tmp/completion-debug
+        SHOW_COMPLETIONS=1 example-01 ${COMP_LINE} >> /tmp/completion-debug
+
+        COMPREPLY=($(SHOW_COMPLETIONS=1 example-01 ${COMP_LINE}))
+}
+
+complete -F _fn example-01
+```
+
+source it with `. /etc/bash_completion` then try as follows
+
+![](doc/img/quickstart-02.gif)
 
 ## API Documentation
 
