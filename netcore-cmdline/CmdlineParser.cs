@@ -187,7 +187,7 @@ namespace SearchAThing
 
         void InternalRun(List<CmdlineArgument> args)
         {
-
+            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
 
             CmdlineParseItem cmdToRun = null;
 
@@ -408,44 +408,41 @@ namespace SearchAThing
             }
             #endregion
 
-            if (!showCompletion)
+            var qglobal = AllFlags.Where(r => r.IsGlobal && r.Matches).ToList();
+
+            if (!showCompletion && qglobal.Count == 0 && missingCommand)
             {
-                var qglobal = AllFlags.Where(r => r.IsGlobal && r.Matches).ToList();
-
-                if (qglobal.Count == 0 && missingCommand)
-                {
-                    ErrorColor();
-                    System.Console.WriteLine($"missing command");
-                    ResetColors();
-                    PrintUsage();
-                    return;
-                }
-
-                if (missingParameter != null)
-                {
-                    ErrorColor();
-                    System.Console.WriteLine($"missing required parameter [{missingParameter.ShortName}]");
-                    ResetColors();
-                    PrintUsage();
-                    return;
-                }
-
-                if (cmdToRun != null)
-                {
-                    foreach (var x in qglobal)
-                    {
-                        x.Unmatch();
-                    }
-
-                    cmdToRun.Parser.InternalRun(args);
-                }
-                if (cmdToRun == null && qglobal.Count > 0)
-                {
-                    foreach (var x in qglobal) x.GlobalFlagAction(x);
-                    return;
-                }
-                if (onCmdlineMatch != null) onCmdlineMatch();
+                ErrorColor();
+                System.Console.WriteLine($"missing command");
+                ResetColors();
+                PrintUsage();
+                return;
             }
+
+            if (!showCompletion && missingParameter != null)
+            {
+                ErrorColor();
+                System.Console.WriteLine($"missing required parameter [{missingParameter.ShortName}]");
+                ResetColors();
+                PrintUsage();
+                return;
+            }
+
+            if (cmdToRun != null)
+            {
+                foreach (var x in qglobal)
+                {
+                    x.Unmatch();
+                }
+
+                cmdToRun.Parser.InternalRun(args);
+            }
+            if (cmdToRun == null && qglobal.Count > 0)
+            {
+                foreach (var x in qglobal) x.GlobalFlagAction(x);
+                return;
+            }
+            if (!showCompletion && onCmdlineMatch != null) onCmdlineMatch();
         }
 
         #region print usage
