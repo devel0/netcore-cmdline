@@ -203,7 +203,7 @@ namespace SearchAThing
                     if (Parser.Commands.Any()) System.Console.Write(" COMMAND");
 
                     FlagsColor();
-                    if (Parser.Flags.Any()) System.Console.Write(" FLAGS");
+                    if (Parser.AllFlags.Any()) System.Console.Write(" FLAGS");
 
                     ParameterColor();
                     foreach (var param in Parser.Parameters)
