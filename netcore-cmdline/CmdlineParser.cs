@@ -259,7 +259,12 @@ namespace SearchAThing
                 if (showCompletionEnv == "1") skipArgs = 1;
             }
 
-            InternalRun(args.Select(w => new CmdlineArgument(w)).Skip(skipArgs).ToList());
+            var cmdlineMatches = InternalRun(args.Select(w => new CmdlineArgument(w)).Skip(skipArgs).ToList());
+
+            foreach (var x in cmdlineMatches)
+            {
+                x();
+            }
         }
 
         void PrintCompletions(IEnumerable<string> values)
@@ -267,7 +272,7 @@ namespace SearchAThing
             foreach (var x in values) System.Console.WriteLine(x);
         }
 
-        void InternalRun(List<CmdlineArgument> args)
+        IEnumerable<Action> InternalRun(List<CmdlineArgument> args)
         {
             showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && (e == "1" || e == "2"));
 
@@ -275,58 +280,18 @@ namespace SearchAThing
 
             var missingCommand = false;
 
-            #region commands
-            if (Commands.Any())
-            {
-                int argIdx = args.Count(w => w.Matched);
-
-                if (argIdx < args.Count)
-                {
-                    var arg = args[argIdx];
-
-                    var qcmd = Commands.FirstOrDefault(w => w.ShortName == arg.Argument);
-                    // if not found valid command checks global flags
-                    if (qcmd == null)
-                    {
-                        missingCommand = true;
-
-                        if (showCompletion)
-                        {
-                            PrintCompletions(Commands.Select(w => w.ShortName).Where(r => r.StartsWith(arg.Argument) && r != arg.Argument));
-                        }
-                    }
-                    else
-                    {
-                        qcmd.Match(this, arg);
-                        cmdToRun = qcmd;
-                    }
-                }
-                else
-                {
-                    missingCommand = true;
-
-                    if (showCompletion)
-                    {
-                        PrintCompletions(Commands.Select(w => w.ShortName));
-                    }
-                }
-            }
-            #endregion
-
             #region flags
             if (AllFlags.Any())
             {
-                var argIdxBegin = args.Count(w => w.Matched);
-
-                for (var argIdx = argIdxBegin; argIdx < args.Count; ++argIdx)
+                foreach (var (arg, argIdx) in args.WithIndex())
                 {
-                    var arg = args[argIdx];
+                    if (arg.Matched) continue;
 
                     var availFlags = AllFlags.Where(r => !r.Matches);
                     if (!availFlags.Any()) break; // all flags consumed
 
                     CmdlineParseItem qFlag = null;
-                    var consumeNextArgAsValue = false;
+
                     foreach (var flag in availFlags)
                     {
                         #region short flag
@@ -338,7 +303,6 @@ namespace SearchAThing
                                 {
                                     if (argIdx < args.Count - 1)
                                     {
-                                        consumeNextArgAsValue = true;
                                         var valArg = args[argIdx + 1];
                                         valArg.MatchedItem = flag;
                                         flag.SetValue(valArg);
@@ -381,7 +345,6 @@ namespace SearchAThing
                                 {
                                     if (argIdx < args.Count - 1)
                                     {
-                                        consumeNextArgAsValue = true;
                                         var valArg = args[argIdx + 1];
                                         valArg.MatchedItem = flag;
                                         flag.SetValue(valArg);
@@ -419,7 +382,6 @@ namespace SearchAThing
                     if (qFlag != null)
                     {
                         qFlag.Match(this, arg);
-                        if (consumeNextArgAsValue) { ++argIdx; continue; }
                     }
                 }
 
@@ -431,6 +393,42 @@ namespace SearchAThing
                         ErrorColor();
                         System.Console.WriteLine($"missing mandatory flag [{qMandatoryMissing.ShortLongFlag}]");
                         ResetColors();
+                    }
+                }
+            }
+            #endregion
+
+            #region commands
+            if (Commands.Any())
+            {
+                var arg = args.FirstOrDefault(w => !w.Matched);
+
+                if (arg != null)
+                {
+                    var qcmd = Commands.FirstOrDefault(w => w.ShortName == arg.Argument);
+                    // if not found valid command checks global flags
+                    if (qcmd == null)
+                    {
+                        missingCommand = true;
+
+                        if (showCompletion)
+                        {
+                            PrintCompletions(Commands.Select(w => w.ShortName).Where(r => r.StartsWith(arg.Argument) && r != arg.Argument));
+                        }
+                    }
+                    else
+                    {
+                        qcmd.Match(this, arg);
+                        cmdToRun = qcmd;
+                    }
+                }
+                else
+                {
+                    missingCommand = true;
+
+                    if (showCompletion)
+                    {
+                        PrintCompletions(Commands.Select(w => w.ShortName));
                     }
                 }
             }
@@ -494,13 +492,13 @@ namespace SearchAThing
                         {
                             if (showCompletion)
                             {
-                                if (parr.onCompletion != null && !missingCommand)                                 
-                                    PrintCompletions(parr.onCompletion(""));                                                            
+                                if (parr.onCompletion != null && !missingCommand)
+                                    PrintCompletions(parr.onCompletion(""));
                             }
                             else
                             {
                                 if (parr.Mandatory && parrArgs.Count == 0)
-                                    missingParameter = parr;                                
+                                    missingParameter = parr;
                             }
                             break;
                         }
@@ -543,7 +541,7 @@ namespace SearchAThing
                 System.Console.WriteLine($"missing command");
                 ResetColors();
                 PrintUsage();
-                return;
+                yield break;
             }
 
             if (!showCompletion && missingParameter != null)
@@ -552,8 +550,10 @@ namespace SearchAThing
                 System.Console.WriteLine($"missing required parameter [{missingParameter.ShortName}]");
                 ResetColors();
                 PrintUsage();
-                return;
+                yield break;
             }
+
+            if (!showCompletion && onCmdlineMatch != null) yield return onCmdlineMatch;
 
             if (cmdToRun != null)
             {
@@ -562,14 +562,17 @@ namespace SearchAThing
                     x.Unmatch();
                 }
 
-                cmdToRun.Parser.InternalRun(args);
+                foreach (var x in cmdToRun.Parser.InternalRun(args))
+                {
+                    yield return x;
+                }
+                yield break;
             }
             if (cmdToRun == null && qglobal.Count > 0)
             {
                 foreach (var x in qglobal) x.GlobalFlagAction(x);
-                return;
+                yield break;
             }
-            if (!showCompletion && onCmdlineMatch != null) onCmdlineMatch();
         }
 
         #region print usage
