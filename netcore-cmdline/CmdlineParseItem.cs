@@ -79,6 +79,13 @@ namespace SearchAThing
         /// </summary>
         public Action<CmdlineParseItem> GlobalFlagAction { get; private set; }
 
+        internal bool GlobalFlagActionExecuted = false;
+
+        /// <summary>
+        /// if false global flag action will executed immeditaly; if true execution will deferred to nested parser
+        /// </summary>
+        public bool GlobalFlagActionNested { get; private set; }
+
         /// <summary>
         /// states if this parse item is a global flag
         /// </summary>
@@ -284,8 +291,9 @@ namespace SearchAThing
         /// <param name="description">description (any item)</param>
         /// <param name="mandatory">if true and not matches a message will reported</param>
         /// <param name="globalFlagAction">if non null sets this flag as a global that can matched independently that command and other mandatory items</param>
+        /// <param name="globalFlagActionNested">if false global flag action will executed immeditaly; if true execution will deferred to nested parser</param>
         internal CmdlineParseItem(CmdlineParser parser, CmdlineParseItemType type,
-            string shortName, string longName, string valueName, string description, bool mandatory, Action<CmdlineParseItem> globalFlagAction)
+            string shortName, string longName, string valueName, string description, bool mandatory, Action<CmdlineParseItem> globalFlagAction, bool globalFlagActionNested = true)
         {
             Parser = parser;
             Type = type;
@@ -295,6 +303,7 @@ namespace SearchAThing
             Description = description;
             Mandatory = mandatory;
             GlobalFlagAction = globalFlagAction;
+            GlobalFlagActionNested = globalFlagActionNested;
         }
 
     }

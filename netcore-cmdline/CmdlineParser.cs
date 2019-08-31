@@ -382,6 +382,11 @@ namespace SearchAThing
                     if (qFlag != null)
                     {
                         qFlag.Match(this, arg);
+                        if (!qFlag.GlobalFlagActionNested && qFlag.GlobalFlagAction != null) 
+                        {
+                            qFlag.GlobalFlagAction(qFlag);
+                            qFlag.GlobalFlagActionExecuted = true;
+                        }
                     }
                 }
 
@@ -534,7 +539,7 @@ namespace SearchAThing
             }
             #endregion
 
-            var qglobal = AllFlags.Where(r => r.IsGlobal && r.Matches).ToList();
+            var qglobal = AllFlags.Where(r => r.IsGlobal && r.GlobalFlagActionNested && r.Matches).ToList();
 
             if (!showCompletion && qglobal.Count == 0 && missingCommand)
             {
@@ -558,10 +563,17 @@ namespace SearchAThing
 
             if (cmdToRun != null)
             {
+                var qGlobalToremove = new List<CmdlineParseItem>();
                 foreach (var x in qglobal)
                 {
-                    x.Unmatch();
+                    if (!x.GlobalFlagActionNested)
+                    {
+                        qGlobalToremove.Add(x);
+                    }
+                    else
+                        x.Unmatch();
                 }
+                foreach (var x in qGlobalToremove) qglobal.Remove(x);
 
                 foreach (var x in cmdToRun.Parser.InternalRun(args))
                 {
@@ -571,7 +583,7 @@ namespace SearchAThing
             }
             if (cmdToRun == null && qglobal.Count > 0)
             {
-                foreach (var x in qglobal) x.GlobalFlagAction(x);
+                foreach (var x in qglobal.Where(r => !r.GlobalFlagActionExecuted)) x.GlobalFlagAction(x);
                 yield break;
             }
         }
@@ -616,10 +628,10 @@ namespace SearchAThing
         /// <summary>
         /// shortName or longName and valueName can be null
         /// </summary>        
-        CmdlineParseItem AddFlag(string shortName, string longName, string description, string valueName, bool mandatory, Action<CmdlineParseItem> globalFlagAction)
+        CmdlineParseItem AddFlag(string shortName, string longName, string description, string valueName, bool mandatory, Action<CmdlineParseItem> globalFlagAction, bool globalFlagActionNested)
         {
             var item = new CmdlineParseItem(this, CmdlineParseItemType.flag,
-                shortName, longName, valueName, description, mandatory, globalFlagAction);
+                shortName, longName, valueName, description, mandatory, globalFlagAction, globalFlagActionNested);
 
             items.Add(item);
 
@@ -631,20 +643,20 @@ namespace SearchAThing
         /// <summary>
         /// add optional short flag
         /// </summary>
-        public CmdlineParseItem AddShort(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null) =>
-            AddFlag(name, null, description, valueName, mandatory: false, globalFlagAction);
+        public CmdlineParseItem AddShort(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null, bool globalFlagActionNested = true) =>
+            AddFlag(name, null, description, valueName, mandatory: false, globalFlagAction, globalFlagActionNested);
 
         /// <summary>
         /// add optional long flag
         /// </summary>
-        public CmdlineParseItem AddLong(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null) =>
-            AddFlag(null, name, description, valueName, mandatory: false, globalFlagAction);
+        public CmdlineParseItem AddLong(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null, bool globalFlagActionNested = true) =>
+            AddFlag(null, name, description, valueName, mandatory: false, globalFlagAction, globalFlagActionNested);
 
         /// <summary>
         /// add optional short/long flag
         /// </summary>
-        public CmdlineParseItem AddShortLong(string shortName, string longName, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null) =>
-            AddFlag(shortName, longName, description, valueName, mandatory: false, globalFlagAction);
+        public CmdlineParseItem AddShortLong(string shortName, string longName, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null, bool globalFlagActionNested = true) =>
+            AddFlag(shortName, longName, description, valueName, mandatory: false, globalFlagAction, globalFlagActionNested);
 
         #endregion
 
@@ -654,19 +666,19 @@ namespace SearchAThing
         /// add mandatory short flag
         /// </summary>
         public CmdlineParseItem AddMandatoryShort(string name, string description, string valueName = null) =>
-            AddFlag(name, null, description, valueName, mandatory: true, globalFlagAction: null);
+            AddFlag(name, null, description, valueName, mandatory: true, globalFlagAction: null, globalFlagActionNested: true);
 
         /// <summary>
         /// add mandatory long flag
         /// </summary>
         public CmdlineParseItem AddMandatoryLong(string name, string description, string valueName = null) =>
-            AddFlag(null, name, description, valueName, mandatory: true, globalFlagAction: null);
+            AddFlag(null, name, description, valueName, mandatory: true, globalFlagAction: null, globalFlagActionNested: true);
 
         /// <summary>
         /// add mandatory short/long flag
         /// </summary>
         public CmdlineParseItem AddMandatoryShortLong(string shortName, string longName, string description, string valueName = null) =>
-            AddFlag(shortName, longName, description, valueName, mandatory: true, globalFlagAction: null);
+            AddFlag(shortName, longName, description, valueName, mandatory: true, globalFlagAction: null, globalFlagActionNested: true);
 
         #endregion
 
