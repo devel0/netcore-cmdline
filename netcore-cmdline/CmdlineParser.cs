@@ -85,7 +85,7 @@ namespace SearchAThing
         {
             get
             {
-                var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+                var assembly = System.Reflection.Assembly.GetCallingAssembly();
                 var fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
                 return fvi.FileVersion;
             }
@@ -393,6 +393,7 @@ namespace SearchAThing
                         ErrorColor();
                         System.Console.WriteLine($"missing mandatory flag [{qMandatoryMissing.ShortLongFlag}]");
                         ResetColors();
+                        PrintUsage();
                     }
                 }
             }
@@ -553,7 +554,7 @@ namespace SearchAThing
                 yield break;
             }
 
-            if (!showCompletion && onCmdlineMatch != null) yield return onCmdlineMatch;
+            if (!showCompletion && onCmdlineMatch != null && qglobal.Count == 0) yield return onCmdlineMatch;
 
             if (cmdToRun != null)
             {
