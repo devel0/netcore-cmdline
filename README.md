@@ -300,15 +300,15 @@ devel0@tuf:~$
 
 - apply to bash completions
 
-edit `/etc/bash_completion.d/example-01` as follow ( note SHOW_COMPLETIONS must 1 for bash to instruct skip first dummy arg that is friendly name of the program )
+edit `/etc/bash_completion.d/example-01` as follow ( note `${COM_LINE:2}` to skip first dummy arg that is friendly name of the program )
 
 ```sh
 _fn() {
         #echo >> /tmp/completion-debug
         #echo "COMP_LINE=${COMP_LINE}" >> /tmp/completion-debug
-        #SHOW_COMPLETIONS=1 example-01 ${COMP_LINE} >> /tmp/completion-debug
+        #SHOW_COMPLETIONS=2 example-01 ${COMP_LINE:2} >> /tmp/completion-debug
 
-        COMPREPLY=($(SHOW_COMPLETIONS=1 example-01 ${COMP_LINE}))
+        COMPREPLY=($(SHOW_COMPLETIONS=2 example-01 ${COMP_LINE:2}))
 }
 
 complete -F _fn example-01
