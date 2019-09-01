@@ -279,6 +279,7 @@ namespace SearchAThing
             CmdlineParseItem cmdToRun = null;
 
             var missingCommand = false;
+            var missingFlag = false;
 
             #region flags
             if (AllFlags.Any())
@@ -382,7 +383,7 @@ namespace SearchAThing
                     if (qFlag != null)
                     {
                         qFlag.Match(this, arg);
-                        if (!qFlag.GlobalFlagActionNested && qFlag.GlobalFlagAction != null) 
+                        if (!qFlag.GlobalFlagActionNested && qFlag.GlobalFlagAction != null)
                         {
                             qFlag.GlobalFlagAction(qFlag);
                             qFlag.GlobalFlagActionExecuted = true;
@@ -399,6 +400,7 @@ namespace SearchAThing
                         System.Console.WriteLine($"missing mandatory flag [{qMandatoryMissing.ShortLongFlag}]");
                         ResetColors();
                         PrintUsage();
+                        missingFlag = true;
                     }
                 }
             }
@@ -559,7 +561,7 @@ namespace SearchAThing
                 yield break;
             }
 
-            if (!showCompletion && onCmdlineMatch != null && qglobal.Count == 0) yield return onCmdlineMatch;
+            if (!showCompletion && onCmdlineMatch != null && qglobal.Count == 0 && !missingFlag) yield return onCmdlineMatch;
 
             if (cmdToRun != null)
             {
@@ -575,9 +577,12 @@ namespace SearchAThing
                 }
                 foreach (var x in qGlobalToremove) qglobal.Remove(x);
 
-                foreach (var x in cmdToRun.Parser.InternalRun(args))
+                if (!missingFlag)
                 {
-                    yield return x;
+                    foreach (var x in cmdToRun.Parser.InternalRun(args))
+                    {
+                        yield return x;
+                    }
                 }
                 yield break;
             }
