@@ -512,7 +512,7 @@ namespace SearchAThing
                         }
                         else
                         {
-                            var skipCompletion = !showCompletion;
+                            var skipCompletion = !showCompletion || parr.onCompletion == null;
 
                             if (showCompletion)
                             {
