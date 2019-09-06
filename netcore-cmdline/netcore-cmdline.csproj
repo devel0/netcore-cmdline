@@ -1,7 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-    <ItemGroup>
-      <ProjectReference Include="..\..\netcore-util\netcore-util\netcore-util.csproj" />
-    </ItemGroup>
     <PropertyGroup>
         <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
         <RootNamespace>SearchAThing</RootNamespace>
@@ -15,4 +12,7 @@
         <PackageProjectUrl>https://github.com/devel0/netcore-cmdline</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="netcore-util" Version="1.0.30" />
+    </ItemGroup>
 </Project>
