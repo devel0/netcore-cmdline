@@ -124,7 +124,7 @@ namespace SearchAThing
         /// <summary>
         /// short/long flag final string ( without value if any )
         /// </summary>        
-        public string ShortLongFlag => $"{(HasShortName ? $"-{ShortFlag}" : "")}{((HasShortName && HasLongName) ? "," : "")}{(HasLongName ? $"--{LongFlag}" : "")}";
+        public string ShortLongFlag => $"{(HasShortName ? ShortFlag : "")}{((HasShortName && HasLongName) ? "," : "")}{(HasLongName ? LongFlag : "")}";
 
         /// <summary>
         /// states if this flag requires a value
