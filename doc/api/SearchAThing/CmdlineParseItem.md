@@ -25,6 +25,7 @@ public class CmdlineParseItem : System.Collections.Generic.IEnumerable<string>, 
 |[ArgValues](CmdlineParseItem/ArgValues.md)|original cmdline argument associated as value to this item (may a flag with value or parameter)
 |[Description](CmdlineParseItem/Description.md)|description for this parse item to use in the usage or is parser description if this is a command
 |[GlobalFlagAction](CmdlineParseItem/GlobalFlagAction.md)|stores actiont to execute if this global flag item matches
+|[GlobalFlagActionNested](CmdlineParseItem/GlobalFlagActionNested.md)|if false global flag action will executed immeditaly; if true execution will deferred to nested parser
 |[HasLongName](CmdlineParseItem/HasLongName.md)|states if this element has a long name ( used only for flags )
 |[HasShortName](CmdlineParseItem/HasShortName.md)|true if this item has a short name ( maybe a command, parameter or a flag with short name )
 |[HasValueName](CmdlineParseItem/HasValueName.md)|states if this flag requires a value
