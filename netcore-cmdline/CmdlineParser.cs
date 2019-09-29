@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace SearchAThing
 {
@@ -199,10 +200,13 @@ namespace SearchAThing
 
         Action onCmdlineMatch = null;
 
-        CmdlineParser(CmdlineParser parent, string description = null)
+        bool unescapeArguments = false;
+
+        CmdlineParser(CmdlineParser parent, string description, bool unescapeArguments)
         {
             Parent = parent;
             _Description = description;
+            this.unescapeArguments = unescapeArguments;
         }
 
         /// <summary>
@@ -211,12 +215,13 @@ namespace SearchAThing
         /// <param name="description">program description</param>
         /// <param name="builder">action to configure and run the parser</param>
         /// <param name="useColors">true to use colors</param>
-        public static CmdlineParser Create(string description, Action<CmdlineParser> builder, bool useColors = true)
+        /// <param name="unescapeArguments">true to unescape arguments ( eg. newlines in argument strings )</param>
+        public static CmdlineParser Create(string description, Action<CmdlineParser> builder, bool useColors = true, bool unescapeArguments = false)
         {
             if (useColors)
-                return Create(description, builder, new CmdlineColors());
+                return Create(description, builder, new CmdlineColors(), unescapeArguments);
             else
-                return Create(description, builder, null);
+                return Create(description, builder, null, unescapeArguments);
         }
 
         /// <summary>
@@ -225,9 +230,10 @@ namespace SearchAThing
         /// <param name="description">program description</param>
         /// <param name="builder">action to configure and run the parser</param>
         /// <param name="colors">custom color object or null to disable</param>
-        public static CmdlineParser Create(string description, Action<CmdlineParser> builder, CmdlineColors colors)
+        /// <param name="unescapeArguments">true to unescape arguments ( eg. newlines in argument strings )</param>
+        public static CmdlineParser Create(string description, Action<CmdlineParser> builder, CmdlineColors colors, bool unescapeArguments)
         {
-            var parser = new CmdlineParser(null, description);
+            var parser = new CmdlineParser(null, description, unescapeArguments);
             parser._Colors = colors;
 
             builder(parser);
@@ -252,7 +258,9 @@ namespace SearchAThing
         {
             showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
 
-            InternalRun(args.Select(w => new CmdlineArgument(w)).Skip(showCompletion ? 1 : 0).ToList());
+            InternalRun(args
+                .Select(w => unescapeArguments ? Regex.Unescape(w) : w)
+                .Select(w => new CmdlineArgument(w)).Skip(showCompletion ? 1 : 0).ToList());
         }
 
         void PrintCompletions(IEnumerable<string> values)
@@ -539,7 +547,7 @@ namespace SearchAThing
         /// <param name="builder">an optional builder to create a subparser from this command</param>        
         public CmdlineParseItem AddCommand(string name, string description, Action<CmdlineParser> builder = null)
         {
-            var parser = new CmdlineParser(this);
+            var parser = new CmdlineParser(this, null, unescapeArguments);
 
             var cmd = new CmdlineParseItem(parser, CmdlineParseItemType.command,
                 name, null, null, description, mandatory: false, globalFlagAction: null);
