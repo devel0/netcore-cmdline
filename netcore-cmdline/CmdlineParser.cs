@@ -86,7 +86,7 @@ namespace SearchAThing
         {
             get
             {
-                var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+                var assembly = System.Reflection.Assembly.GetCallingAssembly();
                 var fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
                 return fvi.FileVersion;
             }
@@ -256,11 +256,23 @@ namespace SearchAThing
         /// </summary>
         public void Run(string[] args)
         {
-            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
+            var skipArgs = 0;
+            // SHOW_COMPLETIONS=1 ( from bash completion will include program name, so we skip first arg )
+            // SHOW_COMPLETIONS=2 ( from debug cmdline so don't skip because first arg is first arg )
+            var showCompletionEnv = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS");
+            if (showCompletionEnv != null)
+            {
+                if (showCompletionEnv == "1") skipArgs = 1;
+            }
 
-            InternalRun(args
+            var cmdlineMatches = InternalRun(args
                 .Select(w => unescapeArguments ? Regex.Unescape(w) : w)
-                .Select(w => new CmdlineArgument(w)).Skip(showCompletion ? 1 : 0).ToList());
+                .Select(w => new CmdlineArgument(w)).Skip(skipArgs).ToList());
+
+            foreach (var x in cmdlineMatches)
+            {
+                x();
+            }
         }
 
         void PrintCompletions(IEnumerable<string> values)
@@ -268,66 +280,27 @@ namespace SearchAThing
             foreach (var x in values) System.Console.WriteLine(x);
         }
 
-        void InternalRun(List<CmdlineArgument> args)
+        IEnumerable<Action> InternalRun(List<CmdlineArgument> args)
         {
-            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && e == "1");
+            showCompletion = Environment.GetEnvironmentVariable("SHOW_COMPLETIONS").Eval((e) => e != null && (e == "1" || e == "2"));
 
             CmdlineParseItem cmdToRun = null;
 
             var missingCommand = false;
-
-            #region commands
-            if (Commands.Any())
-            {
-                int argIdx = args.Count(w => w.Matched);
-
-                if (argIdx < args.Count)
-                {
-                    var arg = args[argIdx];
-
-                    var qcmd = Commands.FirstOrDefault(w => w.ShortName == arg.Argument);
-                    // if not found valid command checks global flags
-                    if (qcmd == null)
-                    {
-                        missingCommand = true;
-
-                        if (showCompletion)
-                        {
-                            PrintCompletions(Commands.Select(w => w.ShortName).Where(r => r.StartsWith(arg.Argument) && r != arg.Argument));
-                        }
-                    }
-                    else
-                    {
-                        qcmd.Match(this, arg);
-                        cmdToRun = qcmd;
-                    }
-                }
-                else
-                {
-                    missingCommand = true;
-
-                    if (showCompletion)
-                    {
-                        PrintCompletions(Commands.Select(w => w.ShortName));
-                    }
-                }
-            }
-            #endregion
+            var missingFlag = false;
 
             #region flags
             if (AllFlags.Any())
             {
-                var argIdxBegin = args.Count(w => w.Matched);
-
-                for (var argIdx = argIdxBegin; argIdx < args.Count; ++argIdx)
+                foreach (var (arg, argIdx) in args.WithIndex())
                 {
-                    var arg = args[argIdx];
+                    if (arg.Matched) continue;
 
                     var availFlags = AllFlags.Where(r => !r.Matches);
                     if (!availFlags.Any()) break; // all flags consumed
 
                     CmdlineParseItem qFlag = null;
-                    var consumeNextArgAsValue = false;
+
                     foreach (var flag in availFlags)
                     {
                         #region short flag
@@ -339,7 +312,6 @@ namespace SearchAThing
                                 {
                                     if (argIdx < args.Count - 1)
                                     {
-                                        consumeNextArgAsValue = true;
                                         var valArg = args[argIdx + 1];
                                         valArg.MatchedItem = flag;
                                         flag.SetValue(valArg);
@@ -382,7 +354,6 @@ namespace SearchAThing
                                 {
                                     if (argIdx < args.Count - 1)
                                     {
-                                        consumeNextArgAsValue = true;
                                         var valArg = args[argIdx + 1];
                                         valArg.MatchedItem = flag;
                                         flag.SetValue(valArg);
@@ -420,7 +391,11 @@ namespace SearchAThing
                     if (qFlag != null)
                     {
                         qFlag.Match(this, arg);
-                        if (consumeNextArgAsValue) { ++argIdx; continue; }
+                        if (!qFlag.GlobalFlagActionNested && qFlag.GlobalFlagAction != null)
+                        {
+                            qFlag.GlobalFlagAction(qFlag);
+                            qFlag.GlobalFlagActionExecuted = true;
+                        }
                     }
                 }
 
@@ -432,6 +407,44 @@ namespace SearchAThing
                         ErrorColor();
                         System.Console.WriteLine($"missing mandatory flag [{qMandatoryMissing.ShortLongFlag}]");
                         ResetColors();
+                        PrintUsage();
+                        missingFlag = true;
+                    }
+                }
+            }
+            #endregion
+
+            #region commands
+            if (Commands.Any())
+            {
+                var arg = args.FirstOrDefault(w => !w.Matched);
+
+                if (arg != null)
+                {
+                    var qcmd = Commands.FirstOrDefault(w => w.ShortName == arg.Argument);
+                    // if not found valid command checks global flags
+                    if (qcmd == null)
+                    {
+                        missingCommand = true;
+
+                        if (showCompletion)
+                        {
+                            PrintCompletions(Commands.Select(w => w.ShortName).Where(r => r.StartsWith(arg.Argument) && r != arg.Argument));
+                        }
+                    }
+                    else
+                    {
+                        qcmd.Match(this, arg);
+                        cmdToRun = qcmd;
+                    }
+                }
+                else
+                {
+                    missingCommand = true;
+
+                    if (showCompletion)
+                    {
+                        PrintCompletions(Commands.Select(w => w.ShortName));
                     }
                 }
             }
@@ -461,11 +474,21 @@ namespace SearchAThing
                     }
                     else
                     {
+                        var skipCompletion = !showCompletion;
+
                         if (showCompletion)
                         {
-                            if (param.onCompletion != null && !missingCommand) PrintCompletions(param.onCompletion(arg.Argument).Where(r => r != arg.Argument));
+                            if (param.onCompletion != null && !missingCommand)
+                            {
+                                var completions = param.onCompletion(arg.Argument).Where(r => r != arg.Argument);
+                                if (completions.Count() > 0)
+                                    PrintCompletions(completions);
+                                else
+                                    skipCompletion = true;
+                            }
                         }
-                        else
+
+                        if (skipCompletion)
                         {
                             param.Match(this, arg);
                             param.SetValue(arg);
@@ -481,17 +504,52 @@ namespace SearchAThing
                     while (true)
                     {
                         var arg = args.FirstOrDefault(r => !r.Matched);
-                        if (arg == null) break;
+                        if (arg == null)
+                        {
+                            if (showCompletion)
+                            {
+                                if (parr.onCompletion != null && !missingCommand)
+                                    PrintCompletions(parr.onCompletion(""));
+                            }
+                            else
+                            {
+                                if (parr.Mandatory && parrArgs.Count == 0)
+                                    missingParameter = parr;
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            var skipCompletion = !showCompletion || parr.onCompletion == null;
 
-                        parr.Match(this, arg);
-                        parrArgs.Add(arg);
+                            if (showCompletion)
+                            {
+                                if (parr.onCompletion != null && !missingCommand)
+                                {
+                                    var completions = parr.onCompletion(arg.Argument).Where(r => r != arg.Argument);
+                                    if (completions.Count() > 0)
+                                    {
+                                        PrintCompletions(completions);
+                                        break;
+                                    }
+                                    else
+                                        skipCompletion = true;
+                                }
+                            }
+
+                            if (skipCompletion)
+                            {
+                                parr.Match(this, arg);
+                                parrArgs.Add(arg);
+                            }
+                        }
                     }
                     parr.SetValues(parrArgs);
                 }
             }
             #endregion
 
-            var qglobal = AllFlags.Where(r => r.IsGlobal && r.Matches).ToList();
+            var qglobal = AllFlags.Where(r => r.IsGlobal && r.GlobalFlagActionNested && r.Matches).ToList();
 
             if (!showCompletion && qglobal.Count == 0 && missingCommand)
             {
@@ -499,7 +557,7 @@ namespace SearchAThing
                 System.Console.WriteLine($"missing command");
                 ResetColors();
                 PrintUsage();
-                return;
+                yield break;
             }
 
             if (!showCompletion && missingParameter != null)
@@ -508,24 +566,39 @@ namespace SearchAThing
                 System.Console.WriteLine($"missing required parameter [{missingParameter.ShortName}]");
                 ResetColors();
                 PrintUsage();
-                return;
+                yield break;
             }
+
+            if (!showCompletion && onCmdlineMatch != null && qglobal.Count == 0 && !missingFlag) yield return onCmdlineMatch;
 
             if (cmdToRun != null)
             {
+                var qGlobalToremove = new List<CmdlineParseItem>();
                 foreach (var x in qglobal)
                 {
-                    x.Unmatch();
+                    if (!x.GlobalFlagActionNested)
+                    {
+                        qGlobalToremove.Add(x);
+                    }
+                    else
+                        x.Unmatch();
                 }
+                foreach (var x in qGlobalToremove) qglobal.Remove(x);
 
-                cmdToRun.Parser.InternalRun(args);
+                if (!missingFlag)
+                {
+                    foreach (var x in cmdToRun.Parser.InternalRun(args))
+                    {
+                        yield return x;
+                    }
+                }
+                yield break;
             }
             if (cmdToRun == null && qglobal.Count > 0)
             {
-                foreach (var x in qglobal) x.GlobalFlagAction(x);
-                return;
+                foreach (var x in qglobal.Where(r => !r.GlobalFlagActionExecuted)) x.GlobalFlagAction(x);
+                yield break;
             }
-            if (!showCompletion && onCmdlineMatch != null) onCmdlineMatch();
         }
 
         #region print usage
@@ -568,10 +641,10 @@ namespace SearchAThing
         /// <summary>
         /// shortName or longName and valueName can be null
         /// </summary>        
-        CmdlineParseItem AddFlag(string shortName, string longName, string description, string valueName, bool mandatory, Action<CmdlineParseItem> globalFlagAction)
+        CmdlineParseItem AddFlag(string shortName, string longName, string description, string valueName, bool mandatory, Action<CmdlineParseItem> globalFlagAction, bool globalFlagActionNested)
         {
             var item = new CmdlineParseItem(this, CmdlineParseItemType.flag,
-                shortName, longName, valueName, description, mandatory, globalFlagAction);
+                shortName, longName, valueName, description, mandatory, globalFlagAction, globalFlagActionNested);
 
             items.Add(item);
 
@@ -583,20 +656,20 @@ namespace SearchAThing
         /// <summary>
         /// add optional short flag
         /// </summary>
-        public CmdlineParseItem AddShort(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null) =>
-            AddFlag(name, null, description, valueName, mandatory: false, globalFlagAction);
+        public CmdlineParseItem AddShort(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null, bool globalFlagActionNested = true) =>
+            AddFlag(name, null, description, valueName, mandatory: false, globalFlagAction, globalFlagActionNested);
 
         /// <summary>
         /// add optional long flag
         /// </summary>
-        public CmdlineParseItem AddLong(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null) =>
-            AddFlag(null, name, description, valueName, mandatory: false, globalFlagAction);
+        public CmdlineParseItem AddLong(string name, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null, bool globalFlagActionNested = true) =>
+            AddFlag(null, name, description, valueName, mandatory: false, globalFlagAction, globalFlagActionNested);
 
         /// <summary>
         /// add optional short/long flag
         /// </summary>
-        public CmdlineParseItem AddShortLong(string shortName, string longName, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null) =>
-            AddFlag(shortName, longName, description, valueName, mandatory: false, globalFlagAction);
+        public CmdlineParseItem AddShortLong(string shortName, string longName, string description, string valueName = null, Action<CmdlineParseItem> globalFlagAction = null, bool globalFlagActionNested = true) =>
+            AddFlag(shortName, longName, description, valueName, mandatory: false, globalFlagAction, globalFlagActionNested);
 
         #endregion
 
@@ -606,19 +679,19 @@ namespace SearchAThing
         /// add mandatory short flag
         /// </summary>
         public CmdlineParseItem AddMandatoryShort(string name, string description, string valueName = null) =>
-            AddFlag(name, null, description, valueName, mandatory: true, globalFlagAction: null);
+            AddFlag(name, null, description, valueName, mandatory: true, globalFlagAction: null, globalFlagActionNested: true);
 
         /// <summary>
         /// add mandatory long flag
         /// </summary>
         public CmdlineParseItem AddMandatoryLong(string name, string description, string valueName = null) =>
-            AddFlag(null, name, description, valueName, mandatory: true, globalFlagAction: null);
+            AddFlag(null, name, description, valueName, mandatory: true, globalFlagAction: null, globalFlagActionNested: true);
 
         /// <summary>
         /// add mandatory short/long flag
         /// </summary>
         public CmdlineParseItem AddMandatoryShortLong(string shortName, string longName, string description, string valueName = null) =>
-            AddFlag(shortName, longName, description, valueName, mandatory: true, globalFlagAction: null);
+            AddFlag(shortName, longName, description, valueName, mandatory: true, globalFlagAction: null, globalFlagActionNested: true);
 
         #endregion
 
