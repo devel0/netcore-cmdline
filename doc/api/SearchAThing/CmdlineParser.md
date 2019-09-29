@@ -24,7 +24,7 @@ public class CmdlineParser
 |[AddShort](CmdlineParser/AddShort.md)|add optional short flag|
 |[AddShortLong](CmdlineParser/AddShortLong.md)|add optional short/long flag|
 |[Create](CmdlineParser/Create.md) (static)|create main parser|
-|[Create](CmdlineParser/Create.md#createstring-actionsearchathingcmdlineparser-cmdlinecolors) (static)|create main parser|
+|[Create](CmdlineParser/Create.md#createstring-actionsearchathingcmdlineparser-cmdlinecolors-bool) (static)|create main parser|
 |[Equals](CmdlineParser/Equals.md)||
 |[GetHashCode](CmdlineParser/GetHashCode.md)||
 |[GetType](CmdlineParser/GetType.md)||
