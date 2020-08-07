@@ -1,0 +1,1202 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CmdlineParseItem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CmdlineParseItem
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SearchAThing.CmdlineParseItem">
+  
+  
+  <h1 id="SearchAThing_CmdlineParseItem" data-uid="SearchAThing.CmdlineParseItem" class="text-break">Class CmdlineParseItem
+  </h1>
+  <div class="markdown level0 summary"><p>describe properties required for a command, a flag or a parameter on the syntax for the cmdline parser;
+enumerating returns the list of values if this is a flag with value or a parameter or a parameter array</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CmdlineParseItem</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SearchAThing.html">SearchAThing</a></h6>
+  <h6><strong>Assembly</strong>: netcore-cmdline.dll</h6>
+  <h5 id="SearchAThing_CmdlineParseItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CmdlineParseItem : IEnumerable&lt;string&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_ArgValues.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.ArgValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L237">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_ArgValues_" data-uid="SearchAThing.CmdlineParseItem.ArgValues*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_ArgValues" data-uid="SearchAThing.CmdlineParseItem.ArgValues">ArgValues</h4>
+  <div class="markdown level1 summary"><p>original cmdline argument associated as value to this item (may a flag with value or parameter)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;CmdlineArgument&gt; ArgValues { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="SearchAThing.CmdlineArgument.html">CmdlineArgument</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_Description.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L142">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_Description_" data-uid="SearchAThing.CmdlineParseItem.Description*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_Description" data-uid="SearchAThing.CmdlineParseItem.Description">Description</h4>
+  <div class="markdown level1 summary"><p>description for this parse item to use in the usage or is parser description if this is a command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_GlobalFlagAction.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.GlobalFlagAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L80">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_GlobalFlagAction_" data-uid="SearchAThing.CmdlineParseItem.GlobalFlagAction*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_GlobalFlagAction" data-uid="SearchAThing.CmdlineParseItem.GlobalFlagAction">GlobalFlagAction</h4>
+  <div class="markdown level1 summary"><p>stores actiont to execute if this global flag item matches</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;CmdlineParseItem&gt; GlobalFlagAction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="SearchAThing.CmdlineParseItem.html">CmdlineParseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_GlobalFlagActionNested.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.GlobalFlagActionNested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L87">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_GlobalFlagActionNested_" data-uid="SearchAThing.CmdlineParseItem.GlobalFlagActionNested*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_GlobalFlagActionNested" data-uid="SearchAThing.CmdlineParseItem.GlobalFlagActionNested">GlobalFlagActionNested</h4>
+  <div class="markdown level1 summary"><p>if false global flag action will executed immeditaly; if true execution will deferred to nested parser</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GlobalFlagActionNested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_HasLongName.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.HasLongName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L112">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_HasLongName_" data-uid="SearchAThing.CmdlineParseItem.HasLongName*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_HasLongName" data-uid="SearchAThing.CmdlineParseItem.HasLongName">HasLongName</h4>
+  <div class="markdown level1 summary"><p>states if this element has a long name ( used only for flags )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLongName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_HasShortName.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.HasShortName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L97">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_HasShortName_" data-uid="SearchAThing.CmdlineParseItem.HasShortName*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_HasShortName" data-uid="SearchAThing.CmdlineParseItem.HasShortName">HasShortName</h4>
+  <div class="markdown level1 summary"><p>true if this item has a short name ( maybe a command, parameter or a flag with short name )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasShortName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_HasValueName.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.HasValueName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L132">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_HasValueName_" data-uid="SearchAThing.CmdlineParseItem.HasValueName*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_HasValueName" data-uid="SearchAThing.CmdlineParseItem.HasValueName">HasValueName</h4>
+  <div class="markdown level1 summary"><p>states if this flag requires a value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasValueName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_IsCommand.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.IsCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L55">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_IsCommand_" data-uid="SearchAThing.CmdlineParseItem.IsCommand*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_IsCommand" data-uid="SearchAThing.CmdlineParseItem.IsCommand">IsCommand</h4>
+  <div class="markdown level1 summary"><p>true if this is a command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCommand { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_IsFlag.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.IsFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L60">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_IsFlag_" data-uid="SearchAThing.CmdlineParseItem.IsFlag*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_IsFlag" data-uid="SearchAThing.CmdlineParseItem.IsFlag">IsFlag</h4>
+  <div class="markdown level1 summary"><p>true if this is a flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_IsGlobal.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.IsGlobal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L92">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_IsGlobal_" data-uid="SearchAThing.CmdlineParseItem.IsGlobal*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_IsGlobal" data-uid="SearchAThing.CmdlineParseItem.IsGlobal">IsGlobal</h4>
+  <div class="markdown level1 summary"><p>states if this parse item is a global flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGlobal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_IsParameter.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.IsParameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L70">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_IsParameter_" data-uid="SearchAThing.CmdlineParseItem.IsParameter*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_IsParameter" data-uid="SearchAThing.CmdlineParseItem.IsParameter">IsParameter</h4>
+  <div class="markdown level1 summary"><p>true if this is a parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParameter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_IsParameterArray.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.IsParameterArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L75">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_IsParameterArray_" data-uid="SearchAThing.CmdlineParseItem.IsParameterArray*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_IsParameterArray" data-uid="SearchAThing.CmdlineParseItem.IsParameterArray">IsParameterArray</h4>
+  <div class="markdown level1 summary"><p>true is this is an array of parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParameterArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_IsParameterOrArray.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.IsParameterOrArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L65">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_IsParameterOrArray_" data-uid="SearchAThing.CmdlineParseItem.IsParameterOrArray*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_IsParameterOrArray" data-uid="SearchAThing.CmdlineParseItem.IsParameterOrArray">IsParameterOrArray</h4>
+  <div class="markdown level1 summary"><p>true if this is a parameter or array of parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParameterOrArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_LongFlag.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.LongFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L122">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_LongFlag_" data-uid="SearchAThing.CmdlineParseItem.LongFlag*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_LongFlag" data-uid="SearchAThing.CmdlineParseItem.LongFlag">LongFlag</h4>
+  <div class="markdown level1 summary"><p>states if this item have a long name ( used only for flags )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_LongName.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.LongName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L117">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_LongName_" data-uid="SearchAThing.CmdlineParseItem.LongName*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_LongName" data-uid="SearchAThing.CmdlineParseItem.LongName">LongName</h4>
+  <div class="markdown level1 summary"><p>long name ( used only for flags )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_Mandatory.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.Mandatory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L147">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_Mandatory_" data-uid="SearchAThing.CmdlineParseItem.Mandatory*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_Mandatory" data-uid="SearchAThing.CmdlineParseItem.Mandatory">Mandatory</h4>
+  <div class="markdown level1 summary"><p>true if this item is mandatory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Mandatory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_MatchArgument.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.MatchArgument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L222">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_MatchArgument_" data-uid="SearchAThing.CmdlineParseItem.MatchArgument*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_MatchArgument" data-uid="SearchAThing.CmdlineParseItem.MatchArgument">MatchArgument</h4>
+  <div class="markdown level1 summary"><p>original argument with that this parse item matches</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineArgument MatchArgument { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CmdlineArgument.html">CmdlineArgument</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_Matches.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.Matches%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L212">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_Matches_" data-uid="SearchAThing.CmdlineParseItem.Matches*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_Matches" data-uid="SearchAThing.CmdlineParseItem.Matches">Matches</h4>
+  <div class="markdown level1 summary"><p>states if this flag have a matching with required usage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Matches { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_MatchParser.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.MatchParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L217">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_MatchParser_" data-uid="SearchAThing.CmdlineParseItem.MatchParser*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_MatchParser" data-uid="SearchAThing.CmdlineParseItem.MatchParser">MatchParser</h4>
+  <div class="markdown level1 summary"><p>used to distinguish sub parser for global flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineParser MatchParser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CmdlineParser.html">CmdlineParser</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_Parser.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.Parser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L45">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_Parser_" data-uid="SearchAThing.CmdlineParseItem.Parser*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_Parser" data-uid="SearchAThing.CmdlineParseItem.Parser">Parser</h4>
+  <div class="markdown level1 summary"><p>parser which this item belongs to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineParser Parser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CmdlineParser.html">CmdlineParser</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_ShortFlag.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.ShortFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L107">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_ShortFlag_" data-uid="SearchAThing.CmdlineParseItem.ShortFlag*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_ShortFlag" data-uid="SearchAThing.CmdlineParseItem.ShortFlag">ShortFlag</h4>
+  <div class="markdown level1 summary"><p>short flag final string ( without value if any )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_ShortLongFlag.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.ShortLongFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L127">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_ShortLongFlag_" data-uid="SearchAThing.CmdlineParseItem.ShortLongFlag*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_ShortLongFlag" data-uid="SearchAThing.CmdlineParseItem.ShortLongFlag">ShortLongFlag</h4>
+  <div class="markdown level1 summary"><p>short/long flag final string ( without value if any )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortLongFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_ShortName.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.ShortName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L102">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_ShortName_" data-uid="SearchAThing.CmdlineParseItem.ShortName*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_ShortName" data-uid="SearchAThing.CmdlineParseItem.ShortName">ShortName</h4>
+  <div class="markdown level1 summary"><p>short name of this element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_SortOrder.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.SortOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L152">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_SortOrder_" data-uid="SearchAThing.CmdlineParseItem.SortOrder*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_SortOrder" data-uid="SearchAThing.CmdlineParseItem.SortOrder">SortOrder</h4>
+  <div class="markdown level1 summary"><p>helper to sort items in groups with follow order Commands, Flags, Parameters, Parameters array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SortOrder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_Type.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L50">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_Type_" data-uid="SearchAThing.CmdlineParseItem.Type*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_Type" data-uid="SearchAThing.CmdlineParseItem.Type">Type</h4>
+  <div class="markdown level1 summary"><p>type of this cmdline parser</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineParseItemType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CmdlineParseItemType.html">CmdlineParseItemType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_ValueName.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.ValueName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L137">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_ValueName_" data-uid="SearchAThing.CmdlineParseItem.ValueName*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_ValueName" data-uid="SearchAThing.CmdlineParseItem.ValueName">ValueName</h4>
+  <div class="markdown level1 summary"><p>symbolic name for the flag value to display in the usage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ValueName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_Values.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L243">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_Values_" data-uid="SearchAThing.CmdlineParseItem.Values*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_Values" data-uid="SearchAThing.CmdlineParseItem.Values">Values</h4>
+  <div class="markdown level1 summary"><p>values associated to this item (may a flag with value or parameter)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; Values { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_GetEnumerator.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L272">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_GetEnumerator_" data-uid="SearchAThing.CmdlineParseItem.GetEnumerator*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_GetEnumerator" data-uid="SearchAThing.CmdlineParseItem.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;string&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_OnCompletion_System_Func_System_String_System_Collections_Generic_IEnumerable_System_String___.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.OnCompletion(System.Func%7BSystem.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L178">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_OnCompletion_" data-uid="SearchAThing.CmdlineParseItem.OnCompletion*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_OnCompletion_System_Func_System_String_System_Collections_Generic_IEnumerable_System_String___" data-uid="SearchAThing.CmdlineParseItem.OnCompletion(System.Func{System.String,System.Collections.Generic.IEnumerable{System.String}})">OnCompletion(Func&lt;String, IEnumerable&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>set a runtime completion function ( used for parameter item types )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCompletion(Func&lt;string, IEnumerable&lt;string&gt;&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_op_Implicit_SearchAThing_CmdlineParseItem__System_Boolean.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.Boolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L227">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_op_Implicit_" data-uid="SearchAThing.CmdlineParseItem.op_Implicit*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_op_Implicit_SearchAThing_CmdlineParseItem__System_Boolean" data-uid="SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.Boolean">Implicit(CmdlineParseItem to Boolean)</h4>
+  <div class="markdown level1 summary"><p>helper to check if this parse item meet usage rules</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool (CmdlineParseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CmdlineParseItem.html">CmdlineParseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_op_Implicit_SearchAThing_CmdlineParseItem__System_String.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.String%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L279">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_op_Implicit_" data-uid="SearchAThing.CmdlineParseItem.op_Implicit*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_op_Implicit_SearchAThing_CmdlineParseItem__System_String" data-uid="SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.String">Implicit(CmdlineParseItem to String)</h4>
+  <div class="markdown level1 summary"><p>helper to retrieve this item value ( used for flag value or single parameter )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (CmdlineParseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CmdlineParseItem.html">CmdlineParseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L274">View Source</a>
+  </span>
+  <a id="SearchAThing_CmdlineParseItem_System_Collections_IEnumerable_GetEnumerator_" data-uid="SearchAThing.CmdlineParseItem.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="SearchAThing_CmdlineParseItem_System_Collections_IEnumerable_GetEnumerator" data-uid="SearchAThing.CmdlineParseItem.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/devel0/netcore-cmdline/new/master/apiSpec/new?filename=SearchAThing_CmdlineParseItem.md&amp;value=---%0Auid%3A%20SearchAThing.CmdlineParseItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/devel0/netcore-cmdline/blob/master/netcore-cmdline/CmdlineParseItem.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

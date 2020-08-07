@@ -7,626 +7,1097 @@ references:
   commentId: N:SearchAThing
   fullName: SearchAThing
   nameWithType: SearchAThing
-- uid: SearchAThing.CSV
-  name: SearchAThing.CSV
-  href: api/SearchAThing.CSV.html
-  commentId: N:SearchAThing.CSV
-  fullName: SearchAThing.CSV
-  nameWithType: SearchAThing.CSV
-- uid: SearchAThing.CSV.CsvColumn
-  name: CsvColumn
-  href: api/SearchAThing.CSV.CsvColumn.html
-  commentId: T:SearchAThing.CSV.CsvColumn
-  fullName: SearchAThing.CSV.CsvColumn
-  nameWithType: CsvColumn
-- uid: SearchAThing.CSV.CsvColumn.#ctor(System.String,System.Int32,PropertyInfo)
-  name: CsvColumn(String, Int32, PropertyInfo)
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn__ctor_System_String_System_Int32_PropertyInfo_
-  commentId: M:SearchAThing.CSV.CsvColumn.#ctor(System.String,System.Int32,PropertyInfo)
-  fullName: SearchAThing.CSV.CsvColumn.CsvColumn(System.String, System.Int32, PropertyInfo)
-  nameWithType: CsvColumn.CsvColumn(String, Int32, PropertyInfo)
-- uid: SearchAThing.CSV.CsvColumn.#ctor*
-  name: CsvColumn
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvColumn.#ctor
+- uid: SearchAThing.CmdlineArgument
+  name: CmdlineArgument
+  href: api/SearchAThing.CmdlineArgument.html
+  commentId: T:SearchAThing.CmdlineArgument
+  fullName: SearchAThing.CmdlineArgument
+  nameWithType: CmdlineArgument
+- uid: SearchAThing.CmdlineArgument.#ctor(System.String)
+  name: CmdlineArgument(String)
+  href: api/SearchAThing.CmdlineArgument.html#SearchAThing_CmdlineArgument__ctor_System_String_
+  commentId: M:SearchAThing.CmdlineArgument.#ctor(System.String)
+  fullName: SearchAThing.CmdlineArgument.CmdlineArgument(System.String)
+  nameWithType: CmdlineArgument.CmdlineArgument(String)
+- uid: SearchAThing.CmdlineArgument.#ctor*
+  name: CmdlineArgument
+  href: api/SearchAThing.CmdlineArgument.html#SearchAThing_CmdlineArgument__ctor_
+  commentId: Overload:SearchAThing.CmdlineArgument.#ctor
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvColumn.CsvColumn
-  nameWithType: CsvColumn.CsvColumn
-- uid: SearchAThing.CSV.CsvColumn.Header
-  name: Header
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_Header
-  commentId: F:SearchAThing.CSV.CsvColumn.Header
-  fullName: SearchAThing.CSV.CsvColumn.Header
-  nameWithType: CsvColumn.Header
-- uid: SearchAThing.CSV.CsvColumn.IsNumber
-  name: IsNumber
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_IsNumber
-  commentId: F:SearchAThing.CSV.CsvColumn.IsNumber
-  fullName: SearchAThing.CSV.CsvColumn.IsNumber
-  nameWithType: CsvColumn.IsNumber
-- uid: SearchAThing.CSV.CsvColumn.IsText
-  name: IsText
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_IsText
-  commentId: F:SearchAThing.CSV.CsvColumn.IsText
-  fullName: SearchAThing.CSV.CsvColumn.IsText
-  nameWithType: CsvColumn.IsText
-- uid: SearchAThing.CSV.CsvColumn.NumberType
-  name: NumberType
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_NumberType
-  commentId: F:SearchAThing.CSV.CsvColumn.NumberType
-  fullName: SearchAThing.CSV.CsvColumn.NumberType
-  nameWithType: CsvColumn.NumberType
-- uid: SearchAThing.CSV.CsvColumn.Order
-  name: Order
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_Order
-  commentId: F:SearchAThing.CSV.CsvColumn.Order
-  fullName: SearchAThing.CSV.CsvColumn.Order
-  nameWithType: CsvColumn.Order
-- uid: SearchAThing.CSV.CsvColumn.Property
-  name: Property
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_Property
-  commentId: F:SearchAThing.CSV.CsvColumn.Property
-  fullName: SearchAThing.CSV.CsvColumn.Property
-  nameWithType: CsvColumn.Property
-- uid: SearchAThing.CSV.CsvColumn.TextType
-  name: TextType
-  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_TextType
-  commentId: F:SearchAThing.CSV.CsvColumn.TextType
-  fullName: SearchAThing.CSV.CsvColumn.TextType
-  nameWithType: CsvColumn.TextType
-- uid: SearchAThing.CSV.CsvColumnNumberType
-  name: CsvColumnNumberType
-  href: api/SearchAThing.CSV.CsvColumnNumberType.html
-  commentId: T:SearchAThing.CSV.CsvColumnNumberType
-  fullName: SearchAThing.CSV.CsvColumnNumberType
-  nameWithType: CsvColumnNumberType
-- uid: SearchAThing.CSV.CsvColumnNumberType.numberDecimal
-  name: numberDecimal
-  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberDecimal
-  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberDecimal
-  fullName: SearchAThing.CSV.CsvColumnNumberType.numberDecimal
-  nameWithType: CsvColumnNumberType.numberDecimal
-- uid: SearchAThing.CSV.CsvColumnNumberType.numberDouble
-  name: numberDouble
-  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberDouble
-  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberDouble
-  fullName: SearchAThing.CSV.CsvColumnNumberType.numberDouble
-  nameWithType: CsvColumnNumberType.numberDouble
-- uid: SearchAThing.CSV.CsvColumnNumberType.numberFloat
-  name: numberFloat
-  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberFloat
-  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberFloat
-  fullName: SearchAThing.CSV.CsvColumnNumberType.numberFloat
-  nameWithType: CsvColumnNumberType.numberFloat
-- uid: SearchAThing.CSV.CsvColumnNumberType.numberInt
-  name: numberInt
-  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberInt
-  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberInt
-  fullName: SearchAThing.CSV.CsvColumnNumberType.numberInt
-  nameWithType: CsvColumnNumberType.numberInt
-- uid: SearchAThing.CSV.CsvColumnOrderAttribute
-  name: CsvColumnOrderAttribute
-  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html
-  commentId: T:SearchAThing.CSV.CsvColumnOrderAttribute
-  fullName: SearchAThing.CSV.CsvColumnOrderAttribute
-  nameWithType: CsvColumnOrderAttribute
-- uid: SearchAThing.CSV.CsvColumnOrderAttribute.#ctor(System.Int32)
-  name: CsvColumnOrderAttribute(Int32)
-  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute__ctor_System_Int32_
-  commentId: M:SearchAThing.CSV.CsvColumnOrderAttribute.#ctor(System.Int32)
-  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.CsvColumnOrderAttribute(System.Int32)
-  nameWithType: CsvColumnOrderAttribute.CsvColumnOrderAttribute(Int32)
-- uid: SearchAThing.CSV.CsvColumnOrderAttribute.#ctor*
-  name: CsvColumnOrderAttribute
-  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvColumnOrderAttribute.#ctor
+  fullName: SearchAThing.CmdlineArgument.CmdlineArgument
+  nameWithType: CmdlineArgument.CmdlineArgument
+- uid: SearchAThing.CmdlineArgument.Argument
+  name: Argument
+  href: api/SearchAThing.CmdlineArgument.html#SearchAThing_CmdlineArgument_Argument
+  commentId: P:SearchAThing.CmdlineArgument.Argument
+  fullName: SearchAThing.CmdlineArgument.Argument
+  nameWithType: CmdlineArgument.Argument
+- uid: SearchAThing.CmdlineArgument.Argument*
+  name: Argument
+  href: api/SearchAThing.CmdlineArgument.html#SearchAThing_CmdlineArgument_Argument_
+  commentId: Overload:SearchAThing.CmdlineArgument.Argument
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.CsvColumnOrderAttribute
-  nameWithType: CsvColumnOrderAttribute.CsvColumnOrderAttribute
-- uid: SearchAThing.CSV.CsvColumnOrderAttribute.Order
-  name: Order
-  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute_Order
-  commentId: P:SearchAThing.CSV.CsvColumnOrderAttribute.Order
-  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.Order
-  nameWithType: CsvColumnOrderAttribute.Order
-- uid: SearchAThing.CSV.CsvColumnOrderAttribute.Order*
-  name: Order
-  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute_Order_
-  commentId: Overload:SearchAThing.CSV.CsvColumnOrderAttribute.Order
+  fullName: SearchAThing.CmdlineArgument.Argument
+  nameWithType: CmdlineArgument.Argument
+- uid: SearchAThing.CmdlineArgument.Matched
+  name: Matched
+  href: api/SearchAThing.CmdlineArgument.html#SearchAThing_CmdlineArgument_Matched
+  commentId: P:SearchAThing.CmdlineArgument.Matched
+  fullName: SearchAThing.CmdlineArgument.Matched
+  nameWithType: CmdlineArgument.Matched
+- uid: SearchAThing.CmdlineArgument.Matched*
+  name: Matched
+  href: api/SearchAThing.CmdlineArgument.html#SearchAThing_CmdlineArgument_Matched_
+  commentId: Overload:SearchAThing.CmdlineArgument.Matched
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.Order
-  nameWithType: CsvColumnOrderAttribute.Order
-- uid: SearchAThing.CSV.CsvColumnTextType
-  name: CsvColumnTextType
-  href: api/SearchAThing.CSV.CsvColumnTextType.html
-  commentId: T:SearchAThing.CSV.CsvColumnTextType
-  fullName: SearchAThing.CSV.CsvColumnTextType
-  nameWithType: CsvColumnTextType
-- uid: SearchAThing.CSV.CsvColumnTextType.textChar
-  name: textChar
-  href: api/SearchAThing.CSV.CsvColumnTextType.html#SearchAThing_CSV_CsvColumnTextType_textChar
-  commentId: F:SearchAThing.CSV.CsvColumnTextType.textChar
-  fullName: SearchAThing.CSV.CsvColumnTextType.textChar
-  nameWithType: CsvColumnTextType.textChar
-- uid: SearchAThing.CSV.CsvColumnTextType.textString
-  name: textString
-  href: api/SearchAThing.CSV.CsvColumnTextType.html#SearchAThing_CSV_CsvColumnTextType_textString
-  commentId: F:SearchAThing.CSV.CsvColumnTextType.textString
-  fullName: SearchAThing.CSV.CsvColumnTextType.textString
-  nameWithType: CsvColumnTextType.textString
-- uid: SearchAThing.CSV.CsvFile`1
-  name: CsvFile<T>
-  href: api/SearchAThing.CSV.CsvFile-1.html
-  commentId: T:SearchAThing.CSV.CsvFile`1
-  name.vb: CsvFile(Of T)
-  fullName: SearchAThing.CSV.CsvFile<T>
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T)
-  nameWithType: CsvFile<T>
-  nameWithType.vb: CsvFile(Of T)
-- uid: SearchAThing.CSV.CsvFile`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
-  name: CsvFile(String, CsvOptions)
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1__ctor_System_String_SearchAThing_CSV_CsvOptions_
-  commentId: M:SearchAThing.CSV.CsvFile`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
-  fullName: SearchAThing.CSV.CsvFile<T>.CsvFile(System.String, SearchAThing.CSV.CsvOptions)
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).CsvFile(System.String, SearchAThing.CSV.CsvOptions)
-  nameWithType: CsvFile<T>.CsvFile(String, CsvOptions)
-  nameWithType.vb: CsvFile(Of T).CsvFile(String, CsvOptions)
-- uid: SearchAThing.CSV.CsvFile`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
-  name: CsvFile(String, Boolean, CsvOptions)
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1__ctor_System_String_System_Boolean_SearchAThing_CSV_CsvOptions_
-  commentId: M:SearchAThing.CSV.CsvFile`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
-  fullName: SearchAThing.CSV.CsvFile<T>.CsvFile(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).CsvFile(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
-  nameWithType: CsvFile<T>.CsvFile(String, Boolean, CsvOptions)
-  nameWithType.vb: CsvFile(Of T).CsvFile(String, Boolean, CsvOptions)
-- uid: SearchAThing.CSV.CsvFile`1.#ctor*
-  name: CsvFile
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.#ctor
+  fullName: SearchAThing.CmdlineArgument.Matched
+  nameWithType: CmdlineArgument.Matched
+- uid: SearchAThing.CmdlineColors
+  name: CmdlineColors
+  href: api/SearchAThing.CmdlineColors.html
+  commentId: T:SearchAThing.CmdlineColors
+  fullName: SearchAThing.CmdlineColors
+  nameWithType: CmdlineColors
+- uid: SearchAThing.CmdlineColors.Commands
+  name: Commands
+  href: api/SearchAThing.CmdlineColors.html#SearchAThing_CmdlineColors_Commands
+  commentId: F:SearchAThing.CmdlineColors.Commands
+  fullName: SearchAThing.CmdlineColors.Commands
+  nameWithType: CmdlineColors.Commands
+- uid: SearchAThing.CmdlineColors.Description
+  name: Description
+  href: api/SearchAThing.CmdlineColors.html#SearchAThing_CmdlineColors_Description
+  commentId: F:SearchAThing.CmdlineColors.Description
+  fullName: SearchAThing.CmdlineColors.Description
+  nameWithType: CmdlineColors.Description
+- uid: SearchAThing.CmdlineColors.Error
+  name: Error
+  href: api/SearchAThing.CmdlineColors.html#SearchAThing_CmdlineColors_Error
+  commentId: F:SearchAThing.CmdlineColors.Error
+  fullName: SearchAThing.CmdlineColors.Error
+  nameWithType: CmdlineColors.Error
+- uid: SearchAThing.CmdlineColors.Flags
+  name: Flags
+  href: api/SearchAThing.CmdlineColors.html#SearchAThing_CmdlineColors_Flags
+  commentId: F:SearchAThing.CmdlineColors.Flags
+  fullName: SearchAThing.CmdlineColors.Flags
+  nameWithType: CmdlineColors.Flags
+- uid: SearchAThing.CmdlineColors.FriendlyName
+  name: FriendlyName
+  href: api/SearchAThing.CmdlineColors.html#SearchAThing_CmdlineColors_FriendlyName
+  commentId: F:SearchAThing.CmdlineColors.FriendlyName
+  fullName: SearchAThing.CmdlineColors.FriendlyName
+  nameWithType: CmdlineColors.FriendlyName
+- uid: SearchAThing.CmdlineColors.Parameter
+  name: Parameter
+  href: api/SearchAThing.CmdlineColors.html#SearchAThing_CmdlineColors_Parameter
+  commentId: F:SearchAThing.CmdlineColors.Parameter
+  fullName: SearchAThing.CmdlineColors.Parameter
+  nameWithType: CmdlineColors.Parameter
+- uid: SearchAThing.CmdlineParseItem
+  name: CmdlineParseItem
+  href: api/SearchAThing.CmdlineParseItem.html
+  commentId: T:SearchAThing.CmdlineParseItem
+  fullName: SearchAThing.CmdlineParseItem
+  nameWithType: CmdlineParseItem
+- uid: SearchAThing.CmdlineParseItem.ArgValues
+  name: ArgValues
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ArgValues
+  commentId: P:SearchAThing.CmdlineParseItem.ArgValues
+  fullName: SearchAThing.CmdlineParseItem.ArgValues
+  nameWithType: CmdlineParseItem.ArgValues
+- uid: SearchAThing.CmdlineParseItem.ArgValues*
+  name: ArgValues
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ArgValues_
+  commentId: Overload:SearchAThing.CmdlineParseItem.ArgValues
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.CsvFile
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).CsvFile
-  nameWithType: CsvFile<T>.CsvFile
-  nameWithType.vb: CsvFile(Of T).CsvFile
-- uid: SearchAThing.CSV.CsvFile`1.AppendMode
-  name: AppendMode
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_AppendMode
-  commentId: P:SearchAThing.CSV.CsvFile`1.AppendMode
-  fullName: SearchAThing.CSV.CsvFile<T>.AppendMode
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).AppendMode
-  nameWithType: CsvFile<T>.AppendMode
-  nameWithType.vb: CsvFile(Of T).AppendMode
-- uid: SearchAThing.CSV.CsvFile`1.AppendMode*
-  name: AppendMode
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_AppendMode_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.AppendMode
+  fullName: SearchAThing.CmdlineParseItem.ArgValues
+  nameWithType: CmdlineParseItem.ArgValues
+- uid: SearchAThing.CmdlineParseItem.Description
+  name: Description
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Description
+  commentId: P:SearchAThing.CmdlineParseItem.Description
+  fullName: SearchAThing.CmdlineParseItem.Description
+  nameWithType: CmdlineParseItem.Description
+- uid: SearchAThing.CmdlineParseItem.Description*
+  name: Description
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Description_
+  commentId: Overload:SearchAThing.CmdlineParseItem.Description
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.AppendMode
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).AppendMode
-  nameWithType: CsvFile<T>.AppendMode
-  nameWithType.vb: CsvFile(Of T).AppendMode
-- uid: SearchAThing.CSV.CsvFile`1.Columns
-  name: Columns
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Columns
-  commentId: P:SearchAThing.CSV.CsvFile`1.Columns
-  fullName: SearchAThing.CSV.CsvFile<T>.Columns
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Columns
-  nameWithType: CsvFile<T>.Columns
-  nameWithType.vb: CsvFile(Of T).Columns
-- uid: SearchAThing.CSV.CsvFile`1.Columns*
-  name: Columns
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Columns_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.Columns
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.Columns
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Columns
-  nameWithType: CsvFile<T>.Columns
-  nameWithType.vb: CsvFile(Of T).Columns
-- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparator
-  name: DecimalSeparator
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparator
-  commentId: P:SearchAThing.CSV.CsvFile`1.DecimalSeparator
-  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparator
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparator
-  nameWithType: CsvFile<T>.DecimalSeparator
-  nameWithType.vb: CsvFile(Of T).DecimalSeparator
-- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparator*
-  name: DecimalSeparator
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparator_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.DecimalSeparator
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparator
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparator
-  nameWithType: CsvFile<T>.DecimalSeparator
-  nameWithType.vb: CsvFile(Of T).DecimalSeparator
-- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant
-  name: DecimalSeparatorIsInvariant
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparatorIsInvariant
-  commentId: P:SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant
-  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparatorIsInvariant
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparatorIsInvariant
-  nameWithType: CsvFile<T>.DecimalSeparatorIsInvariant
-  nameWithType.vb: CsvFile(Of T).DecimalSeparatorIsInvariant
-- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant*
-  name: DecimalSeparatorIsInvariant
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparatorIsInvariant_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparatorIsInvariant
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparatorIsInvariant
-  nameWithType: CsvFile<T>.DecimalSeparatorIsInvariant
-  nameWithType.vb: CsvFile(Of T).DecimalSeparatorIsInvariant
-- uid: SearchAThing.CSV.CsvFile`1.FieldSeparator
-  name: FieldSeparator
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_FieldSeparator
-  commentId: P:SearchAThing.CSV.CsvFile`1.FieldSeparator
-  fullName: SearchAThing.CSV.CsvFile<T>.FieldSeparator
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).FieldSeparator
-  nameWithType: CsvFile<T>.FieldSeparator
-  nameWithType.vb: CsvFile(Of T).FieldSeparator
-- uid: SearchAThing.CSV.CsvFile`1.FieldSeparator*
-  name: FieldSeparator
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_FieldSeparator_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.FieldSeparator
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.FieldSeparator
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).FieldSeparator
-  nameWithType: CsvFile<T>.FieldSeparator
-  nameWithType.vb: CsvFile(Of T).FieldSeparator
-- uid: SearchAThing.CSV.CsvFile`1.Options
-  name: Options
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Options
-  commentId: P:SearchAThing.CSV.CsvFile`1.Options
-  fullName: SearchAThing.CSV.CsvFile<T>.Options
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Options
-  nameWithType: CsvFile<T>.Options
-  nameWithType.vb: CsvFile(Of T).Options
-- uid: SearchAThing.CSV.CsvFile`1.Options*
-  name: Options
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Options_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.Options
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.Options
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Options
-  nameWithType: CsvFile<T>.Options
-  nameWithType.vb: CsvFile(Of T).Options
-- uid: SearchAThing.CSV.CsvFile`1.Pathfilename
-  name: Pathfilename
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Pathfilename
-  commentId: P:SearchAThing.CSV.CsvFile`1.Pathfilename
-  fullName: SearchAThing.CSV.CsvFile<T>.Pathfilename
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Pathfilename
-  nameWithType: CsvFile<T>.Pathfilename
-  nameWithType.vb: CsvFile(Of T).Pathfilename
-- uid: SearchAThing.CSV.CsvFile`1.Pathfilename*
-  name: Pathfilename
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Pathfilename_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.Pathfilename
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.Pathfilename
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Pathfilename
-  nameWithType: CsvFile<T>.Pathfilename
-  nameWithType.vb: CsvFile(Of T).Pathfilename
-- uid: SearchAThing.CSV.CsvFile`1.StringDelimiter
-  name: StringDelimiter
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_StringDelimiter
-  commentId: P:SearchAThing.CSV.CsvFile`1.StringDelimiter
-  fullName: SearchAThing.CSV.CsvFile<T>.StringDelimiter
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).StringDelimiter
-  nameWithType: CsvFile<T>.StringDelimiter
-  nameWithType.vb: CsvFile(Of T).StringDelimiter
-- uid: SearchAThing.CSV.CsvFile`1.StringDelimiter*
-  name: StringDelimiter
-  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_StringDelimiter_
-  commentId: Overload:SearchAThing.CSV.CsvFile`1.StringDelimiter
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvFile<T>.StringDelimiter
-  fullName.vb: SearchAThing.CSV.CsvFile(Of T).StringDelimiter
-  nameWithType: CsvFile<T>.StringDelimiter
-  nameWithType.vb: CsvFile(Of T).StringDelimiter
-- uid: SearchAThing.CSV.CsvHeaderAttribute
-  name: CsvHeaderAttribute
-  href: api/SearchAThing.CSV.CsvHeaderAttribute.html
-  commentId: T:SearchAThing.CSV.CsvHeaderAttribute
-  fullName: SearchAThing.CSV.CsvHeaderAttribute
-  nameWithType: CsvHeaderAttribute
-- uid: SearchAThing.CSV.CsvHeaderAttribute.#ctor(System.String)
-  name: CsvHeaderAttribute(String)
-  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute__ctor_System_String_
-  commentId: M:SearchAThing.CSV.CsvHeaderAttribute.#ctor(System.String)
-  fullName: SearchAThing.CSV.CsvHeaderAttribute.CsvHeaderAttribute(System.String)
-  nameWithType: CsvHeaderAttribute.CsvHeaderAttribute(String)
-- uid: SearchAThing.CSV.CsvHeaderAttribute.#ctor*
-  name: CsvHeaderAttribute
-  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvHeaderAttribute.#ctor
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvHeaderAttribute.CsvHeaderAttribute
-  nameWithType: CsvHeaderAttribute.CsvHeaderAttribute
-- uid: SearchAThing.CSV.CsvHeaderAttribute.Header
-  name: Header
-  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute_Header
-  commentId: P:SearchAThing.CSV.CsvHeaderAttribute.Header
-  fullName: SearchAThing.CSV.CsvHeaderAttribute.Header
-  nameWithType: CsvHeaderAttribute.Header
-- uid: SearchAThing.CSV.CsvHeaderAttribute.Header*
-  name: Header
-  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute_Header_
-  commentId: Overload:SearchAThing.CSV.CsvHeaderAttribute.Header
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvHeaderAttribute.Header
-  nameWithType: CsvHeaderAttribute.Header
-- uid: SearchAThing.CSV.CsvIgnoreAttribute
-  name: CsvIgnoreAttribute
-  href: api/SearchAThing.CSV.CsvIgnoreAttribute.html
-  commentId: T:SearchAThing.CSV.CsvIgnoreAttribute
-  fullName: SearchAThing.CSV.CsvIgnoreAttribute
-  nameWithType: CsvIgnoreAttribute
-- uid: SearchAThing.CSV.CsvIgnoreAttribute.#ctor
-  name: CsvIgnoreAttribute()
-  href: api/SearchAThing.CSV.CsvIgnoreAttribute.html#SearchAThing_CSV_CsvIgnoreAttribute__ctor
-  commentId: M:SearchAThing.CSV.CsvIgnoreAttribute.#ctor
-  fullName: SearchAThing.CSV.CsvIgnoreAttribute.CsvIgnoreAttribute()
-  nameWithType: CsvIgnoreAttribute.CsvIgnoreAttribute()
-- uid: SearchAThing.CSV.CsvIgnoreAttribute.#ctor*
-  name: CsvIgnoreAttribute
-  href: api/SearchAThing.CSV.CsvIgnoreAttribute.html#SearchAThing_CSV_CsvIgnoreAttribute__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvIgnoreAttribute.#ctor
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvIgnoreAttribute.CsvIgnoreAttribute
-  nameWithType: CsvIgnoreAttribute.CsvIgnoreAttribute
-- uid: SearchAThing.CSV.CsvOptions
-  name: CsvOptions
-  href: api/SearchAThing.CSV.CsvOptions.html
-  commentId: T:SearchAThing.CSV.CsvOptions
-  fullName: SearchAThing.CSV.CsvOptions
-  nameWithType: CsvOptions
-- uid: SearchAThing.CSV.CsvOptions.DecimalSeparator
-  name: DecimalSeparator
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_DecimalSeparator
-  commentId: P:SearchAThing.CSV.CsvOptions.DecimalSeparator
-  fullName: SearchAThing.CSV.CsvOptions.DecimalSeparator
-  nameWithType: CsvOptions.DecimalSeparator
-- uid: SearchAThing.CSV.CsvOptions.DecimalSeparator*
-  name: DecimalSeparator
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_DecimalSeparator_
-  commentId: Overload:SearchAThing.CSV.CsvOptions.DecimalSeparator
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvOptions.DecimalSeparator
-  nameWithType: CsvOptions.DecimalSeparator
-- uid: SearchAThing.CSV.CsvOptions.FieldSeparator
-  name: FieldSeparator
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_FieldSeparator
-  commentId: P:SearchAThing.CSV.CsvOptions.FieldSeparator
-  fullName: SearchAThing.CSV.CsvOptions.FieldSeparator
-  nameWithType: CsvOptions.FieldSeparator
-- uid: SearchAThing.CSV.CsvOptions.FieldSeparator*
-  name: FieldSeparator
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_FieldSeparator_
-  commentId: Overload:SearchAThing.CSV.CsvOptions.FieldSeparator
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvOptions.FieldSeparator
-  nameWithType: CsvOptions.FieldSeparator
-- uid: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
-  name: PropNameHeaderMapping
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameHeaderMapping
-  commentId: P:SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
-  fullName: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
-  nameWithType: CsvOptions.PropNameHeaderMapping
-- uid: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping*
-  name: PropNameHeaderMapping
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameHeaderMapping_
-  commentId: Overload:SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
-  nameWithType: CsvOptions.PropNameHeaderMapping
-- uid: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
-  name: PropNameToHeaderFunc
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameToHeaderFunc
-  commentId: P:SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
-  fullName: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
-  nameWithType: CsvOptions.PropNameToHeaderFunc
-- uid: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc*
-  name: PropNameToHeaderFunc
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameToHeaderFunc_
-  commentId: Overload:SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
-  nameWithType: CsvOptions.PropNameToHeaderFunc
-- uid: SearchAThing.CSV.CsvOptions.StringDelimiter
-  name: StringDelimiter
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_StringDelimiter
-  commentId: P:SearchAThing.CSV.CsvOptions.StringDelimiter
-  fullName: SearchAThing.CSV.CsvOptions.StringDelimiter
-  nameWithType: CsvOptions.StringDelimiter
-- uid: SearchAThing.CSV.CsvOptions.StringDelimiter*
-  name: StringDelimiter
-  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_StringDelimiter_
-  commentId: Overload:SearchAThing.CSV.CsvOptions.StringDelimiter
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvOptions.StringDelimiter
-  nameWithType: CsvOptions.StringDelimiter
-- uid: SearchAThing.CSV.CsvReader`1
-  name: CsvReader<T>
-  href: api/SearchAThing.CSV.CsvReader-1.html
-  commentId: T:SearchAThing.CSV.CsvReader`1
-  name.vb: CsvReader(Of T)
-  fullName: SearchAThing.CSV.CsvReader<T>
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T)
-  nameWithType: CsvReader<T>
-  nameWithType.vb: CsvReader(Of T)
-- uid: SearchAThing.CSV.CsvReader`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
-  name: CsvReader(String, CsvOptions)
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1__ctor_System_String_SearchAThing_CSV_CsvOptions_
-  commentId: M:SearchAThing.CSV.CsvReader`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
-  fullName: SearchAThing.CSV.CsvReader<T>.CsvReader(System.String, SearchAThing.CSV.CsvOptions)
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).CsvReader(System.String, SearchAThing.CSV.CsvOptions)
-  nameWithType: CsvReader<T>.CsvReader(String, CsvOptions)
-  nameWithType.vb: CsvReader(Of T).CsvReader(String, CsvOptions)
-- uid: SearchAThing.CSV.CsvReader`1.#ctor*
-  name: CsvReader
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvReader`1.#ctor
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvReader<T>.CsvReader
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).CsvReader
-  nameWithType: CsvReader<T>.CsvReader
-  nameWithType.vb: CsvReader(Of T).CsvReader
-- uid: SearchAThing.CSV.CsvReader`1.Dispose
-  name: Dispose()
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Dispose
-  commentId: M:SearchAThing.CSV.CsvReader`1.Dispose
-  fullName: SearchAThing.CSV.CsvReader<T>.Dispose()
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Dispose()
-  nameWithType: CsvReader<T>.Dispose()
-  nameWithType.vb: CsvReader(Of T).Dispose()
-- uid: SearchAThing.CSV.CsvReader`1.Dispose*
-  name: Dispose
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Dispose_
-  commentId: Overload:SearchAThing.CSV.CsvReader`1.Dispose
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvReader<T>.Dispose
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Dispose
-  nameWithType: CsvReader<T>.Dispose
-  nameWithType.vb: CsvReader(Of T).Dispose
-- uid: SearchAThing.CSV.CsvReader`1.File
-  name: File
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_File
-  commentId: P:SearchAThing.CSV.CsvReader`1.File
-  fullName: SearchAThing.CSV.CsvReader<T>.File
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).File
-  nameWithType: CsvReader<T>.File
-  nameWithType.vb: CsvReader(Of T).File
-- uid: SearchAThing.CSV.CsvReader`1.File*
-  name: File
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_File_
-  commentId: Overload:SearchAThing.CSV.CsvReader`1.File
-  isSpec: "True"
-  fullName: SearchAThing.CSV.CsvReader<T>.File
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).File
-  nameWithType: CsvReader<T>.File
-  nameWithType.vb: CsvReader(Of T).File
-- uid: SearchAThing.CSV.CsvReader`1.GetEnumerator
+  fullName: SearchAThing.CmdlineParseItem.Description
+  nameWithType: CmdlineParseItem.Description
+- uid: SearchAThing.CmdlineParseItem.GetEnumerator
   name: GetEnumerator()
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_GetEnumerator
-  commentId: M:SearchAThing.CSV.CsvReader`1.GetEnumerator
-  fullName: SearchAThing.CSV.CsvReader<T>.GetEnumerator()
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).GetEnumerator()
-  nameWithType: CsvReader<T>.GetEnumerator()
-  nameWithType.vb: CsvReader(Of T).GetEnumerator()
-- uid: SearchAThing.CSV.CsvReader`1.GetEnumerator*
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_GetEnumerator
+  commentId: M:SearchAThing.CmdlineParseItem.GetEnumerator
+  fullName: SearchAThing.CmdlineParseItem.GetEnumerator()
+  nameWithType: CmdlineParseItem.GetEnumerator()
+- uid: SearchAThing.CmdlineParseItem.GetEnumerator*
   name: GetEnumerator
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_GetEnumerator_
-  commentId: Overload:SearchAThing.CSV.CsvReader`1.GetEnumerator
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_GetEnumerator_
+  commentId: Overload:SearchAThing.CmdlineParseItem.GetEnumerator
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvReader<T>.GetEnumerator
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).GetEnumerator
-  nameWithType: CsvReader<T>.GetEnumerator
-  nameWithType.vb: CsvReader(Of T).GetEnumerator
-- uid: SearchAThing.CSV.CsvReader`1.Reset
-  name: Reset()
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Reset
-  commentId: M:SearchAThing.CSV.CsvReader`1.Reset
-  fullName: SearchAThing.CSV.CsvReader<T>.Reset()
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Reset()
-  nameWithType: CsvReader<T>.Reset()
-  nameWithType.vb: CsvReader(Of T).Reset()
-- uid: SearchAThing.CSV.CsvReader`1.Reset*
-  name: Reset
-  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Reset_
-  commentId: Overload:SearchAThing.CSV.CsvReader`1.Reset
+  fullName: SearchAThing.CmdlineParseItem.GetEnumerator
+  nameWithType: CmdlineParseItem.GetEnumerator
+- uid: SearchAThing.CmdlineParseItem.GlobalFlagAction
+  name: GlobalFlagAction
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_GlobalFlagAction
+  commentId: P:SearchAThing.CmdlineParseItem.GlobalFlagAction
+  fullName: SearchAThing.CmdlineParseItem.GlobalFlagAction
+  nameWithType: CmdlineParseItem.GlobalFlagAction
+- uid: SearchAThing.CmdlineParseItem.GlobalFlagAction*
+  name: GlobalFlagAction
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_GlobalFlagAction_
+  commentId: Overload:SearchAThing.CmdlineParseItem.GlobalFlagAction
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvReader<T>.Reset
-  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Reset
-  nameWithType: CsvReader<T>.Reset
-  nameWithType.vb: CsvReader(Of T).Reset
-- uid: SearchAThing.CSV.CsvWriter`1
-  name: CsvWriter<T>
-  href: api/SearchAThing.CSV.CsvWriter-1.html
-  commentId: T:SearchAThing.CSV.CsvWriter`1
-  name.vb: CsvWriter(Of T)
-  fullName: SearchAThing.CSV.CsvWriter<T>
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T)
-  nameWithType: CsvWriter<T>
-  nameWithType.vb: CsvWriter(Of T)
-- uid: SearchAThing.CSV.CsvWriter`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
-  name: CsvWriter(String, CsvOptions)
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1__ctor_System_String_SearchAThing_CSV_CsvOptions_
-  commentId: M:SearchAThing.CSV.CsvWriter`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
-  fullName: SearchAThing.CSV.CsvWriter<T>.CsvWriter(System.String, SearchAThing.CSV.CsvOptions)
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).CsvWriter(System.String, SearchAThing.CSV.CsvOptions)
-  nameWithType: CsvWriter<T>.CsvWriter(String, CsvOptions)
-  nameWithType.vb: CsvWriter(Of T).CsvWriter(String, CsvOptions)
-- uid: SearchAThing.CSV.CsvWriter`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
-  name: CsvWriter(String, Boolean, CsvOptions)
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1__ctor_System_String_System_Boolean_SearchAThing_CSV_CsvOptions_
-  commentId: M:SearchAThing.CSV.CsvWriter`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
-  fullName: SearchAThing.CSV.CsvWriter<T>.CsvWriter(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).CsvWriter(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
-  nameWithType: CsvWriter<T>.CsvWriter(String, Boolean, CsvOptions)
-  nameWithType.vb: CsvWriter(Of T).CsvWriter(String, Boolean, CsvOptions)
-- uid: SearchAThing.CSV.CsvWriter`1.#ctor*
-  name: CsvWriter
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1__ctor_
-  commentId: Overload:SearchAThing.CSV.CsvWriter`1.#ctor
+  fullName: SearchAThing.CmdlineParseItem.GlobalFlagAction
+  nameWithType: CmdlineParseItem.GlobalFlagAction
+- uid: SearchAThing.CmdlineParseItem.GlobalFlagActionNested
+  name: GlobalFlagActionNested
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_GlobalFlagActionNested
+  commentId: P:SearchAThing.CmdlineParseItem.GlobalFlagActionNested
+  fullName: SearchAThing.CmdlineParseItem.GlobalFlagActionNested
+  nameWithType: CmdlineParseItem.GlobalFlagActionNested
+- uid: SearchAThing.CmdlineParseItem.GlobalFlagActionNested*
+  name: GlobalFlagActionNested
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_GlobalFlagActionNested_
+  commentId: Overload:SearchAThing.CmdlineParseItem.GlobalFlagActionNested
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvWriter<T>.CsvWriter
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).CsvWriter
-  nameWithType: CsvWriter<T>.CsvWriter
-  nameWithType.vb: CsvWriter(Of T).CsvWriter
-- uid: SearchAThing.CSV.CsvWriter`1.Dispose
-  name: Dispose()
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Dispose
-  commentId: M:SearchAThing.CSV.CsvWriter`1.Dispose
-  fullName: SearchAThing.CSV.CsvWriter<T>.Dispose()
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Dispose()
-  nameWithType: CsvWriter<T>.Dispose()
-  nameWithType.vb: CsvWriter(Of T).Dispose()
-- uid: SearchAThing.CSV.CsvWriter`1.Dispose*
-  name: Dispose
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Dispose_
-  commentId: Overload:SearchAThing.CSV.CsvWriter`1.Dispose
+  fullName: SearchAThing.CmdlineParseItem.GlobalFlagActionNested
+  nameWithType: CmdlineParseItem.GlobalFlagActionNested
+- uid: SearchAThing.CmdlineParseItem.HasLongName
+  name: HasLongName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_HasLongName
+  commentId: P:SearchAThing.CmdlineParseItem.HasLongName
+  fullName: SearchAThing.CmdlineParseItem.HasLongName
+  nameWithType: CmdlineParseItem.HasLongName
+- uid: SearchAThing.CmdlineParseItem.HasLongName*
+  name: HasLongName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_HasLongName_
+  commentId: Overload:SearchAThing.CmdlineParseItem.HasLongName
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvWriter<T>.Dispose
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Dispose
-  nameWithType: CsvWriter<T>.Dispose
-  nameWithType.vb: CsvWriter(Of T).Dispose
-- uid: SearchAThing.CSV.CsvWriter`1.Push(`0)
-  name: Push(T)
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Push__0_
-  commentId: M:SearchAThing.CSV.CsvWriter`1.Push(`0)
-  fullName: SearchAThing.CSV.CsvWriter<T>.Push(T)
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Push(T)
-  nameWithType: CsvWriter<T>.Push(T)
-  nameWithType.vb: CsvWriter(Of T).Push(T)
-- uid: SearchAThing.CSV.CsvWriter`1.Push*
-  name: Push
-  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Push_
-  commentId: Overload:SearchAThing.CSV.CsvWriter`1.Push
+  fullName: SearchAThing.CmdlineParseItem.HasLongName
+  nameWithType: CmdlineParseItem.HasLongName
+- uid: SearchAThing.CmdlineParseItem.HasShortName
+  name: HasShortName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_HasShortName
+  commentId: P:SearchAThing.CmdlineParseItem.HasShortName
+  fullName: SearchAThing.CmdlineParseItem.HasShortName
+  nameWithType: CmdlineParseItem.HasShortName
+- uid: SearchAThing.CmdlineParseItem.HasShortName*
+  name: HasShortName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_HasShortName_
+  commentId: Overload:SearchAThing.CmdlineParseItem.HasShortName
   isSpec: "True"
-  fullName: SearchAThing.CSV.CsvWriter<T>.Push
-  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Push
-  nameWithType: CsvWriter<T>.Push
-  nameWithType.vb: CsvWriter(Of T).Push
-- uid: SearchAThing.Extensions
-  name: Extensions
-  href: api/SearchAThing.Extensions.html
-  commentId: T:SearchAThing.Extensions
-  fullName: SearchAThing.Extensions
-  nameWithType: Extensions
-- uid: SearchAThing.Extensions.ToCSV*
-  name: ToCSV
-  href: api/SearchAThing.Extensions.html#SearchAThing_Extensions_ToCSV_
-  commentId: Overload:SearchAThing.Extensions.ToCSV
+  fullName: SearchAThing.CmdlineParseItem.HasShortName
+  nameWithType: CmdlineParseItem.HasShortName
+- uid: SearchAThing.CmdlineParseItem.HasValueName
+  name: HasValueName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_HasValueName
+  commentId: P:SearchAThing.CmdlineParseItem.HasValueName
+  fullName: SearchAThing.CmdlineParseItem.HasValueName
+  nameWithType: CmdlineParseItem.HasValueName
+- uid: SearchAThing.CmdlineParseItem.HasValueName*
+  name: HasValueName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_HasValueName_
+  commentId: Overload:SearchAThing.CmdlineParseItem.HasValueName
   isSpec: "True"
-  fullName: SearchAThing.Extensions.ToCSV
-  nameWithType: Extensions.ToCSV
-- uid: SearchAThing.Extensions.ToCSV``1(IEnumerable{``0},System.String,SearchAThing.CSV.CsvOptions)
-  name: ToCSV<T>(IEnumerable<T>, String, CsvOptions)
-  href: api/SearchAThing.Extensions.html#SearchAThing_Extensions_ToCSV__1_IEnumerable___0__System_String_SearchAThing_CSV_CsvOptions_
-  commentId: M:SearchAThing.Extensions.ToCSV``1(IEnumerable{``0},System.String,SearchAThing.CSV.CsvOptions)
-  name.vb: ToCSV(Of T)(IEnumerable(Of T), String, CsvOptions)
-  fullName: SearchAThing.Extensions.ToCSV<T>(IEnumerable<T>, System.String, SearchAThing.CSV.CsvOptions)
-  fullName.vb: SearchAThing.Extensions.ToCSV(Of T)(IEnumerable(Of T), System.String, SearchAThing.CSV.CsvOptions)
-  nameWithType: Extensions.ToCSV<T>(IEnumerable<T>, String, CsvOptions)
-  nameWithType.vb: Extensions.ToCSV(Of T)(IEnumerable(Of T), String, CsvOptions)
+  fullName: SearchAThing.CmdlineParseItem.HasValueName
+  nameWithType: CmdlineParseItem.HasValueName
+- uid: SearchAThing.CmdlineParseItem.IsCommand
+  name: IsCommand
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsCommand
+  commentId: P:SearchAThing.CmdlineParseItem.IsCommand
+  fullName: SearchAThing.CmdlineParseItem.IsCommand
+  nameWithType: CmdlineParseItem.IsCommand
+- uid: SearchAThing.CmdlineParseItem.IsCommand*
+  name: IsCommand
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsCommand_
+  commentId: Overload:SearchAThing.CmdlineParseItem.IsCommand
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.IsCommand
+  nameWithType: CmdlineParseItem.IsCommand
+- uid: SearchAThing.CmdlineParseItem.IsFlag
+  name: IsFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsFlag
+  commentId: P:SearchAThing.CmdlineParseItem.IsFlag
+  fullName: SearchAThing.CmdlineParseItem.IsFlag
+  nameWithType: CmdlineParseItem.IsFlag
+- uid: SearchAThing.CmdlineParseItem.IsFlag*
+  name: IsFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsFlag_
+  commentId: Overload:SearchAThing.CmdlineParseItem.IsFlag
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.IsFlag
+  nameWithType: CmdlineParseItem.IsFlag
+- uid: SearchAThing.CmdlineParseItem.IsGlobal
+  name: IsGlobal
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsGlobal
+  commentId: P:SearchAThing.CmdlineParseItem.IsGlobal
+  fullName: SearchAThing.CmdlineParseItem.IsGlobal
+  nameWithType: CmdlineParseItem.IsGlobal
+- uid: SearchAThing.CmdlineParseItem.IsGlobal*
+  name: IsGlobal
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsGlobal_
+  commentId: Overload:SearchAThing.CmdlineParseItem.IsGlobal
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.IsGlobal
+  nameWithType: CmdlineParseItem.IsGlobal
+- uid: SearchAThing.CmdlineParseItem.IsParameter
+  name: IsParameter
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsParameter
+  commentId: P:SearchAThing.CmdlineParseItem.IsParameter
+  fullName: SearchAThing.CmdlineParseItem.IsParameter
+  nameWithType: CmdlineParseItem.IsParameter
+- uid: SearchAThing.CmdlineParseItem.IsParameter*
+  name: IsParameter
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsParameter_
+  commentId: Overload:SearchAThing.CmdlineParseItem.IsParameter
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.IsParameter
+  nameWithType: CmdlineParseItem.IsParameter
+- uid: SearchAThing.CmdlineParseItem.IsParameterArray
+  name: IsParameterArray
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsParameterArray
+  commentId: P:SearchAThing.CmdlineParseItem.IsParameterArray
+  fullName: SearchAThing.CmdlineParseItem.IsParameterArray
+  nameWithType: CmdlineParseItem.IsParameterArray
+- uid: SearchAThing.CmdlineParseItem.IsParameterArray*
+  name: IsParameterArray
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsParameterArray_
+  commentId: Overload:SearchAThing.CmdlineParseItem.IsParameterArray
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.IsParameterArray
+  nameWithType: CmdlineParseItem.IsParameterArray
+- uid: SearchAThing.CmdlineParseItem.IsParameterOrArray
+  name: IsParameterOrArray
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsParameterOrArray
+  commentId: P:SearchAThing.CmdlineParseItem.IsParameterOrArray
+  fullName: SearchAThing.CmdlineParseItem.IsParameterOrArray
+  nameWithType: CmdlineParseItem.IsParameterOrArray
+- uid: SearchAThing.CmdlineParseItem.IsParameterOrArray*
+  name: IsParameterOrArray
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_IsParameterOrArray_
+  commentId: Overload:SearchAThing.CmdlineParseItem.IsParameterOrArray
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.IsParameterOrArray
+  nameWithType: CmdlineParseItem.IsParameterOrArray
+- uid: SearchAThing.CmdlineParseItem.LongFlag
+  name: LongFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_LongFlag
+  commentId: P:SearchAThing.CmdlineParseItem.LongFlag
+  fullName: SearchAThing.CmdlineParseItem.LongFlag
+  nameWithType: CmdlineParseItem.LongFlag
+- uid: SearchAThing.CmdlineParseItem.LongFlag*
+  name: LongFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_LongFlag_
+  commentId: Overload:SearchAThing.CmdlineParseItem.LongFlag
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.LongFlag
+  nameWithType: CmdlineParseItem.LongFlag
+- uid: SearchAThing.CmdlineParseItem.LongName
+  name: LongName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_LongName
+  commentId: P:SearchAThing.CmdlineParseItem.LongName
+  fullName: SearchAThing.CmdlineParseItem.LongName
+  nameWithType: CmdlineParseItem.LongName
+- uid: SearchAThing.CmdlineParseItem.LongName*
+  name: LongName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_LongName_
+  commentId: Overload:SearchAThing.CmdlineParseItem.LongName
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.LongName
+  nameWithType: CmdlineParseItem.LongName
+- uid: SearchAThing.CmdlineParseItem.Mandatory
+  name: Mandatory
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Mandatory
+  commentId: P:SearchAThing.CmdlineParseItem.Mandatory
+  fullName: SearchAThing.CmdlineParseItem.Mandatory
+  nameWithType: CmdlineParseItem.Mandatory
+- uid: SearchAThing.CmdlineParseItem.Mandatory*
+  name: Mandatory
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Mandatory_
+  commentId: Overload:SearchAThing.CmdlineParseItem.Mandatory
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.Mandatory
+  nameWithType: CmdlineParseItem.Mandatory
+- uid: SearchAThing.CmdlineParseItem.MatchArgument
+  name: MatchArgument
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_MatchArgument
+  commentId: P:SearchAThing.CmdlineParseItem.MatchArgument
+  fullName: SearchAThing.CmdlineParseItem.MatchArgument
+  nameWithType: CmdlineParseItem.MatchArgument
+- uid: SearchAThing.CmdlineParseItem.MatchArgument*
+  name: MatchArgument
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_MatchArgument_
+  commentId: Overload:SearchAThing.CmdlineParseItem.MatchArgument
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.MatchArgument
+  nameWithType: CmdlineParseItem.MatchArgument
+- uid: SearchAThing.CmdlineParseItem.Matches
+  name: Matches
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Matches
+  commentId: P:SearchAThing.CmdlineParseItem.Matches
+  fullName: SearchAThing.CmdlineParseItem.Matches
+  nameWithType: CmdlineParseItem.Matches
+- uid: SearchAThing.CmdlineParseItem.Matches*
+  name: Matches
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Matches_
+  commentId: Overload:SearchAThing.CmdlineParseItem.Matches
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.Matches
+  nameWithType: CmdlineParseItem.Matches
+- uid: SearchAThing.CmdlineParseItem.MatchParser
+  name: MatchParser
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_MatchParser
+  commentId: P:SearchAThing.CmdlineParseItem.MatchParser
+  fullName: SearchAThing.CmdlineParseItem.MatchParser
+  nameWithType: CmdlineParseItem.MatchParser
+- uid: SearchAThing.CmdlineParseItem.MatchParser*
+  name: MatchParser
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_MatchParser_
+  commentId: Overload:SearchAThing.CmdlineParseItem.MatchParser
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.MatchParser
+  nameWithType: CmdlineParseItem.MatchParser
+- uid: SearchAThing.CmdlineParseItem.OnCompletion(System.Func{System.String,System.Collections.Generic.IEnumerable{System.String}})
+  name: OnCompletion(Func<String, IEnumerable<String>>)
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_OnCompletion_System_Func_System_String_System_Collections_Generic_IEnumerable_System_String___
+  commentId: M:SearchAThing.CmdlineParseItem.OnCompletion(System.Func{System.String,System.Collections.Generic.IEnumerable{System.String}})
+  name.vb: OnCompletion(Func(Of String, IEnumerable(Of String)))
+  fullName: SearchAThing.CmdlineParseItem.OnCompletion(System.Func<System.String, System.Collections.Generic.IEnumerable<System.String>>)
+  fullName.vb: SearchAThing.CmdlineParseItem.OnCompletion(System.Func(Of System.String, System.Collections.Generic.IEnumerable(Of System.String)))
+  nameWithType: CmdlineParseItem.OnCompletion(Func<String, IEnumerable<String>>)
+  nameWithType.vb: CmdlineParseItem.OnCompletion(Func(Of String, IEnumerable(Of String)))
+- uid: SearchAThing.CmdlineParseItem.OnCompletion*
+  name: OnCompletion
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_OnCompletion_
+  commentId: Overload:SearchAThing.CmdlineParseItem.OnCompletion
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.OnCompletion
+  nameWithType: CmdlineParseItem.OnCompletion
+- uid: SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.Boolean
+  name: Implicit(CmdlineParseItem to Boolean)
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_op_Implicit_SearchAThing_CmdlineParseItem__System_Boolean
+  commentId: M:SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.Boolean
+  name.vb: Widening(CmdlineParseItem to Boolean)
+  fullName: SearchAThing.CmdlineParseItem.Implicit(SearchAThing.CmdlineParseItem to System.Boolean)
+  fullName.vb: SearchAThing.CmdlineParseItem.Widening(SearchAThing.CmdlineParseItem to System.Boolean)
+  nameWithType: CmdlineParseItem.Implicit(CmdlineParseItem to Boolean)
+  nameWithType.vb: CmdlineParseItem.Widening(CmdlineParseItem to Boolean)
+- uid: SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.String
+  name: Implicit(CmdlineParseItem to String)
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_op_Implicit_SearchAThing_CmdlineParseItem__System_String
+  commentId: M:SearchAThing.CmdlineParseItem.op_Implicit(SearchAThing.CmdlineParseItem)~System.String
+  name.vb: Widening(CmdlineParseItem to String)
+  fullName: SearchAThing.CmdlineParseItem.Implicit(SearchAThing.CmdlineParseItem to System.String)
+  fullName.vb: SearchAThing.CmdlineParseItem.Widening(SearchAThing.CmdlineParseItem to System.String)
+  nameWithType: CmdlineParseItem.Implicit(CmdlineParseItem to String)
+  nameWithType.vb: CmdlineParseItem.Widening(CmdlineParseItem to String)
+- uid: SearchAThing.CmdlineParseItem.op_Implicit*
+  name: Implicit
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_op_Implicit_
+  commentId: Overload:SearchAThing.CmdlineParseItem.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: SearchAThing.CmdlineParseItem.Implicit
+  fullName.vb: SearchAThing.CmdlineParseItem.Widening
+  nameWithType: CmdlineParseItem.Implicit
+  nameWithType.vb: CmdlineParseItem.Widening
+- uid: SearchAThing.CmdlineParseItem.Parser
+  name: Parser
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Parser
+  commentId: P:SearchAThing.CmdlineParseItem.Parser
+  fullName: SearchAThing.CmdlineParseItem.Parser
+  nameWithType: CmdlineParseItem.Parser
+- uid: SearchAThing.CmdlineParseItem.Parser*
+  name: Parser
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Parser_
+  commentId: Overload:SearchAThing.CmdlineParseItem.Parser
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.Parser
+  nameWithType: CmdlineParseItem.Parser
+- uid: SearchAThing.CmdlineParseItem.ShortFlag
+  name: ShortFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ShortFlag
+  commentId: P:SearchAThing.CmdlineParseItem.ShortFlag
+  fullName: SearchAThing.CmdlineParseItem.ShortFlag
+  nameWithType: CmdlineParseItem.ShortFlag
+- uid: SearchAThing.CmdlineParseItem.ShortFlag*
+  name: ShortFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ShortFlag_
+  commentId: Overload:SearchAThing.CmdlineParseItem.ShortFlag
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.ShortFlag
+  nameWithType: CmdlineParseItem.ShortFlag
+- uid: SearchAThing.CmdlineParseItem.ShortLongFlag
+  name: ShortLongFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ShortLongFlag
+  commentId: P:SearchAThing.CmdlineParseItem.ShortLongFlag
+  fullName: SearchAThing.CmdlineParseItem.ShortLongFlag
+  nameWithType: CmdlineParseItem.ShortLongFlag
+- uid: SearchAThing.CmdlineParseItem.ShortLongFlag*
+  name: ShortLongFlag
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ShortLongFlag_
+  commentId: Overload:SearchAThing.CmdlineParseItem.ShortLongFlag
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.ShortLongFlag
+  nameWithType: CmdlineParseItem.ShortLongFlag
+- uid: SearchAThing.CmdlineParseItem.ShortName
+  name: ShortName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ShortName
+  commentId: P:SearchAThing.CmdlineParseItem.ShortName
+  fullName: SearchAThing.CmdlineParseItem.ShortName
+  nameWithType: CmdlineParseItem.ShortName
+- uid: SearchAThing.CmdlineParseItem.ShortName*
+  name: ShortName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ShortName_
+  commentId: Overload:SearchAThing.CmdlineParseItem.ShortName
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.ShortName
+  nameWithType: CmdlineParseItem.ShortName
+- uid: SearchAThing.CmdlineParseItem.SortOrder
+  name: SortOrder
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_SortOrder
+  commentId: P:SearchAThing.CmdlineParseItem.SortOrder
+  fullName: SearchAThing.CmdlineParseItem.SortOrder
+  nameWithType: CmdlineParseItem.SortOrder
+- uid: SearchAThing.CmdlineParseItem.SortOrder*
+  name: SortOrder
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_SortOrder_
+  commentId: Overload:SearchAThing.CmdlineParseItem.SortOrder
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.SortOrder
+  nameWithType: CmdlineParseItem.SortOrder
+- uid: SearchAThing.CmdlineParseItem.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:SearchAThing.CmdlineParseItem.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: SearchAThing.CmdlineParseItem.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: CmdlineParseItem.IEnumerable.GetEnumerator()
+  nameWithType.vb: CmdlineParseItem.System.Collections.IEnumerable.GetEnumerator()
+- uid: SearchAThing.CmdlineParseItem.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:SearchAThing.CmdlineParseItem.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: SearchAThing.CmdlineParseItem.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: CmdlineParseItem.IEnumerable.GetEnumerator
+  nameWithType.vb: CmdlineParseItem.System.Collections.IEnumerable.GetEnumerator
+- uid: SearchAThing.CmdlineParseItem.Type
+  name: Type
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Type
+  commentId: P:SearchAThing.CmdlineParseItem.Type
+  fullName: SearchAThing.CmdlineParseItem.Type
+  nameWithType: CmdlineParseItem.Type
+- uid: SearchAThing.CmdlineParseItem.Type*
+  name: Type
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Type_
+  commentId: Overload:SearchAThing.CmdlineParseItem.Type
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.Type
+  nameWithType: CmdlineParseItem.Type
+- uid: SearchAThing.CmdlineParseItem.ValueName
+  name: ValueName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ValueName
+  commentId: P:SearchAThing.CmdlineParseItem.ValueName
+  fullName: SearchAThing.CmdlineParseItem.ValueName
+  nameWithType: CmdlineParseItem.ValueName
+- uid: SearchAThing.CmdlineParseItem.ValueName*
+  name: ValueName
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_ValueName_
+  commentId: Overload:SearchAThing.CmdlineParseItem.ValueName
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.ValueName
+  nameWithType: CmdlineParseItem.ValueName
+- uid: SearchAThing.CmdlineParseItem.Values
+  name: Values
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Values
+  commentId: P:SearchAThing.CmdlineParseItem.Values
+  fullName: SearchAThing.CmdlineParseItem.Values
+  nameWithType: CmdlineParseItem.Values
+- uid: SearchAThing.CmdlineParseItem.Values*
+  name: Values
+  href: api/SearchAThing.CmdlineParseItem.html#SearchAThing_CmdlineParseItem_Values_
+  commentId: Overload:SearchAThing.CmdlineParseItem.Values
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParseItem.Values
+  nameWithType: CmdlineParseItem.Values
+- uid: SearchAThing.CmdlineParseItemType
+  name: CmdlineParseItemType
+  href: api/SearchAThing.CmdlineParseItemType.html
+  commentId: T:SearchAThing.CmdlineParseItemType
+  fullName: SearchAThing.CmdlineParseItemType
+  nameWithType: CmdlineParseItemType
+- uid: SearchAThing.CmdlineParseItemType.command
+  name: command
+  href: api/SearchAThing.CmdlineParseItemType.html#SearchAThing_CmdlineParseItemType_command
+  commentId: F:SearchAThing.CmdlineParseItemType.command
+  fullName: SearchAThing.CmdlineParseItemType.command
+  nameWithType: CmdlineParseItemType.command
+- uid: SearchAThing.CmdlineParseItemType.flag
+  name: flag
+  href: api/SearchAThing.CmdlineParseItemType.html#SearchAThing_CmdlineParseItemType_flag
+  commentId: F:SearchAThing.CmdlineParseItemType.flag
+  fullName: SearchAThing.CmdlineParseItemType.flag
+  nameWithType: CmdlineParseItemType.flag
+- uid: SearchAThing.CmdlineParseItemType.parameter
+  name: parameter
+  href: api/SearchAThing.CmdlineParseItemType.html#SearchAThing_CmdlineParseItemType_parameter
+  commentId: F:SearchAThing.CmdlineParseItemType.parameter
+  fullName: SearchAThing.CmdlineParseItemType.parameter
+  nameWithType: CmdlineParseItemType.parameter
+- uid: SearchAThing.CmdlineParseItemType.parameterArray
+  name: parameterArray
+  href: api/SearchAThing.CmdlineParseItemType.html#SearchAThing_CmdlineParseItemType_parameterArray
+  commentId: F:SearchAThing.CmdlineParseItemType.parameterArray
+  fullName: SearchAThing.CmdlineParseItemType.parameterArray
+  nameWithType: CmdlineParseItemType.parameterArray
+- uid: SearchAThing.CmdlineParser
+  name: CmdlineParser
+  href: api/SearchAThing.CmdlineParser.html
+  commentId: T:SearchAThing.CmdlineParser
+  fullName: SearchAThing.CmdlineParser
+  nameWithType: CmdlineParser
+- uid: SearchAThing.CmdlineParser.AddCommand(System.String,System.String,System.Action{SearchAThing.CmdlineParser})
+  name: AddCommand(String, String, Action<CmdlineParser>)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddCommand_System_String_System_String_System_Action_SearchAThing_CmdlineParser__
+  commentId: M:SearchAThing.CmdlineParser.AddCommand(System.String,System.String,System.Action{SearchAThing.CmdlineParser})
+  name.vb: AddCommand(String, String, Action(Of CmdlineParser))
+  fullName: SearchAThing.CmdlineParser.AddCommand(System.String, System.String, System.Action<SearchAThing.CmdlineParser>)
+  fullName.vb: SearchAThing.CmdlineParser.AddCommand(System.String, System.String, System.Action(Of SearchAThing.CmdlineParser))
+  nameWithType: CmdlineParser.AddCommand(String, String, Action<CmdlineParser>)
+  nameWithType.vb: CmdlineParser.AddCommand(String, String, Action(Of CmdlineParser))
+- uid: SearchAThing.CmdlineParser.AddCommand*
+  name: AddCommand
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddCommand_
+  commentId: Overload:SearchAThing.CmdlineParser.AddCommand
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddCommand
+  nameWithType: CmdlineParser.AddCommand
+- uid: SearchAThing.CmdlineParser.AddLong(System.String,System.String,System.String,System.Action{SearchAThing.CmdlineParseItem},System.Boolean)
+  name: AddLong(String, String, String, Action<CmdlineParseItem>, Boolean)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddLong_System_String_System_String_System_String_System_Action_SearchAThing_CmdlineParseItem__System_Boolean_
+  commentId: M:SearchAThing.CmdlineParser.AddLong(System.String,System.String,System.String,System.Action{SearchAThing.CmdlineParseItem},System.Boolean)
+  name.vb: AddLong(String, String, String, Action(Of CmdlineParseItem), Boolean)
+  fullName: SearchAThing.CmdlineParser.AddLong(System.String, System.String, System.String, System.Action<SearchAThing.CmdlineParseItem>, System.Boolean)
+  fullName.vb: SearchAThing.CmdlineParser.AddLong(System.String, System.String, System.String, System.Action(Of SearchAThing.CmdlineParseItem), System.Boolean)
+  nameWithType: CmdlineParser.AddLong(String, String, String, Action<CmdlineParseItem>, Boolean)
+  nameWithType.vb: CmdlineParser.AddLong(String, String, String, Action(Of CmdlineParseItem), Boolean)
+- uid: SearchAThing.CmdlineParser.AddLong*
+  name: AddLong
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddLong_
+  commentId: Overload:SearchAThing.CmdlineParser.AddLong
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddLong
+  nameWithType: CmdlineParser.AddLong
+- uid: SearchAThing.CmdlineParser.AddMandatoryLong(System.String,System.String,System.String)
+  name: AddMandatoryLong(String, String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryLong_System_String_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddMandatoryLong(System.String,System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddMandatoryLong(System.String, System.String, System.String)
+  nameWithType: CmdlineParser.AddMandatoryLong(String, String, String)
+- uid: SearchAThing.CmdlineParser.AddMandatoryLong*
+  name: AddMandatoryLong
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryLong_
+  commentId: Overload:SearchAThing.CmdlineParser.AddMandatoryLong
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddMandatoryLong
+  nameWithType: CmdlineParser.AddMandatoryLong
+- uid: SearchAThing.CmdlineParser.AddMandatoryParameter(System.String,System.String)
+  name: AddMandatoryParameter(String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryParameter_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddMandatoryParameter(System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddMandatoryParameter(System.String, System.String)
+  nameWithType: CmdlineParser.AddMandatoryParameter(String, String)
+- uid: SearchAThing.CmdlineParser.AddMandatoryParameter*
+  name: AddMandatoryParameter
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryParameter_
+  commentId: Overload:SearchAThing.CmdlineParser.AddMandatoryParameter
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddMandatoryParameter
+  nameWithType: CmdlineParser.AddMandatoryParameter
+- uid: SearchAThing.CmdlineParser.AddMandatoryParameterArray(System.String,System.String)
+  name: AddMandatoryParameterArray(String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryParameterArray_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddMandatoryParameterArray(System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddMandatoryParameterArray(System.String, System.String)
+  nameWithType: CmdlineParser.AddMandatoryParameterArray(String, String)
+- uid: SearchAThing.CmdlineParser.AddMandatoryParameterArray*
+  name: AddMandatoryParameterArray
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryParameterArray_
+  commentId: Overload:SearchAThing.CmdlineParser.AddMandatoryParameterArray
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddMandatoryParameterArray
+  nameWithType: CmdlineParser.AddMandatoryParameterArray
+- uid: SearchAThing.CmdlineParser.AddMandatoryShort(System.String,System.String,System.String)
+  name: AddMandatoryShort(String, String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryShort_System_String_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddMandatoryShort(System.String,System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddMandatoryShort(System.String, System.String, System.String)
+  nameWithType: CmdlineParser.AddMandatoryShort(String, String, String)
+- uid: SearchAThing.CmdlineParser.AddMandatoryShort*
+  name: AddMandatoryShort
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryShort_
+  commentId: Overload:SearchAThing.CmdlineParser.AddMandatoryShort
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddMandatoryShort
+  nameWithType: CmdlineParser.AddMandatoryShort
+- uid: SearchAThing.CmdlineParser.AddMandatoryShortLong(System.String,System.String,System.String,System.String)
+  name: AddMandatoryShortLong(String, String, String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryShortLong_System_String_System_String_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddMandatoryShortLong(System.String,System.String,System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddMandatoryShortLong(System.String, System.String, System.String, System.String)
+  nameWithType: CmdlineParser.AddMandatoryShortLong(String, String, String, String)
+- uid: SearchAThing.CmdlineParser.AddMandatoryShortLong*
+  name: AddMandatoryShortLong
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddMandatoryShortLong_
+  commentId: Overload:SearchAThing.CmdlineParser.AddMandatoryShortLong
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddMandatoryShortLong
+  nameWithType: CmdlineParser.AddMandatoryShortLong
+- uid: SearchAThing.CmdlineParser.AddParameter(System.String,System.String)
+  name: AddParameter(String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddParameter_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddParameter(System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddParameter(System.String, System.String)
+  nameWithType: CmdlineParser.AddParameter(String, String)
+- uid: SearchAThing.CmdlineParser.AddParameter*
+  name: AddParameter
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddParameter_
+  commentId: Overload:SearchAThing.CmdlineParser.AddParameter
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddParameter
+  nameWithType: CmdlineParser.AddParameter
+- uid: SearchAThing.CmdlineParser.AddParameterArray(System.String,System.String)
+  name: AddParameterArray(String, String)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddParameterArray_System_String_System_String_
+  commentId: M:SearchAThing.CmdlineParser.AddParameterArray(System.String,System.String)
+  fullName: SearchAThing.CmdlineParser.AddParameterArray(System.String, System.String)
+  nameWithType: CmdlineParser.AddParameterArray(String, String)
+- uid: SearchAThing.CmdlineParser.AddParameterArray*
+  name: AddParameterArray
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddParameterArray_
+  commentId: Overload:SearchAThing.CmdlineParser.AddParameterArray
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddParameterArray
+  nameWithType: CmdlineParser.AddParameterArray
+- uid: SearchAThing.CmdlineParser.AddShort(System.String,System.String,System.String,System.Action{SearchAThing.CmdlineParseItem},System.Boolean)
+  name: AddShort(String, String, String, Action<CmdlineParseItem>, Boolean)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddShort_System_String_System_String_System_String_System_Action_SearchAThing_CmdlineParseItem__System_Boolean_
+  commentId: M:SearchAThing.CmdlineParser.AddShort(System.String,System.String,System.String,System.Action{SearchAThing.CmdlineParseItem},System.Boolean)
+  name.vb: AddShort(String, String, String, Action(Of CmdlineParseItem), Boolean)
+  fullName: SearchAThing.CmdlineParser.AddShort(System.String, System.String, System.String, System.Action<SearchAThing.CmdlineParseItem>, System.Boolean)
+  fullName.vb: SearchAThing.CmdlineParser.AddShort(System.String, System.String, System.String, System.Action(Of SearchAThing.CmdlineParseItem), System.Boolean)
+  nameWithType: CmdlineParser.AddShort(String, String, String, Action<CmdlineParseItem>, Boolean)
+  nameWithType.vb: CmdlineParser.AddShort(String, String, String, Action(Of CmdlineParseItem), Boolean)
+- uid: SearchAThing.CmdlineParser.AddShort*
+  name: AddShort
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddShort_
+  commentId: Overload:SearchAThing.CmdlineParser.AddShort
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddShort
+  nameWithType: CmdlineParser.AddShort
+- uid: SearchAThing.CmdlineParser.AddShortLong(System.String,System.String,System.String,System.String,System.Action{SearchAThing.CmdlineParseItem},System.Boolean)
+  name: AddShortLong(String, String, String, String, Action<CmdlineParseItem>, Boolean)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddShortLong_System_String_System_String_System_String_System_String_System_Action_SearchAThing_CmdlineParseItem__System_Boolean_
+  commentId: M:SearchAThing.CmdlineParser.AddShortLong(System.String,System.String,System.String,System.String,System.Action{SearchAThing.CmdlineParseItem},System.Boolean)
+  name.vb: AddShortLong(String, String, String, String, Action(Of CmdlineParseItem), Boolean)
+  fullName: SearchAThing.CmdlineParser.AddShortLong(System.String, System.String, System.String, System.String, System.Action<SearchAThing.CmdlineParseItem>, System.Boolean)
+  fullName.vb: SearchAThing.CmdlineParser.AddShortLong(System.String, System.String, System.String, System.String, System.Action(Of SearchAThing.CmdlineParseItem), System.Boolean)
+  nameWithType: CmdlineParser.AddShortLong(String, String, String, String, Action<CmdlineParseItem>, Boolean)
+  nameWithType.vb: CmdlineParser.AddShortLong(String, String, String, String, Action(Of CmdlineParseItem), Boolean)
+- uid: SearchAThing.CmdlineParser.AddShortLong*
+  name: AddShortLong
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AddShortLong_
+  commentId: Overload:SearchAThing.CmdlineParser.AddShortLong
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AddShortLong
+  nameWithType: CmdlineParser.AddShortLong
+- uid: SearchAThing.CmdlineParser.AllFlags
+  name: AllFlags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AllFlags
+  commentId: P:SearchAThing.CmdlineParser.AllFlags
+  fullName: SearchAThing.CmdlineParser.AllFlags
+  nameWithType: CmdlineParser.AllFlags
+- uid: SearchAThing.CmdlineParser.AllFlags*
+  name: AllFlags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AllFlags_
+  commentId: Overload:SearchAThing.CmdlineParser.AllFlags
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AllFlags
+  nameWithType: CmdlineParser.AllFlags
+- uid: SearchAThing.CmdlineParser.AllItems
+  name: AllItems
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AllItems
+  commentId: P:SearchAThing.CmdlineParser.AllItems
+  fullName: SearchAThing.CmdlineParser.AllItems
+  nameWithType: CmdlineParser.AllItems
+- uid: SearchAThing.CmdlineParser.AllItems*
+  name: AllItems
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AllItems_
+  commentId: Overload:SearchAThing.CmdlineParser.AllItems
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AllItems
+  nameWithType: CmdlineParser.AllItems
+- uid: SearchAThing.CmdlineParser.AppVersion
+  name: AppVersion
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AppVersion
+  commentId: P:SearchAThing.CmdlineParser.AppVersion
+  fullName: SearchAThing.CmdlineParser.AppVersion
+  nameWithType: CmdlineParser.AppVersion
+- uid: SearchAThing.CmdlineParser.AppVersion*
+  name: AppVersion
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_AppVersion_
+  commentId: Overload:SearchAThing.CmdlineParser.AppVersion
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.AppVersion
+  nameWithType: CmdlineParser.AppVersion
+- uid: SearchAThing.CmdlineParser.Colors
+  name: Colors
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Colors
+  commentId: P:SearchAThing.CmdlineParser.Colors
+  fullName: SearchAThing.CmdlineParser.Colors
+  nameWithType: CmdlineParser.Colors
+- uid: SearchAThing.CmdlineParser.Colors*
+  name: Colors
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Colors_
+  commentId: Overload:SearchAThing.CmdlineParser.Colors
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Colors
+  nameWithType: CmdlineParser.Colors
+- uid: SearchAThing.CmdlineParser.Command
+  name: Command
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Command
+  commentId: P:SearchAThing.CmdlineParser.Command
+  fullName: SearchAThing.CmdlineParser.Command
+  nameWithType: CmdlineParser.Command
+- uid: SearchAThing.CmdlineParser.Command*
+  name: Command
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Command_
+  commentId: Overload:SearchAThing.CmdlineParser.Command
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Command
+  nameWithType: CmdlineParser.Command
+- uid: SearchAThing.CmdlineParser.Commands
+  name: Commands
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Commands
+  commentId: P:SearchAThing.CmdlineParser.Commands
+  fullName: SearchAThing.CmdlineParser.Commands
+  nameWithType: CmdlineParser.Commands
+- uid: SearchAThing.CmdlineParser.Commands*
+  name: Commands
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Commands_
+  commentId: Overload:SearchAThing.CmdlineParser.Commands
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Commands
+  nameWithType: CmdlineParser.Commands
+- uid: SearchAThing.CmdlineParser.Create(System.String,System.Action{SearchAThing.CmdlineParser},SearchAThing.CmdlineColors,System.Boolean)
+  name: Create(String, Action<CmdlineParser>, CmdlineColors, Boolean)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Create_System_String_System_Action_SearchAThing_CmdlineParser__SearchAThing_CmdlineColors_System_Boolean_
+  commentId: M:SearchAThing.CmdlineParser.Create(System.String,System.Action{SearchAThing.CmdlineParser},SearchAThing.CmdlineColors,System.Boolean)
+  name.vb: Create(String, Action(Of CmdlineParser), CmdlineColors, Boolean)
+  fullName: SearchAThing.CmdlineParser.Create(System.String, System.Action<SearchAThing.CmdlineParser>, SearchAThing.CmdlineColors, System.Boolean)
+  fullName.vb: SearchAThing.CmdlineParser.Create(System.String, System.Action(Of SearchAThing.CmdlineParser), SearchAThing.CmdlineColors, System.Boolean)
+  nameWithType: CmdlineParser.Create(String, Action<CmdlineParser>, CmdlineColors, Boolean)
+  nameWithType.vb: CmdlineParser.Create(String, Action(Of CmdlineParser), CmdlineColors, Boolean)
+- uid: SearchAThing.CmdlineParser.Create(System.String,System.Action{SearchAThing.CmdlineParser},System.Boolean,System.Boolean)
+  name: Create(String, Action<CmdlineParser>, Boolean, Boolean)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Create_System_String_System_Action_SearchAThing_CmdlineParser__System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.CmdlineParser.Create(System.String,System.Action{SearchAThing.CmdlineParser},System.Boolean,System.Boolean)
+  name.vb: Create(String, Action(Of CmdlineParser), Boolean, Boolean)
+  fullName: SearchAThing.CmdlineParser.Create(System.String, System.Action<SearchAThing.CmdlineParser>, System.Boolean, System.Boolean)
+  fullName.vb: SearchAThing.CmdlineParser.Create(System.String, System.Action(Of SearchAThing.CmdlineParser), System.Boolean, System.Boolean)
+  nameWithType: CmdlineParser.Create(String, Action<CmdlineParser>, Boolean, Boolean)
+  nameWithType.vb: CmdlineParser.Create(String, Action(Of CmdlineParser), Boolean, Boolean)
+- uid: SearchAThing.CmdlineParser.Create*
+  name: Create
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Create_
+  commentId: Overload:SearchAThing.CmdlineParser.Create
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Create
+  nameWithType: CmdlineParser.Create
+- uid: SearchAThing.CmdlineParser.Description
+  name: Description
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Description
+  commentId: P:SearchAThing.CmdlineParser.Description
+  fullName: SearchAThing.CmdlineParser.Description
+  nameWithType: CmdlineParser.Description
+- uid: SearchAThing.CmdlineParser.Description*
+  name: Description
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Description_
+  commentId: Overload:SearchAThing.CmdlineParser.Description
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Description
+  nameWithType: CmdlineParser.Description
+- uid: SearchAThing.CmdlineParser.Flags
+  name: Flags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Flags
+  commentId: P:SearchAThing.CmdlineParser.Flags
+  fullName: SearchAThing.CmdlineParser.Flags
+  nameWithType: CmdlineParser.Flags
+- uid: SearchAThing.CmdlineParser.Flags*
+  name: Flags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Flags_
+  commentId: Overload:SearchAThing.CmdlineParser.Flags
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Flags
+  nameWithType: CmdlineParser.Flags
+- uid: SearchAThing.CmdlineParser.FriendlyName
+  name: FriendlyName
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_FriendlyName
+  commentId: P:SearchAThing.CmdlineParser.FriendlyName
+  fullName: SearchAThing.CmdlineParser.FriendlyName
+  nameWithType: CmdlineParser.FriendlyName
+- uid: SearchAThing.CmdlineParser.FriendlyName*
+  name: FriendlyName
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_FriendlyName_
+  commentId: Overload:SearchAThing.CmdlineParser.FriendlyName
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.FriendlyName
+  nameWithType: CmdlineParser.FriendlyName
+- uid: SearchAThing.CmdlineParser.GlobalFlags
+  name: GlobalFlags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_GlobalFlags
+  commentId: P:SearchAThing.CmdlineParser.GlobalFlags
+  fullName: SearchAThing.CmdlineParser.GlobalFlags
+  nameWithType: CmdlineParser.GlobalFlags
+- uid: SearchAThing.CmdlineParser.GlobalFlags*
+  name: GlobalFlags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_GlobalFlags_
+  commentId: Overload:SearchAThing.CmdlineParser.GlobalFlags
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.GlobalFlags
+  nameWithType: CmdlineParser.GlobalFlags
+- uid: SearchAThing.CmdlineParser.InheritedFlags
+  name: InheritedFlags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_InheritedFlags
+  commentId: P:SearchAThing.CmdlineParser.InheritedFlags
+  fullName: SearchAThing.CmdlineParser.InheritedFlags
+  nameWithType: CmdlineParser.InheritedFlags
+- uid: SearchAThing.CmdlineParser.InheritedFlags*
+  name: InheritedFlags
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_InheritedFlags_
+  commentId: Overload:SearchAThing.CmdlineParser.InheritedFlags
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.InheritedFlags
+  nameWithType: CmdlineParser.InheritedFlags
+- uid: SearchAThing.CmdlineParser.InheritedItems
+  name: InheritedItems
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_InheritedItems
+  commentId: P:SearchAThing.CmdlineParser.InheritedItems
+  fullName: SearchAThing.CmdlineParser.InheritedItems
+  nameWithType: CmdlineParser.InheritedItems
+- uid: SearchAThing.CmdlineParser.InheritedItems*
+  name: InheritedItems
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_InheritedItems_
+  commentId: Overload:SearchAThing.CmdlineParser.InheritedItems
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.InheritedItems
+  nameWithType: CmdlineParser.InheritedItems
+- uid: SearchAThing.CmdlineParser.Items
+  name: Items
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Items
+  commentId: P:SearchAThing.CmdlineParser.Items
+  fullName: SearchAThing.CmdlineParser.Items
+  nameWithType: CmdlineParser.Items
+- uid: SearchAThing.CmdlineParser.Items*
+  name: Items
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Items_
+  commentId: Overload:SearchAThing.CmdlineParser.Items
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Items
+  nameWithType: CmdlineParser.Items
+- uid: SearchAThing.CmdlineParser.OnCmdlineMatch(System.Action)
+  name: OnCmdlineMatch(Action)
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_OnCmdlineMatch_System_Action_
+  commentId: M:SearchAThing.CmdlineParser.OnCmdlineMatch(System.Action)
+  fullName: SearchAThing.CmdlineParser.OnCmdlineMatch(System.Action)
+  nameWithType: CmdlineParser.OnCmdlineMatch(Action)
+- uid: SearchAThing.CmdlineParser.OnCmdlineMatch*
+  name: OnCmdlineMatch
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_OnCmdlineMatch_
+  commentId: Overload:SearchAThing.CmdlineParser.OnCmdlineMatch
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.OnCmdlineMatch
+  nameWithType: CmdlineParser.OnCmdlineMatch
+- uid: SearchAThing.CmdlineParser.ParameterArrays
+  name: ParameterArrays
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParameterArrays
+  commentId: P:SearchAThing.CmdlineParser.ParameterArrays
+  fullName: SearchAThing.CmdlineParser.ParameterArrays
+  nameWithType: CmdlineParser.ParameterArrays
+- uid: SearchAThing.CmdlineParser.ParameterArrays*
+  name: ParameterArrays
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParameterArrays_
+  commentId: Overload:SearchAThing.CmdlineParser.ParameterArrays
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.ParameterArrays
+  nameWithType: CmdlineParser.ParameterArrays
+- uid: SearchAThing.CmdlineParser.Parameters
+  name: Parameters
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Parameters
+  commentId: P:SearchAThing.CmdlineParser.Parameters
+  fullName: SearchAThing.CmdlineParser.Parameters
+  nameWithType: CmdlineParser.Parameters
+- uid: SearchAThing.CmdlineParser.Parameters*
+  name: Parameters
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Parameters_
+  commentId: Overload:SearchAThing.CmdlineParser.Parameters
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Parameters
+  nameWithType: CmdlineParser.Parameters
+- uid: SearchAThing.CmdlineParser.ParametersOrArray
+  name: ParametersOrArray
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParametersOrArray
+  commentId: P:SearchAThing.CmdlineParser.ParametersOrArray
+  fullName: SearchAThing.CmdlineParser.ParametersOrArray
+  nameWithType: CmdlineParser.ParametersOrArray
+- uid: SearchAThing.CmdlineParser.ParametersOrArray*
+  name: ParametersOrArray
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParametersOrArray_
+  commentId: Overload:SearchAThing.CmdlineParser.ParametersOrArray
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.ParametersOrArray
+  nameWithType: CmdlineParser.ParametersOrArray
+- uid: SearchAThing.CmdlineParser.Parent
+  name: Parent
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Parent
+  commentId: P:SearchAThing.CmdlineParser.Parent
+  fullName: SearchAThing.CmdlineParser.Parent
+  nameWithType: CmdlineParser.Parent
+- uid: SearchAThing.CmdlineParser.Parent*
+  name: Parent
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Parent_
+  commentId: Overload:SearchAThing.CmdlineParser.Parent
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Parent
+  nameWithType: CmdlineParser.Parent
+- uid: SearchAThing.CmdlineParser.ParentParsers
+  name: ParentParsers
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParentParsers
+  commentId: P:SearchAThing.CmdlineParser.ParentParsers
+  fullName: SearchAThing.CmdlineParser.ParentParsers
+  nameWithType: CmdlineParser.ParentParsers
+- uid: SearchAThing.CmdlineParser.ParentParsers*
+  name: ParentParsers
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParentParsers_
+  commentId: Overload:SearchAThing.CmdlineParser.ParentParsers
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.ParentParsers
+  nameWithType: CmdlineParser.ParentParsers
+- uid: SearchAThing.CmdlineParser.ParserPath
+  name: ParserPath
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParserPath
+  commentId: P:SearchAThing.CmdlineParser.ParserPath
+  fullName: SearchAThing.CmdlineParser.ParserPath
+  nameWithType: CmdlineParser.ParserPath
+- uid: SearchAThing.CmdlineParser.ParserPath*
+  name: ParserPath
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ParserPath_
+  commentId: Overload:SearchAThing.CmdlineParser.ParserPath
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.ParserPath
+  nameWithType: CmdlineParser.ParserPath
+- uid: SearchAThing.CmdlineParser.PrintUsage
+  name: PrintUsage()
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_PrintUsage
+  commentId: M:SearchAThing.CmdlineParser.PrintUsage
+  fullName: SearchAThing.CmdlineParser.PrintUsage()
+  nameWithType: CmdlineParser.PrintUsage()
+- uid: SearchAThing.CmdlineParser.PrintUsage*
+  name: PrintUsage
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_PrintUsage_
+  commentId: Overload:SearchAThing.CmdlineParser.PrintUsage
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.PrintUsage
+  nameWithType: CmdlineParser.PrintUsage
+- uid: SearchAThing.CmdlineParser.RootParser
+  name: RootParser
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_RootParser
+  commentId: P:SearchAThing.CmdlineParser.RootParser
+  fullName: SearchAThing.CmdlineParser.RootParser
+  nameWithType: CmdlineParser.RootParser
+- uid: SearchAThing.CmdlineParser.RootParser*
+  name: RootParser
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_RootParser_
+  commentId: Overload:SearchAThing.CmdlineParser.RootParser
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.RootParser
+  nameWithType: CmdlineParser.RootParser
+- uid: SearchAThing.CmdlineParser.Run(System.String[])
+  name: Run(String[])
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Run_System_String___
+  commentId: M:SearchAThing.CmdlineParser.Run(System.String[])
+  name.vb: Run(String())
+  fullName: SearchAThing.CmdlineParser.Run(System.String[])
+  fullName.vb: SearchAThing.CmdlineParser.Run(System.String())
+  nameWithType: CmdlineParser.Run(String[])
+  nameWithType.vb: CmdlineParser.Run(String())
+- uid: SearchAThing.CmdlineParser.Run*
+  name: Run
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_Run_
+  commentId: Overload:SearchAThing.CmdlineParser.Run
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.Run
+  nameWithType: CmdlineParser.Run
+- uid: SearchAThing.CmdlineParser.ToString
+  name: ToString()
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ToString
+  commentId: M:SearchAThing.CmdlineParser.ToString
+  fullName: SearchAThing.CmdlineParser.ToString()
+  nameWithType: CmdlineParser.ToString()
+- uid: SearchAThing.CmdlineParser.ToString*
+  name: ToString
+  href: api/SearchAThing.CmdlineParser.html#SearchAThing_CmdlineParser_ToString_
+  commentId: Overload:SearchAThing.CmdlineParser.ToString
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineParser.ToString
+  nameWithType: CmdlineParser.ToString
+- uid: SearchAThing.CmdlineUsage
+  name: CmdlineUsage
+  href: api/SearchAThing.CmdlineUsage.html
+  commentId: T:SearchAThing.CmdlineUsage
+  fullName: SearchAThing.CmdlineUsage
+  nameWithType: CmdlineUsage
+- uid: SearchAThing.CmdlineUsage.#ctor(SearchAThing.CmdlineParser)
+  name: CmdlineUsage(CmdlineParser)
+  href: api/SearchAThing.CmdlineUsage.html#SearchAThing_CmdlineUsage__ctor_SearchAThing_CmdlineParser_
+  commentId: M:SearchAThing.CmdlineUsage.#ctor(SearchAThing.CmdlineParser)
+  fullName: SearchAThing.CmdlineUsage.CmdlineUsage(SearchAThing.CmdlineParser)
+  nameWithType: CmdlineUsage.CmdlineUsage(CmdlineParser)
+- uid: SearchAThing.CmdlineUsage.#ctor*
+  name: CmdlineUsage
+  href: api/SearchAThing.CmdlineUsage.html#SearchAThing_CmdlineUsage__ctor_
+  commentId: Overload:SearchAThing.CmdlineUsage.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineUsage.CmdlineUsage
+  nameWithType: CmdlineUsage.CmdlineUsage
+- uid: SearchAThing.CmdlineUsage.Parser
+  name: Parser
+  href: api/SearchAThing.CmdlineUsage.html#SearchAThing_CmdlineUsage_Parser
+  commentId: P:SearchAThing.CmdlineUsage.Parser
+  fullName: SearchAThing.CmdlineUsage.Parser
+  nameWithType: CmdlineUsage.Parser
+- uid: SearchAThing.CmdlineUsage.Parser*
+  name: Parser
+  href: api/SearchAThing.CmdlineUsage.html#SearchAThing_CmdlineUsage_Parser_
+  commentId: Overload:SearchAThing.CmdlineUsage.Parser
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineUsage.Parser
+  nameWithType: CmdlineUsage.Parser
+- uid: SearchAThing.CmdlineUsage.Print
+  name: Print()
+  href: api/SearchAThing.CmdlineUsage.html#SearchAThing_CmdlineUsage_Print
+  commentId: M:SearchAThing.CmdlineUsage.Print
+  fullName: SearchAThing.CmdlineUsage.Print()
+  nameWithType: CmdlineUsage.Print()
+- uid: SearchAThing.CmdlineUsage.Print*
+  name: Print
+  href: api/SearchAThing.CmdlineUsage.html#SearchAThing_CmdlineUsage_Print_
+  commentId: Overload:SearchAThing.CmdlineUsage.Print
+  isSpec: "True"
+  fullName: SearchAThing.CmdlineUsage.Print
+  nameWithType: CmdlineUsage.Print

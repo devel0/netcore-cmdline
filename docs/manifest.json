@@ -5,146 +5,74 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvColumn.yml",
+      "source_relative_path": "api/SearchAThing.CmdlineArgument.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvColumn.html",
-          "hash": "Ery9kLDZ3zVpRse8+/PpFw=="
+          "relative_path": "api/SearchAThing.CmdlineArgument.html",
+          "hash": "C5vHnrj0omPw3++C+IpS0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvColumnNumberType.yml",
+      "source_relative_path": "api/SearchAThing.CmdlineColors.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvColumnNumberType.html",
-          "hash": "lTVPGx+hJqZ14Dn5jlCtuA=="
+          "relative_path": "api/SearchAThing.CmdlineColors.html",
+          "hash": "Tgvq1Pm3QwynJcLl3EpiBw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvColumnOrderAttribute.yml",
+      "source_relative_path": "api/SearchAThing.CmdlineParseItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvColumnOrderAttribute.html",
-          "hash": "m6fc8rgb1rvrwmyNY7bF6w=="
+          "relative_path": "api/SearchAThing.CmdlineParseItem.html",
+          "hash": "wxVNGPrAh/iAnSOix1riOw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvColumnTextType.yml",
+      "source_relative_path": "api/SearchAThing.CmdlineParseItemType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvColumnTextType.html",
-          "hash": "5JvNlcXPEUH/K6It5VJiAg=="
+          "relative_path": "api/SearchAThing.CmdlineParseItemType.html",
+          "hash": "5IUvN0hR6gfQ1OUSa5Qpew=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvFile-1.yml",
+      "source_relative_path": "api/SearchAThing.CmdlineParser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvFile-1.html",
-          "hash": "mTOZcxoOkG81ZGjmV+Vovw=="
+          "relative_path": "api/SearchAThing.CmdlineParser.html",
+          "hash": "ijznUYpfzLbFHCSEmRVZYg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvHeaderAttribute.yml",
+      "source_relative_path": "api/SearchAThing.CmdlineUsage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvHeaderAttribute.html",
-          "hash": "/2vG48Glbf8LrffW8w6/eA=="
+          "relative_path": "api/SearchAThing.CmdlineUsage.html",
+          "hash": "BvutSwPuEHxwKu6TJvuO3A=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvIgnoreAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvIgnoreAttribute.html",
-          "hash": "DC4cPf1fgyHuygVINznzKg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvOptions.html",
-          "hash": "KEf3I1CvT9dI4q2QVYvegw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvReader-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvReader-1.html",
-          "hash": "AKNUATP8nBh44lUQZ2QmZg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.CsvWriter-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.CSV.CsvWriter-1.html",
-          "hash": "qK5fsND1HElUjZRE0fEyAA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CSV.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.CSV.html",
-          "hash": "i9MNKhzWlvW26CuqH1FNxA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Extensions.html",
-          "hash": "aHYEBClro21mcf9eZc4goA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.html",
-          "hash": "54Ux4FTGAPKAH0zshtU8ug=="
+          "hash": "NlUc9X+UsdG8L4E75BnYzw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "yFdXn0Bm5D8IeKfQkk7rsQ=="
+          "hash": "hhAtm9dFUj/KnCMSlMehtA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "d9VpBvNJP8rJQ7UqVj3tEA=="
+          "hash": "ZGCuq/PpDnKew9+nHY7Y0g=="
         }
       },
       "is_incremental": false,
@@ -189,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "v0NQoEccBbuFV6huiRH+xg=="
+          "hash": "G9SPq0BOk3ce9YEvRDjNQw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -238,23 +166,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
-          "skipped_file_count": 13
+          "total_file_count": 7,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -267,8 +197,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
