@@ -361,12 +361,7 @@ namespace example_01
 
 ## API Documentation
 
-- [CmdlineParser](doc/api/SearchAThing/CmdlineParser.md)
-- [CmdlineParseItem](doc/api/SearchAThing/CmdlineParseItem.md)
-- [CmdlineUsage](doc/api/SearchAThing/CmdlineUsage.md)
-- [CmdlineColors](doc/api/SearchAThing/CmdlineColors.md)
-- [CmdlineArgument](doc/api/SearchAThing/CmdlineArgument.md)
-- [CmdlineParseItemType](doc/api/SearchAThing/CmdlineParseItemType.md)
+- [API](https://devel0.github.io/netcore-cmdline/api)
 
 ## how this project was built
 

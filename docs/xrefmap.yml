@@ -1,0 +1,632 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: SearchAThing
+  name: SearchAThing
+  href: api/SearchAThing.html
+  commentId: N:SearchAThing
+  fullName: SearchAThing
+  nameWithType: SearchAThing
+- uid: SearchAThing.CSV
+  name: SearchAThing.CSV
+  href: api/SearchAThing.CSV.html
+  commentId: N:SearchAThing.CSV
+  fullName: SearchAThing.CSV
+  nameWithType: SearchAThing.CSV
+- uid: SearchAThing.CSV.CsvColumn
+  name: CsvColumn
+  href: api/SearchAThing.CSV.CsvColumn.html
+  commentId: T:SearchAThing.CSV.CsvColumn
+  fullName: SearchAThing.CSV.CsvColumn
+  nameWithType: CsvColumn
+- uid: SearchAThing.CSV.CsvColumn.#ctor(System.String,System.Int32,PropertyInfo)
+  name: CsvColumn(String, Int32, PropertyInfo)
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn__ctor_System_String_System_Int32_PropertyInfo_
+  commentId: M:SearchAThing.CSV.CsvColumn.#ctor(System.String,System.Int32,PropertyInfo)
+  fullName: SearchAThing.CSV.CsvColumn.CsvColumn(System.String, System.Int32, PropertyInfo)
+  nameWithType: CsvColumn.CsvColumn(String, Int32, PropertyInfo)
+- uid: SearchAThing.CSV.CsvColumn.#ctor*
+  name: CsvColumn
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvColumn.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvColumn.CsvColumn
+  nameWithType: CsvColumn.CsvColumn
+- uid: SearchAThing.CSV.CsvColumn.Header
+  name: Header
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_Header
+  commentId: F:SearchAThing.CSV.CsvColumn.Header
+  fullName: SearchAThing.CSV.CsvColumn.Header
+  nameWithType: CsvColumn.Header
+- uid: SearchAThing.CSV.CsvColumn.IsNumber
+  name: IsNumber
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_IsNumber
+  commentId: F:SearchAThing.CSV.CsvColumn.IsNumber
+  fullName: SearchAThing.CSV.CsvColumn.IsNumber
+  nameWithType: CsvColumn.IsNumber
+- uid: SearchAThing.CSV.CsvColumn.IsText
+  name: IsText
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_IsText
+  commentId: F:SearchAThing.CSV.CsvColumn.IsText
+  fullName: SearchAThing.CSV.CsvColumn.IsText
+  nameWithType: CsvColumn.IsText
+- uid: SearchAThing.CSV.CsvColumn.NumberType
+  name: NumberType
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_NumberType
+  commentId: F:SearchAThing.CSV.CsvColumn.NumberType
+  fullName: SearchAThing.CSV.CsvColumn.NumberType
+  nameWithType: CsvColumn.NumberType
+- uid: SearchAThing.CSV.CsvColumn.Order
+  name: Order
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_Order
+  commentId: F:SearchAThing.CSV.CsvColumn.Order
+  fullName: SearchAThing.CSV.CsvColumn.Order
+  nameWithType: CsvColumn.Order
+- uid: SearchAThing.CSV.CsvColumn.Property
+  name: Property
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_Property
+  commentId: F:SearchAThing.CSV.CsvColumn.Property
+  fullName: SearchAThing.CSV.CsvColumn.Property
+  nameWithType: CsvColumn.Property
+- uid: SearchAThing.CSV.CsvColumn.TextType
+  name: TextType
+  href: api/SearchAThing.CSV.CsvColumn.html#SearchAThing_CSV_CsvColumn_TextType
+  commentId: F:SearchAThing.CSV.CsvColumn.TextType
+  fullName: SearchAThing.CSV.CsvColumn.TextType
+  nameWithType: CsvColumn.TextType
+- uid: SearchAThing.CSV.CsvColumnNumberType
+  name: CsvColumnNumberType
+  href: api/SearchAThing.CSV.CsvColumnNumberType.html
+  commentId: T:SearchAThing.CSV.CsvColumnNumberType
+  fullName: SearchAThing.CSV.CsvColumnNumberType
+  nameWithType: CsvColumnNumberType
+- uid: SearchAThing.CSV.CsvColumnNumberType.numberDecimal
+  name: numberDecimal
+  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberDecimal
+  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberDecimal
+  fullName: SearchAThing.CSV.CsvColumnNumberType.numberDecimal
+  nameWithType: CsvColumnNumberType.numberDecimal
+- uid: SearchAThing.CSV.CsvColumnNumberType.numberDouble
+  name: numberDouble
+  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberDouble
+  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberDouble
+  fullName: SearchAThing.CSV.CsvColumnNumberType.numberDouble
+  nameWithType: CsvColumnNumberType.numberDouble
+- uid: SearchAThing.CSV.CsvColumnNumberType.numberFloat
+  name: numberFloat
+  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberFloat
+  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberFloat
+  fullName: SearchAThing.CSV.CsvColumnNumberType.numberFloat
+  nameWithType: CsvColumnNumberType.numberFloat
+- uid: SearchAThing.CSV.CsvColumnNumberType.numberInt
+  name: numberInt
+  href: api/SearchAThing.CSV.CsvColumnNumberType.html#SearchAThing_CSV_CsvColumnNumberType_numberInt
+  commentId: F:SearchAThing.CSV.CsvColumnNumberType.numberInt
+  fullName: SearchAThing.CSV.CsvColumnNumberType.numberInt
+  nameWithType: CsvColumnNumberType.numberInt
+- uid: SearchAThing.CSV.CsvColumnOrderAttribute
+  name: CsvColumnOrderAttribute
+  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html
+  commentId: T:SearchAThing.CSV.CsvColumnOrderAttribute
+  fullName: SearchAThing.CSV.CsvColumnOrderAttribute
+  nameWithType: CsvColumnOrderAttribute
+- uid: SearchAThing.CSV.CsvColumnOrderAttribute.#ctor(System.Int32)
+  name: CsvColumnOrderAttribute(Int32)
+  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute__ctor_System_Int32_
+  commentId: M:SearchAThing.CSV.CsvColumnOrderAttribute.#ctor(System.Int32)
+  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.CsvColumnOrderAttribute(System.Int32)
+  nameWithType: CsvColumnOrderAttribute.CsvColumnOrderAttribute(Int32)
+- uid: SearchAThing.CSV.CsvColumnOrderAttribute.#ctor*
+  name: CsvColumnOrderAttribute
+  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvColumnOrderAttribute.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.CsvColumnOrderAttribute
+  nameWithType: CsvColumnOrderAttribute.CsvColumnOrderAttribute
+- uid: SearchAThing.CSV.CsvColumnOrderAttribute.Order
+  name: Order
+  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute_Order
+  commentId: P:SearchAThing.CSV.CsvColumnOrderAttribute.Order
+  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.Order
+  nameWithType: CsvColumnOrderAttribute.Order
+- uid: SearchAThing.CSV.CsvColumnOrderAttribute.Order*
+  name: Order
+  href: api/SearchAThing.CSV.CsvColumnOrderAttribute.html#SearchAThing_CSV_CsvColumnOrderAttribute_Order_
+  commentId: Overload:SearchAThing.CSV.CsvColumnOrderAttribute.Order
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvColumnOrderAttribute.Order
+  nameWithType: CsvColumnOrderAttribute.Order
+- uid: SearchAThing.CSV.CsvColumnTextType
+  name: CsvColumnTextType
+  href: api/SearchAThing.CSV.CsvColumnTextType.html
+  commentId: T:SearchAThing.CSV.CsvColumnTextType
+  fullName: SearchAThing.CSV.CsvColumnTextType
+  nameWithType: CsvColumnTextType
+- uid: SearchAThing.CSV.CsvColumnTextType.textChar
+  name: textChar
+  href: api/SearchAThing.CSV.CsvColumnTextType.html#SearchAThing_CSV_CsvColumnTextType_textChar
+  commentId: F:SearchAThing.CSV.CsvColumnTextType.textChar
+  fullName: SearchAThing.CSV.CsvColumnTextType.textChar
+  nameWithType: CsvColumnTextType.textChar
+- uid: SearchAThing.CSV.CsvColumnTextType.textString
+  name: textString
+  href: api/SearchAThing.CSV.CsvColumnTextType.html#SearchAThing_CSV_CsvColumnTextType_textString
+  commentId: F:SearchAThing.CSV.CsvColumnTextType.textString
+  fullName: SearchAThing.CSV.CsvColumnTextType.textString
+  nameWithType: CsvColumnTextType.textString
+- uid: SearchAThing.CSV.CsvFile`1
+  name: CsvFile<T>
+  href: api/SearchAThing.CSV.CsvFile-1.html
+  commentId: T:SearchAThing.CSV.CsvFile`1
+  name.vb: CsvFile(Of T)
+  fullName: SearchAThing.CSV.CsvFile<T>
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T)
+  nameWithType: CsvFile<T>
+  nameWithType.vb: CsvFile(Of T)
+- uid: SearchAThing.CSV.CsvFile`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
+  name: CsvFile(String, CsvOptions)
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1__ctor_System_String_SearchAThing_CSV_CsvOptions_
+  commentId: M:SearchAThing.CSV.CsvFile`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
+  fullName: SearchAThing.CSV.CsvFile<T>.CsvFile(System.String, SearchAThing.CSV.CsvOptions)
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).CsvFile(System.String, SearchAThing.CSV.CsvOptions)
+  nameWithType: CsvFile<T>.CsvFile(String, CsvOptions)
+  nameWithType.vb: CsvFile(Of T).CsvFile(String, CsvOptions)
+- uid: SearchAThing.CSV.CsvFile`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
+  name: CsvFile(String, Boolean, CsvOptions)
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1__ctor_System_String_System_Boolean_SearchAThing_CSV_CsvOptions_
+  commentId: M:SearchAThing.CSV.CsvFile`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
+  fullName: SearchAThing.CSV.CsvFile<T>.CsvFile(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).CsvFile(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
+  nameWithType: CsvFile<T>.CsvFile(String, Boolean, CsvOptions)
+  nameWithType.vb: CsvFile(Of T).CsvFile(String, Boolean, CsvOptions)
+- uid: SearchAThing.CSV.CsvFile`1.#ctor*
+  name: CsvFile
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.CsvFile
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).CsvFile
+  nameWithType: CsvFile<T>.CsvFile
+  nameWithType.vb: CsvFile(Of T).CsvFile
+- uid: SearchAThing.CSV.CsvFile`1.AppendMode
+  name: AppendMode
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_AppendMode
+  commentId: P:SearchAThing.CSV.CsvFile`1.AppendMode
+  fullName: SearchAThing.CSV.CsvFile<T>.AppendMode
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).AppendMode
+  nameWithType: CsvFile<T>.AppendMode
+  nameWithType.vb: CsvFile(Of T).AppendMode
+- uid: SearchAThing.CSV.CsvFile`1.AppendMode*
+  name: AppendMode
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_AppendMode_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.AppendMode
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.AppendMode
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).AppendMode
+  nameWithType: CsvFile<T>.AppendMode
+  nameWithType.vb: CsvFile(Of T).AppendMode
+- uid: SearchAThing.CSV.CsvFile`1.Columns
+  name: Columns
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Columns
+  commentId: P:SearchAThing.CSV.CsvFile`1.Columns
+  fullName: SearchAThing.CSV.CsvFile<T>.Columns
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Columns
+  nameWithType: CsvFile<T>.Columns
+  nameWithType.vb: CsvFile(Of T).Columns
+- uid: SearchAThing.CSV.CsvFile`1.Columns*
+  name: Columns
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Columns_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.Columns
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.Columns
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Columns
+  nameWithType: CsvFile<T>.Columns
+  nameWithType.vb: CsvFile(Of T).Columns
+- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparator
+  name: DecimalSeparator
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparator
+  commentId: P:SearchAThing.CSV.CsvFile`1.DecimalSeparator
+  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparator
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparator
+  nameWithType: CsvFile<T>.DecimalSeparator
+  nameWithType.vb: CsvFile(Of T).DecimalSeparator
+- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparator*
+  name: DecimalSeparator
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparator_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.DecimalSeparator
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparator
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparator
+  nameWithType: CsvFile<T>.DecimalSeparator
+  nameWithType.vb: CsvFile(Of T).DecimalSeparator
+- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant
+  name: DecimalSeparatorIsInvariant
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparatorIsInvariant
+  commentId: P:SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant
+  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparatorIsInvariant
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparatorIsInvariant
+  nameWithType: CsvFile<T>.DecimalSeparatorIsInvariant
+  nameWithType.vb: CsvFile(Of T).DecimalSeparatorIsInvariant
+- uid: SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant*
+  name: DecimalSeparatorIsInvariant
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_DecimalSeparatorIsInvariant_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.DecimalSeparatorIsInvariant
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.DecimalSeparatorIsInvariant
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).DecimalSeparatorIsInvariant
+  nameWithType: CsvFile<T>.DecimalSeparatorIsInvariant
+  nameWithType.vb: CsvFile(Of T).DecimalSeparatorIsInvariant
+- uid: SearchAThing.CSV.CsvFile`1.FieldSeparator
+  name: FieldSeparator
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_FieldSeparator
+  commentId: P:SearchAThing.CSV.CsvFile`1.FieldSeparator
+  fullName: SearchAThing.CSV.CsvFile<T>.FieldSeparator
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).FieldSeparator
+  nameWithType: CsvFile<T>.FieldSeparator
+  nameWithType.vb: CsvFile(Of T).FieldSeparator
+- uid: SearchAThing.CSV.CsvFile`1.FieldSeparator*
+  name: FieldSeparator
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_FieldSeparator_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.FieldSeparator
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.FieldSeparator
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).FieldSeparator
+  nameWithType: CsvFile<T>.FieldSeparator
+  nameWithType.vb: CsvFile(Of T).FieldSeparator
+- uid: SearchAThing.CSV.CsvFile`1.Options
+  name: Options
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Options
+  commentId: P:SearchAThing.CSV.CsvFile`1.Options
+  fullName: SearchAThing.CSV.CsvFile<T>.Options
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Options
+  nameWithType: CsvFile<T>.Options
+  nameWithType.vb: CsvFile(Of T).Options
+- uid: SearchAThing.CSV.CsvFile`1.Options*
+  name: Options
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Options_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.Options
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.Options
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Options
+  nameWithType: CsvFile<T>.Options
+  nameWithType.vb: CsvFile(Of T).Options
+- uid: SearchAThing.CSV.CsvFile`1.Pathfilename
+  name: Pathfilename
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Pathfilename
+  commentId: P:SearchAThing.CSV.CsvFile`1.Pathfilename
+  fullName: SearchAThing.CSV.CsvFile<T>.Pathfilename
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Pathfilename
+  nameWithType: CsvFile<T>.Pathfilename
+  nameWithType.vb: CsvFile(Of T).Pathfilename
+- uid: SearchAThing.CSV.CsvFile`1.Pathfilename*
+  name: Pathfilename
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_Pathfilename_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.Pathfilename
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.Pathfilename
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).Pathfilename
+  nameWithType: CsvFile<T>.Pathfilename
+  nameWithType.vb: CsvFile(Of T).Pathfilename
+- uid: SearchAThing.CSV.CsvFile`1.StringDelimiter
+  name: StringDelimiter
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_StringDelimiter
+  commentId: P:SearchAThing.CSV.CsvFile`1.StringDelimiter
+  fullName: SearchAThing.CSV.CsvFile<T>.StringDelimiter
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).StringDelimiter
+  nameWithType: CsvFile<T>.StringDelimiter
+  nameWithType.vb: CsvFile(Of T).StringDelimiter
+- uid: SearchAThing.CSV.CsvFile`1.StringDelimiter*
+  name: StringDelimiter
+  href: api/SearchAThing.CSV.CsvFile-1.html#SearchAThing_CSV_CsvFile_1_StringDelimiter_
+  commentId: Overload:SearchAThing.CSV.CsvFile`1.StringDelimiter
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvFile<T>.StringDelimiter
+  fullName.vb: SearchAThing.CSV.CsvFile(Of T).StringDelimiter
+  nameWithType: CsvFile<T>.StringDelimiter
+  nameWithType.vb: CsvFile(Of T).StringDelimiter
+- uid: SearchAThing.CSV.CsvHeaderAttribute
+  name: CsvHeaderAttribute
+  href: api/SearchAThing.CSV.CsvHeaderAttribute.html
+  commentId: T:SearchAThing.CSV.CsvHeaderAttribute
+  fullName: SearchAThing.CSV.CsvHeaderAttribute
+  nameWithType: CsvHeaderAttribute
+- uid: SearchAThing.CSV.CsvHeaderAttribute.#ctor(System.String)
+  name: CsvHeaderAttribute(String)
+  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute__ctor_System_String_
+  commentId: M:SearchAThing.CSV.CsvHeaderAttribute.#ctor(System.String)
+  fullName: SearchAThing.CSV.CsvHeaderAttribute.CsvHeaderAttribute(System.String)
+  nameWithType: CsvHeaderAttribute.CsvHeaderAttribute(String)
+- uid: SearchAThing.CSV.CsvHeaderAttribute.#ctor*
+  name: CsvHeaderAttribute
+  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvHeaderAttribute.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvHeaderAttribute.CsvHeaderAttribute
+  nameWithType: CsvHeaderAttribute.CsvHeaderAttribute
+- uid: SearchAThing.CSV.CsvHeaderAttribute.Header
+  name: Header
+  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute_Header
+  commentId: P:SearchAThing.CSV.CsvHeaderAttribute.Header
+  fullName: SearchAThing.CSV.CsvHeaderAttribute.Header
+  nameWithType: CsvHeaderAttribute.Header
+- uid: SearchAThing.CSV.CsvHeaderAttribute.Header*
+  name: Header
+  href: api/SearchAThing.CSV.CsvHeaderAttribute.html#SearchAThing_CSV_CsvHeaderAttribute_Header_
+  commentId: Overload:SearchAThing.CSV.CsvHeaderAttribute.Header
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvHeaderAttribute.Header
+  nameWithType: CsvHeaderAttribute.Header
+- uid: SearchAThing.CSV.CsvIgnoreAttribute
+  name: CsvIgnoreAttribute
+  href: api/SearchAThing.CSV.CsvIgnoreAttribute.html
+  commentId: T:SearchAThing.CSV.CsvIgnoreAttribute
+  fullName: SearchAThing.CSV.CsvIgnoreAttribute
+  nameWithType: CsvIgnoreAttribute
+- uid: SearchAThing.CSV.CsvIgnoreAttribute.#ctor
+  name: CsvIgnoreAttribute()
+  href: api/SearchAThing.CSV.CsvIgnoreAttribute.html#SearchAThing_CSV_CsvIgnoreAttribute__ctor
+  commentId: M:SearchAThing.CSV.CsvIgnoreAttribute.#ctor
+  fullName: SearchAThing.CSV.CsvIgnoreAttribute.CsvIgnoreAttribute()
+  nameWithType: CsvIgnoreAttribute.CsvIgnoreAttribute()
+- uid: SearchAThing.CSV.CsvIgnoreAttribute.#ctor*
+  name: CsvIgnoreAttribute
+  href: api/SearchAThing.CSV.CsvIgnoreAttribute.html#SearchAThing_CSV_CsvIgnoreAttribute__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvIgnoreAttribute.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvIgnoreAttribute.CsvIgnoreAttribute
+  nameWithType: CsvIgnoreAttribute.CsvIgnoreAttribute
+- uid: SearchAThing.CSV.CsvOptions
+  name: CsvOptions
+  href: api/SearchAThing.CSV.CsvOptions.html
+  commentId: T:SearchAThing.CSV.CsvOptions
+  fullName: SearchAThing.CSV.CsvOptions
+  nameWithType: CsvOptions
+- uid: SearchAThing.CSV.CsvOptions.DecimalSeparator
+  name: DecimalSeparator
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_DecimalSeparator
+  commentId: P:SearchAThing.CSV.CsvOptions.DecimalSeparator
+  fullName: SearchAThing.CSV.CsvOptions.DecimalSeparator
+  nameWithType: CsvOptions.DecimalSeparator
+- uid: SearchAThing.CSV.CsvOptions.DecimalSeparator*
+  name: DecimalSeparator
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_DecimalSeparator_
+  commentId: Overload:SearchAThing.CSV.CsvOptions.DecimalSeparator
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvOptions.DecimalSeparator
+  nameWithType: CsvOptions.DecimalSeparator
+- uid: SearchAThing.CSV.CsvOptions.FieldSeparator
+  name: FieldSeparator
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_FieldSeparator
+  commentId: P:SearchAThing.CSV.CsvOptions.FieldSeparator
+  fullName: SearchAThing.CSV.CsvOptions.FieldSeparator
+  nameWithType: CsvOptions.FieldSeparator
+- uid: SearchAThing.CSV.CsvOptions.FieldSeparator*
+  name: FieldSeparator
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_FieldSeparator_
+  commentId: Overload:SearchAThing.CSV.CsvOptions.FieldSeparator
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvOptions.FieldSeparator
+  nameWithType: CsvOptions.FieldSeparator
+- uid: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
+  name: PropNameHeaderMapping
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameHeaderMapping
+  commentId: P:SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
+  fullName: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
+  nameWithType: CsvOptions.PropNameHeaderMapping
+- uid: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping*
+  name: PropNameHeaderMapping
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameHeaderMapping_
+  commentId: Overload:SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvOptions.PropNameHeaderMapping
+  nameWithType: CsvOptions.PropNameHeaderMapping
+- uid: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
+  name: PropNameToHeaderFunc
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameToHeaderFunc
+  commentId: P:SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
+  fullName: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
+  nameWithType: CsvOptions.PropNameToHeaderFunc
+- uid: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc*
+  name: PropNameToHeaderFunc
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_PropNameToHeaderFunc_
+  commentId: Overload:SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvOptions.PropNameToHeaderFunc
+  nameWithType: CsvOptions.PropNameToHeaderFunc
+- uid: SearchAThing.CSV.CsvOptions.StringDelimiter
+  name: StringDelimiter
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_StringDelimiter
+  commentId: P:SearchAThing.CSV.CsvOptions.StringDelimiter
+  fullName: SearchAThing.CSV.CsvOptions.StringDelimiter
+  nameWithType: CsvOptions.StringDelimiter
+- uid: SearchAThing.CSV.CsvOptions.StringDelimiter*
+  name: StringDelimiter
+  href: api/SearchAThing.CSV.CsvOptions.html#SearchAThing_CSV_CsvOptions_StringDelimiter_
+  commentId: Overload:SearchAThing.CSV.CsvOptions.StringDelimiter
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvOptions.StringDelimiter
+  nameWithType: CsvOptions.StringDelimiter
+- uid: SearchAThing.CSV.CsvReader`1
+  name: CsvReader<T>
+  href: api/SearchAThing.CSV.CsvReader-1.html
+  commentId: T:SearchAThing.CSV.CsvReader`1
+  name.vb: CsvReader(Of T)
+  fullName: SearchAThing.CSV.CsvReader<T>
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T)
+  nameWithType: CsvReader<T>
+  nameWithType.vb: CsvReader(Of T)
+- uid: SearchAThing.CSV.CsvReader`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
+  name: CsvReader(String, CsvOptions)
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1__ctor_System_String_SearchAThing_CSV_CsvOptions_
+  commentId: M:SearchAThing.CSV.CsvReader`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
+  fullName: SearchAThing.CSV.CsvReader<T>.CsvReader(System.String, SearchAThing.CSV.CsvOptions)
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).CsvReader(System.String, SearchAThing.CSV.CsvOptions)
+  nameWithType: CsvReader<T>.CsvReader(String, CsvOptions)
+  nameWithType.vb: CsvReader(Of T).CsvReader(String, CsvOptions)
+- uid: SearchAThing.CSV.CsvReader`1.#ctor*
+  name: CsvReader
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvReader`1.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvReader<T>.CsvReader
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).CsvReader
+  nameWithType: CsvReader<T>.CsvReader
+  nameWithType.vb: CsvReader(Of T).CsvReader
+- uid: SearchAThing.CSV.CsvReader`1.Dispose
+  name: Dispose()
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Dispose
+  commentId: M:SearchAThing.CSV.CsvReader`1.Dispose
+  fullName: SearchAThing.CSV.CsvReader<T>.Dispose()
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Dispose()
+  nameWithType: CsvReader<T>.Dispose()
+  nameWithType.vb: CsvReader(Of T).Dispose()
+- uid: SearchAThing.CSV.CsvReader`1.Dispose*
+  name: Dispose
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Dispose_
+  commentId: Overload:SearchAThing.CSV.CsvReader`1.Dispose
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvReader<T>.Dispose
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Dispose
+  nameWithType: CsvReader<T>.Dispose
+  nameWithType.vb: CsvReader(Of T).Dispose
+- uid: SearchAThing.CSV.CsvReader`1.File
+  name: File
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_File
+  commentId: P:SearchAThing.CSV.CsvReader`1.File
+  fullName: SearchAThing.CSV.CsvReader<T>.File
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).File
+  nameWithType: CsvReader<T>.File
+  nameWithType.vb: CsvReader(Of T).File
+- uid: SearchAThing.CSV.CsvReader`1.File*
+  name: File
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_File_
+  commentId: Overload:SearchAThing.CSV.CsvReader`1.File
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvReader<T>.File
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).File
+  nameWithType: CsvReader<T>.File
+  nameWithType.vb: CsvReader(Of T).File
+- uid: SearchAThing.CSV.CsvReader`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_GetEnumerator
+  commentId: M:SearchAThing.CSV.CsvReader`1.GetEnumerator
+  fullName: SearchAThing.CSV.CsvReader<T>.GetEnumerator()
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).GetEnumerator()
+  nameWithType: CsvReader<T>.GetEnumerator()
+  nameWithType.vb: CsvReader(Of T).GetEnumerator()
+- uid: SearchAThing.CSV.CsvReader`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_GetEnumerator_
+  commentId: Overload:SearchAThing.CSV.CsvReader`1.GetEnumerator
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvReader<T>.GetEnumerator
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).GetEnumerator
+  nameWithType: CsvReader<T>.GetEnumerator
+  nameWithType.vb: CsvReader(Of T).GetEnumerator
+- uid: SearchAThing.CSV.CsvReader`1.Reset
+  name: Reset()
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Reset
+  commentId: M:SearchAThing.CSV.CsvReader`1.Reset
+  fullName: SearchAThing.CSV.CsvReader<T>.Reset()
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Reset()
+  nameWithType: CsvReader<T>.Reset()
+  nameWithType.vb: CsvReader(Of T).Reset()
+- uid: SearchAThing.CSV.CsvReader`1.Reset*
+  name: Reset
+  href: api/SearchAThing.CSV.CsvReader-1.html#SearchAThing_CSV_CsvReader_1_Reset_
+  commentId: Overload:SearchAThing.CSV.CsvReader`1.Reset
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvReader<T>.Reset
+  fullName.vb: SearchAThing.CSV.CsvReader(Of T).Reset
+  nameWithType: CsvReader<T>.Reset
+  nameWithType.vb: CsvReader(Of T).Reset
+- uid: SearchAThing.CSV.CsvWriter`1
+  name: CsvWriter<T>
+  href: api/SearchAThing.CSV.CsvWriter-1.html
+  commentId: T:SearchAThing.CSV.CsvWriter`1
+  name.vb: CsvWriter(Of T)
+  fullName: SearchAThing.CSV.CsvWriter<T>
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T)
+  nameWithType: CsvWriter<T>
+  nameWithType.vb: CsvWriter(Of T)
+- uid: SearchAThing.CSV.CsvWriter`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
+  name: CsvWriter(String, CsvOptions)
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1__ctor_System_String_SearchAThing_CSV_CsvOptions_
+  commentId: M:SearchAThing.CSV.CsvWriter`1.#ctor(System.String,SearchAThing.CSV.CsvOptions)
+  fullName: SearchAThing.CSV.CsvWriter<T>.CsvWriter(System.String, SearchAThing.CSV.CsvOptions)
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).CsvWriter(System.String, SearchAThing.CSV.CsvOptions)
+  nameWithType: CsvWriter<T>.CsvWriter(String, CsvOptions)
+  nameWithType.vb: CsvWriter(Of T).CsvWriter(String, CsvOptions)
+- uid: SearchAThing.CSV.CsvWriter`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
+  name: CsvWriter(String, Boolean, CsvOptions)
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1__ctor_System_String_System_Boolean_SearchAThing_CSV_CsvOptions_
+  commentId: M:SearchAThing.CSV.CsvWriter`1.#ctor(System.String,System.Boolean,SearchAThing.CSV.CsvOptions)
+  fullName: SearchAThing.CSV.CsvWriter<T>.CsvWriter(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).CsvWriter(System.String, System.Boolean, SearchAThing.CSV.CsvOptions)
+  nameWithType: CsvWriter<T>.CsvWriter(String, Boolean, CsvOptions)
+  nameWithType.vb: CsvWriter(Of T).CsvWriter(String, Boolean, CsvOptions)
+- uid: SearchAThing.CSV.CsvWriter`1.#ctor*
+  name: CsvWriter
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1__ctor_
+  commentId: Overload:SearchAThing.CSV.CsvWriter`1.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvWriter<T>.CsvWriter
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).CsvWriter
+  nameWithType: CsvWriter<T>.CsvWriter
+  nameWithType.vb: CsvWriter(Of T).CsvWriter
+- uid: SearchAThing.CSV.CsvWriter`1.Dispose
+  name: Dispose()
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Dispose
+  commentId: M:SearchAThing.CSV.CsvWriter`1.Dispose
+  fullName: SearchAThing.CSV.CsvWriter<T>.Dispose()
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Dispose()
+  nameWithType: CsvWriter<T>.Dispose()
+  nameWithType.vb: CsvWriter(Of T).Dispose()
+- uid: SearchAThing.CSV.CsvWriter`1.Dispose*
+  name: Dispose
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Dispose_
+  commentId: Overload:SearchAThing.CSV.CsvWriter`1.Dispose
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvWriter<T>.Dispose
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Dispose
+  nameWithType: CsvWriter<T>.Dispose
+  nameWithType.vb: CsvWriter(Of T).Dispose
+- uid: SearchAThing.CSV.CsvWriter`1.Push(`0)
+  name: Push(T)
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Push__0_
+  commentId: M:SearchAThing.CSV.CsvWriter`1.Push(`0)
+  fullName: SearchAThing.CSV.CsvWriter<T>.Push(T)
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Push(T)
+  nameWithType: CsvWriter<T>.Push(T)
+  nameWithType.vb: CsvWriter(Of T).Push(T)
+- uid: SearchAThing.CSV.CsvWriter`1.Push*
+  name: Push
+  href: api/SearchAThing.CSV.CsvWriter-1.html#SearchAThing_CSV_CsvWriter_1_Push_
+  commentId: Overload:SearchAThing.CSV.CsvWriter`1.Push
+  isSpec: "True"
+  fullName: SearchAThing.CSV.CsvWriter<T>.Push
+  fullName.vb: SearchAThing.CSV.CsvWriter(Of T).Push
+  nameWithType: CsvWriter<T>.Push
+  nameWithType.vb: CsvWriter(Of T).Push
+- uid: SearchAThing.Extensions
+  name: Extensions
+  href: api/SearchAThing.Extensions.html
+  commentId: T:SearchAThing.Extensions
+  fullName: SearchAThing.Extensions
+  nameWithType: Extensions
+- uid: SearchAThing.Extensions.ToCSV*
+  name: ToCSV
+  href: api/SearchAThing.Extensions.html#SearchAThing_Extensions_ToCSV_
+  commentId: Overload:SearchAThing.Extensions.ToCSV
+  isSpec: "True"
+  fullName: SearchAThing.Extensions.ToCSV
+  nameWithType: Extensions.ToCSV
+- uid: SearchAThing.Extensions.ToCSV``1(IEnumerable{``0},System.String,SearchAThing.CSV.CsvOptions)
+  name: ToCSV<T>(IEnumerable<T>, String, CsvOptions)
+  href: api/SearchAThing.Extensions.html#SearchAThing_Extensions_ToCSV__1_IEnumerable___0__System_String_SearchAThing_CSV_CsvOptions_
+  commentId: M:SearchAThing.Extensions.ToCSV``1(IEnumerable{``0},System.String,SearchAThing.CSV.CsvOptions)
+  name.vb: ToCSV(Of T)(IEnumerable(Of T), String, CsvOptions)
+  fullName: SearchAThing.Extensions.ToCSV<T>(IEnumerable<T>, System.String, SearchAThing.CSV.CsvOptions)
+  fullName.vb: SearchAThing.Extensions.ToCSV(Of T)(IEnumerable(Of T), System.String, SearchAThing.CSV.CsvOptions)
+  nameWithType: Extensions.ToCSV<T>(IEnumerable<T>, String, CsvOptions)
+  nameWithType.vb: Extensions.ToCSV(Of T)(IEnumerable(Of T), String, CsvOptions)
