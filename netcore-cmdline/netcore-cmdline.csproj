@@ -4,7 +4,7 @@
         <RootNamespace>SearchAThing</RootNamespace>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>netcore-cmdline</PackageId>
-        <PackageVersion>0.3</PackageVersion>
+        <PackageVersion>0.3.1</PackageVersion>
         <Title>net core cmdline parser</Title>
         <Description>Multi level command line parser with completions</Description>
         <Authors>Lorenzo Delana</Authors>
@@ -13,6 +13,6 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="netcore-util" Version="1.0.30" />
+      <PackageReference Include="netcore-util" Version="1.7.0" />
     </ItemGroup>
 </Project>
