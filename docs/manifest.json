@@ -1,15 +1,15 @@
 {
   "homepages": [],
-  "source_base_path": "Z:/netcore-cmdline/docfx",
+  "source_base_path": "/home/devel0/Documents/opensource/netcore-cmdline/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CmdlineArgument.yml",
+      "source_relative_path": "api/SearchAThing.ColumnAlignment.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CmdlineArgument.html",
-          "hash": "C5vHnrj0omPw3++C+IpS0g=="
+          "relative_path": "api/SearchAThing.ColumnAlignment.html",
+          "hash": "PTNPAU7pq/3pK7r27F+yJQ=="
         }
       },
       "is_incremental": true,
@@ -17,11 +17,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CmdlineColors.yml",
+      "source_relative_path": "api/SearchAThing.CopyFromCustomDelegate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CmdlineColors.html",
-          "hash": "Tgvq1Pm3QwynJcLl3EpiBw=="
+          "relative_path": "api/SearchAThing.CopyFromCustomDelegate.html",
+          "hash": "ki0QRJQ3N7XKMsbNLuvbDg=="
         }
       },
       "is_incremental": true,
@@ -29,23 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CmdlineParseItem.yml",
+      "source_relative_path": "api/SearchAThing.DockerContainerNfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CmdlineParseItem.html",
-          "hash": "wxVNGPrAh/iAnSOix1riOw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CmdlineParseItemType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.CmdlineParseItemType.html",
-          "hash": "5IUvN0hR6gfQ1OUSa5Qpew=="
+          "relative_path": "api/SearchAThing.DockerContainerNfo.html",
+          "hash": "967qCeAi+y/gOk4UI5lBnw=="
         }
       },
       "is_incremental": true,
@@ -53,23 +41,119 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CmdlineParser.yml",
+      "source_relative_path": "api/SearchAThing.DockerNetworkNfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CmdlineParser.html",
-          "hash": "ijznUYpfzLbFHCSEmRVZYg=="
+          "relative_path": "api/SearchAThing.DockerNetworkNfo.html",
+          "hash": "3b9I/TPwSw5F69jXV2Nubg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.CmdlineUsage.yml",
+      "source_relative_path": "api/SearchAThing.ErrorInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SearchAThing.CmdlineUsage.html",
-          "hash": "BvutSwPuEHxwKu6TJvuO3A=="
+          "relative_path": "api/SearchAThing.ErrorInfo.html",
+          "hash": "jeD7G0PpSBChTD3TIJ/SQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.ExecResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.ExecResult.html",
+          "hash": "AYMEH4k5AhlaPKMVs7DI9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.RandomPasswordOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.RandomPasswordOptions.html",
+          "hash": "UiFgatlXlQafmpfWBuLBXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.StringWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.StringWrapper.html",
+          "hash": "OVxSh44R/Y+FfQo/ff/y5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.StringWrapperLineReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.StringWrapperLineReader.html",
+          "hash": "LgXoB0Se8mm+gbQqLJTTRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.TrueTypeNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.TrueTypeNfo.html",
+          "hash": "EVRH1XTPOhPxszJvpGdxUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.UtilExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.UtilExt.html",
+          "hash": "jwQtoXQ9zmgSTLFgU50cYg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.UtilToolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.UtilToolkit.html",
+          "hash": "M9PnTszve1jpzPg96GoQlA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.ValueObj-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.ValueObj-1.html",
+          "hash": "Ts798L/RlOrLso855FJcWg=="
         }
       },
       "is_incremental": true,
@@ -81,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.html",
-          "hash": "NlUc9X+UsdG8L4E75BnYzw=="
+          "hash": "lliMKxFC58kwjgiKGKPwdQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "hhAtm9dFUj/KnCMSlMehtA=="
+          "hash": "ara+VgFuMYWTqwU1Uaos3g=="
         }
       },
       "is_incremental": true,
@@ -105,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZGCuq/PpDnKew9+nHY7Y0g=="
+          "hash": "YOfUegbMil3ZW1SizHT3Mw=="
         }
       },
       "is_incremental": false,
@@ -117,19 +201,22 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "V5nyz2FCVvwczdfLT2UFVA=="
+          "hash": "p+dRoYd8lmaBdCWIytNpwg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "CXy9hdv+q37cMq9RP5dfyg=="
         }
       },
       "is_incremental": false,
@@ -144,19 +231,22 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "luEdzxZvk2+zBPjm28pbkA=="
+          "hash": "5HBRplDvhgOyzFcmAZ1kyQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "J+EpFVdz6PS07cWKCYHrJQ=="
+          "hash": "90Wck3Z62yiG/IIs65XKHA=="
         }
       },
       "is_incremental": false,
@@ -176,13 +266,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 7,
-          "skipped_file_count": 6
+          "total_file_count": 14,
+          "skipped_file_count": 14
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
