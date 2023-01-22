@@ -29,7 +29,12 @@
 
 ## Quickstart
 
-- [nuget package](https://www.nuget.org/packages/netcore-cmdline/)
+```sh
+dotnet new console --use-program-main -n test
+cd test
+dotnet add package netcore-cmdline
+dotnet run
+```
 
 ### Basic flags
 
@@ -364,7 +369,7 @@ namespace example_01
 - [API](https://devel0.github.io/netcore-cmdline/api)
 
 ## how this project was built
-
+ 
 ```sh
 mkdir netcore-cmdline
 cd netcore-cmdline
@@ -373,7 +378,7 @@ dotnet new sln
 
 dotnet new classlib -n netcore-cmdline
 cd netcore-cmdline
-dotnet add package netcore-util --version 1.0.28
+dotnet add package netcore-util
 cd ..
 dotnet sln add netcore-cmdline
 

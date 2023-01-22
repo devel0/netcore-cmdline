@@ -1,35 +1,32 @@
-namespace SearchAThing
+namespace SearchAThing.Cmdline;
+
+/// <summary>
+/// Encloses command line argument string and relate to matching parse item if any
+/// </summary>
+public class CmdlineArgument
 {
 
     /// <summary>
-    /// Encloses command line argument string and relate to matching parse item if any
+    /// cmdline argument string
     /// </summary>
-    public class CmdlineArgument
+    public string Argument { get; private set; }
+
+    /// <summary>
+    /// non null if a parser item matches
+    /// </summary>
+    internal CmdlineParseItem MatchedItem { get; set; }
+
+    /// <summary>
+    /// true if a parser item matches
+    /// </summary>
+    public bool Matched => MatchedItem != null;
+
+    /// <summary>
+    /// construct a cmdline argument from cmdline arg string
+    /// </summary>
+    public CmdlineArgument(string arg)
     {
-
-        /// <summary>
-        /// cmdline argument string
-        /// </summary>
-        public string Argument { get; private set; }
-
-        /// <summary>
-        /// non null if a parser item matches
-        /// </summary>
-        internal CmdlineParseItem MatchedItem { get; set; }
-
-        /// <summary>
-        /// true if a parser item matches
-        /// </summary>
-        public bool Matched => MatchedItem != null;
-
-        /// <summary>
-        /// construct a cmdline argument from cmdline arg string
-        /// </summary>
-        public CmdlineArgument(string arg)
-        {
-            Argument = arg;
-        }
-
+        Argument = arg;
     }
 
 }

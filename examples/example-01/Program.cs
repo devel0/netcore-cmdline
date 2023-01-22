@@ -1,4 +1,4 @@
-﻿using SearchAThing;
+﻿using SearchAThing.Cmdline;
 
 namespace example_01
 {
