@@ -4,18 +4,23 @@
 
 .NET core command line parser
 
+- [API Documentation](https://devel0.github.io/netcore-cmdline/html/annotated.html)
+- [Changelog](https://github.com/devel0/netcore-cmdline/commits/master)
+
 <hr/>
 
-- [Features](#features)
-- [Quickstart](#quickstart)
-  - [Basic flags](#basic-flags)
-  - [Flags with value](#flags-with-value)
-  - [Parameters](#parameters)
-  - [Parameters array](#parameters-array)
-  - [Bash Completion](#bash-completion)
-  - [Sub parser](#sub-parser)
-- [API Documentation](#api-documentation)
-- [how this project was built](#how-this-project-was-built)
+<!-- TOC -->
+* [Features](#features)
+* [Quickstart](#quickstart)
+  + [Basic flags](#basic-flags)
+  + [Flags with value](#flags-with-value)
+  + [Parameters](#parameters)
+  + [Parameters array](#parameters-array)
+  + [Bash completion](#bash-completion)
+  + [Sub parser](#sub-parser)
+* [API Documentation](#api-documentation)
+* [how this project was built](#how-this-project-was-built)
+<!-- TOCEND -->
 
 <hr/>
 
