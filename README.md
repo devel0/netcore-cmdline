@@ -97,7 +97,7 @@ namespace example_01
                 var yflag = parser.AddShort("y", "my second flag", "YVAL");
                 var vflag = parser.AddShortLong("v", "value", "a value flag", "VAL");
 
-                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
+                parser.AddShortLong("h", "help", "show usage", null, (item) => item.MatchParser.PrintUsage());
 
                 parser.OnCmdlineMatch(() =>
                 {
@@ -126,7 +126,7 @@ Optional flags:
   -v,--value=VAL   a value flag
 
 Global flags:
-  -h               show usage
+  -h,--help        show usage
 
 
 devel0@tuf:~$ example-01 -x 1 -y 2 -v 3
@@ -358,7 +358,8 @@ namespace example_01
                     });
                 });
 
-                parser.AddShort("h", "show usage", null, (item) => item.MatchParser.PrintUsage());
+                // standard --help variant
+                parser.AddShortLong("h", "help", "show usage", null, (item) => item.MatchParser.PrintUsage());
 
                 parser.Run(args);
             });
