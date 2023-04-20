@@ -78,7 +78,7 @@ namespace example_01
 }
 ```
 
-![](doc/img/quickstart-01.png)
+![](data/img/quickstart-01.png)
 
 ### Flags with value
 
@@ -326,7 +326,7 @@ complete -F _fn example-01
 
 source it with `. /etc/bash_completion` then try as follows
 
-![](doc/img/quickstart-02.gif)
+![](data/img/quickstart-02.gif)
 
 ### Sub parser
 
@@ -368,7 +368,7 @@ namespace example_01
 }
 ```
 
-![](doc/img/quickstart-04.gif)
+![](data/img/quickstart-04.gif)
 
 ## API Documentation
 
