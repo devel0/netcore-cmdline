@@ -1,10 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net7.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <LangVersion>11</LangVersion>
         <RootNamespace>SearchAThing.Cmdline</RootNamespace>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>netcore-cmdline</PackageId>
-        <PackageVersion>0.5.0</PackageVersion>
+        <PackageVersion>0.6.0</PackageVersion>
         <Title>net core cmdline parser</Title>
         <Description>Multi level command line parser with completions</Description>
         <Authors>Lorenzo Delana</Authors>
@@ -13,6 +14,6 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="netcore-util" Version="5.1.1" />
+      <PackageReference Include="netcore-ext" Version="2.3.1" />
     </ItemGroup>
 </Project>
