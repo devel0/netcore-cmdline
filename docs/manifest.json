@@ -1,0 +1,135 @@
+{
+  "source_base_path": "/home/devel0/Documents/opensource/netcore-cmdline",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.CmdlineArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.CmdlineArgument.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.CmdlineColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.CmdlineColors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.CmdlineParseItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.CmdlineParseItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.CmdlineParseItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.CmdlineParseItemType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.CmdlineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.CmdlineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.CmdlineUsage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.CmdlineUsage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Cmdline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Cmdline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>netcore-cmdline | netcore-cmdline </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="netcore-cmdline | netcore-cmdline ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/devel0/netcore-cmdline/blob/docs/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="netcore-cmdline">
+            netcore-cmdline
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="netcore-cmdline">netcore-cmdline</h1>
+
+<p><a href="https://www.nuget.org/packages/netcore-cmdline/"><img src="https://buildstats.info/nuget/netcore-cmdline" alt="NuGet Badge"></a></p>
+<p>.NET core command line parser</p>
+<ul>
+<li><a href="https://devel0.github.io/netcore-cmdline/html/annotated.html">API Documentation</a></li>
+<li><a href="https://github.com/devel0/netcore-cmdline/commits/master">Changelog</a></li>
+</ul>
+<hr>
+<!-- TOC -->
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#quickstart">Quickstart</a>
+<ul>
+<li><a href="#basic-flags">Basic flags</a></li>
+<li><a href="#flags-with-value">Flags with value</a></li>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#parameters-array">Parameters array</a></li>
+<li><a href="#bash-completion">Bash completion</a></li>
+<li><a href="#sub-parser">Sub parser</a></li>
+</ul>
+</li>
+<li><a href="#api-documentation">API Documentation</a></li>
+<li><a href="#how-this-project-was-built">how this project was built</a></li>
+</ul>
+<!-- TOCEND -->
+<hr>
+<h2 id="features">Features</h2>
+<ul>
+<li>multi level nested command parsers</li>
+<li>mandatory/optional short/long flags with/without value ; global flags</li>
+<li>parameter and array of parameters</li>
+<li>automatic standard usage ( color supported )</li>
+<li>automatic bash completions</li>
+</ul>
+<h2 id="quickstart">Quickstart</h2>
+<pre><code class="lang-sh">dotnet new console --use-program-main -n test
+cd test
+dotnet add package netcore-cmdline
+dotnet run
+</code></pre>
+<h3 id="basic-flags">Basic flags</h3>
+<blockquote>
+<p>to execute <code>example-01</code> from command line can set path with something like <code>export PATH=$PATH:~/opensource/netcore-cmdline/examples/example-01/bin/Debug/netcoreapp3.0</code></p>
+</blockquote>
+<pre><code class="lang-csharp">using SearchAThing;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // create main parser
+            CmdlineParser.Create(&quot;sample application&quot;, (parser) =&gt;
+            {
+                var xflag = parser.AddShort(&quot;x&quot;, &quot;my first flag&quot;);
+                var yflag = parser.AddShort(&quot;y&quot;, &quot;my second flag&quot;);                
+
+                // global flag with auto invoked action when matches that print usage for nested MatchParser
+                parser.AddShort(&quot;h&quot;, &quot;show usage&quot;, null, (item) =&gt; item.MatchParser.PrintUsage());
+
+                // entrypoint for parser level cmdline match
+                parser.OnCmdlineMatch(() =&gt;
+                {
+                    if (xflag) System.Console.WriteLine($&quot;x flag used&quot;);
+                    if (yflag) System.Console.WriteLine($&quot;y flag used&quot;);
+                });
+
+                // call this once at toplevel parser only
+                parser.Run(args);
+            });
+        }
+    }
+}
+</code></pre>
+<p><img src="data/images/quickstart-01.png" alt=""></p>
+<h3 id="flags-with-value">Flags with value</h3>
+<pre><code class="lang-csharp">using SearchAThing;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create(&quot;sample application&quot;, (parser) =&gt;
+            {
+                var xflag = parser.AddShort(&quot;x&quot;, &quot;my first flag&quot;, &quot;XVAL&quot;);
+                var yflag = parser.AddShort(&quot;y&quot;, &quot;my second flag&quot;, &quot;YVAL&quot;);
+                var vflag = parser.AddShortLong(&quot;v&quot;, &quot;value&quot;, &quot;a value flag&quot;, &quot;VAL&quot;);
+
+                parser.AddShortLong(&quot;h&quot;, &quot;help&quot;, &quot;show usage&quot;, null, (item) =&gt; item.MatchParser.PrintUsage());
+
+                parser.OnCmdlineMatch(() =&gt;
+                {
+                    if (xflag) System.Console.WriteLine($&quot;x flag used [{(string)xflag}]&quot;);
+                    if (yflag) System.Console.WriteLine($&quot;y flag used [{(string)yflag}]&quot;);
+                    if (vflag) System.Console.WriteLine($&quot;value specified [{(string)vflag}]&quot;);
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+</code></pre>
+<pre><code class="lang-sh">devel0@tuf:~$ example-01 -h
+
+Usage: example-01 FLAGS
+
+sample application
+
+Optional flags:
+  -x=XVAL          my first flag
+  -y=YVAL          my second flag
+  -v,--value=VAL   a value flag
+
+Global flags:
+  -h,--help        show usage
+
+
+devel0@tuf:~$ example-01 -x 1 -y 2 -v 3
+x flag used [1]
+y flag used [2]
+value specified [3]
+devel0@tuf:~$ example-01 -x 1 -y 2 --value 3
+x flag used [1]
+y flag used [2]
+value specified [3]
+devel0@tuf:~$ example-01 -x 1 -y 2 -v=3
+x flag used [1]
+y flag used [2]
+value specified [3]
+devel0@tuf:~$ example-01 -x 1 -y 2 --value=3
+x flag used [1]
+y flag used [2]
+value specified [3]
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<pre><code class="lang-csharp">using SearchAThing;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create(&quot;sample application&quot;, (parser) =&gt;
+            {
+                var xflag = parser.AddShort(&quot;x&quot;, &quot;test flag&quot;);
+                var param1 = parser.AddParameter(&quot;param1&quot;, &quot;first parameter&quot;);
+                var param2 = parser.AddParameter(&quot;param2&quot;, &quot;second parameter&quot;);
+
+                parser.AddShort(&quot;h&quot;, &quot;show usage&quot;, null, (item) =&gt; item.MatchParser.PrintUsage());
+
+                parser.OnCmdlineMatch(() =&gt;
+                {
+                    System.Console.WriteLine(parser);
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+</code></pre>
+<pre><code class="lang-sh">devel0@tuf:~$ example-01 -x a bcd
+TYPE        SHORT-NAME   LONG-NAME   DESCRIPTION        GLOBAL   MANDATORY   MATCHES   VALUE
+--------------------------------------------------------------------------------------------
+flag        x                        test flag                                  X           
+flag        h                        show usage           X                                 
+parameter   param1                   first parameter                            X      a    
+parameter   param2                   second parameter                           X      bcd  
+
+</code></pre>
+<h3 id="parameters-array">Parameters array</h3>
+<pre><code class="lang-csharp">using SearchAThing;
+using System.Linq;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create(&quot;sample application&quot;, (parser) =&gt;
+            {
+                var xflag = parser.AddShort(&quot;x&quot;, &quot;test flag&quot;);
+                var param1 = parser.AddParameter(&quot;param1&quot;, &quot;first parameter&quot;);
+                var param2 = parser.AddParameterArray(&quot;param2&quot;, &quot;other params&quot;);
+
+                parser.AddShort(&quot;h&quot;, &quot;show usage&quot;, null, (item) =&gt; item.MatchParser.PrintUsage());
+
+                parser.OnCmdlineMatch(() =&gt;
+                {
+                    System.Console.WriteLine($&quot;param2 count = {param2.Count()}&quot;);
+                    System.Console.WriteLine(parser);
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+</code></pre>
+<pre><code class="lang-sh">devel0@tuf:~$ example-01 a
+param2 count = 0
+TYPE             SHORT-NAME   LONG-NAME   DESCRIPTION       GLOBAL   MANDATORY   MATCHES   VALUE
+------------------------------------------------------------------------------------------------
+flag             x                        test flag                                             
+flag             h                        show usage          X                                 
+parameter        param1                   first parameter                           X      a    
+parameterArray   param2                   other params                                          
+
+devel0@tuf:~$ example-01 a b c
+param2 count = 2
+TYPE             SHORT-NAME   LONG-NAME   DESCRIPTION       GLOBAL   MANDATORY   MATCHES   VALUE      
+------------------------------------------------------------------------------------------------------
+flag             x                        test flag                                                   
+flag             h                        show usage          X                                       
+parameter        param1                   first parameter                           X      a          
+parameterArray   param2                   other params                              X      [ &quot;b&quot;,&quot;c&quot; ]
+
+</code></pre>
+<h3 id="bash-completion">Bash completion</h3>
+<pre><code class="lang-csharp">using SearchAThing;
+using System.Linq;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create(&quot;sample application&quot;, (parser) =&gt;
+            {
+                var cmd1 = parser.AddCommand(&quot;cmd1&quot;, &quot;sample command 1&quot;);
+                var cmd2 = parser.AddCommand(&quot;cmd2&quot;, &quot;sample command 2&quot;);
+
+                var flag1 = parser.AddShortLong(&quot;f1&quot;, &quot;test-flag1&quot;, &quot;sample flag 1&quot;);
+                var flag2 = parser.AddShortLong(&quot;f2&quot;, &quot;test-flag2&quot;, &quot;sample flag 2&quot;);
+                var flag3 = parser.AddShortLong(&quot;f3&quot;, &quot;my-flag3&quot;, &quot;sample flag 3&quot;);
+
+                parser.AddShort(&quot;h&quot;, &quot;show usage&quot;, null, (item) =&gt; item.MatchParser.PrintUsage());
+
+                var param = parser.AddParameter(&quot;item&quot;, &quot;an odd number between 51 and 63&quot;);
+                param.OnCompletion((str) =&gt;
+                {
+                    var validSet = Enumerable.Range(50, 15).Where(r =&gt; r % 2 != 0).Select(w =&gt; w.ToString());
+
+                    return validSet.Where(r =&gt; r.StartsWith(str));
+                });
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>debugging</li>
+</ul>
+<pre><code class="lang-sh">devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01
+cmd1
+cmd2
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2
+51
+53
+55
+57
+59
+61
+63
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2 5
+51
+53
+55
+57
+59
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2 6
+61
+63
+devel0@tuf:~$ SHOW_COMPLETIONS=2 example-01 cmd2 63
+devel0@tuf:~$
+</code></pre>
+<ul>
+<li>apply to bash completions</li>
+</ul>
+<p>edit <code>/etc/bash_completion.d/example-01</code> as follow ( note <code>${COM_LINE:2}</code> to skip first dummy arg that is friendly name of the program )</p>
+<pre><code class="lang-sh">_fn() {
+        #echo &gt;&gt; /tmp/completion-debug
+        #echo &quot;COMP_LINE=${COMP_LINE}&quot; &gt;&gt; /tmp/completion-debug
+        #SHOW_COMPLETIONS=2 example-01 ${COMP_LINE:2} &gt;&gt; /tmp/completion-debug
+
+        COMPREPLY=($(SHOW_COMPLETIONS=2 example-01 ${COMP_LINE:2}))
+}
+
+complete -F _fn example-01
+</code></pre>
+<p>source it with <code>. /etc/bash_completion</code> then try as follows</p>
+<p><img src="data/images/quickstart-02.gif" alt=""></p>
+<h3 id="sub-parser">Sub parser</h3>
+<pre><code class="lang-csharp">using SearchAThing;
+
+namespace example_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CmdlineParser.Create(&quot;sample application&quot;, (parser) =&gt;
+            {
+                var cmdConfig = parser.AddCommand(&quot;config&quot;, &quot;configuration&quot;, (pConfig) =&gt;
+                {
+                    pConfig.AddCommand(&quot;show&quot;, &quot;show current config&quot;, (pConfigShow) =&gt;
+                    {
+                        pConfigShow.OnCmdlineMatch(() =&gt; System.Console.WriteLine($&quot;showing configuration...&quot;));
+                    });
+
+                    pConfig.AddCommand(&quot;update&quot;, &quot;update config item&quot;, (pConfigUpdate) =&gt;
+                    {
+                        var param = pConfigUpdate.AddMandatoryParameter(&quot;var=value&quot;, &quot;assign value to var&quot;);
+                        pConfigUpdate.OnCmdlineMatch(() =&gt;
+                        {
+                            System.Console.WriteLine($&quot;setting [{(string)param}]&quot;);
+                        });
+                    });
+                });
+
+                // standard --help variant
+                parser.AddShortLong(&quot;h&quot;, &quot;help&quot;, &quot;show usage&quot;, null, (item) =&gt; item.MatchParser.PrintUsage());
+
+                parser.Run(args);
+            });
+        }
+    }
+}
+</code></pre>
+<p><img src="data/images/quickstart-04.gif" alt=""></p>
+<h2 id="api-documentation">API Documentation</h2>
+<ul>
+<li><a href="https://devel0.github.io/netcore-cmdline/api">API</a></li>
+</ul>
+<h2 id="how-this-project-was-built">how this project was built</h2>
+<pre><code class="lang-sh">mkdir netcore-cmdline
+cd netcore-cmdline
+
+dotnet new sln
+
+dotnet new classlib -n netcore-cmdline
+cd netcore-cmdline
+dotnet add package netcore-util
+cd ..
+dotnet sln add netcore-cmdline
+
+mkdir examples
+cd examples
+dotnet new console -n example-01
+cd example-01
+dotnet add reference ../../netcore-cmdline
+cd ..
+cd ..
+dotnet sln add examples/example-01
+
+dotnet restore
+dotnet build
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/devel0/netcore-cmdline/blob/docs/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

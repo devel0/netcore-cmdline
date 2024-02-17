@@ -1,0 +1,1198 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CmdlineParseItem | netcore-cmdline </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CmdlineParseItem | netcore-cmdline ">
+      
+      <meta name="description" content="describe properties required for a command, a flag or a parameter on the syntax for the cmdline parser; enumerating returns the list of values if this is a flag with value or a parameter or a parameter array">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/devel0/netcore-cmdline/new/docs/apiSpec/new?filename=SearchAThing_Cmdline_CmdlineParseItem.md&amp;value=---%0Auid%3A%20SearchAThing.Cmdline.CmdlineParseItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="netcore-cmdline">
+            netcore-cmdline
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SearchAThing.Cmdline.CmdlineParseItem">
+
+
+
+  <h1 id="SearchAThing_Cmdline_CmdlineParseItem" data-uid="SearchAThing.Cmdline.CmdlineParseItem" class="text-break">
+Class CmdlineParseItem  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SearchAThing.html">SearchAThing</a>.<a class="xref" href="SearchAThing.Cmdline.html">Cmdline</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>netcore-cmdline.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>describe properties required for a command, a flag or a parameter on the syntax for the cmdline parser;
+enumerating returns the list of values if this is a flag with value or a parameter or a parameter array</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CmdlineParseItem : IEnumerable&lt;string&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CmdlineParseItem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_ArgValues_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ArgValues*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_ArgValues" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ArgValues">
+  ArgValues
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>original cmdline argument associated as value to this item (may a flag with value or parameter)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;CmdlineArgument&gt; ArgValues { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="SearchAThing.Cmdline.CmdlineArgument.html">CmdlineArgument</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_Description_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Description*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_Description" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>description for this parse item to use in the usage or is parser description if this is a command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_GlobalFlagAction_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.GlobalFlagAction*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_GlobalFlagAction" data-uid="SearchAThing.Cmdline.CmdlineParseItem.GlobalFlagAction">
+  GlobalFlagAction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>stores actiont to execute if this global flag item matches</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;CmdlineParseItem&gt; GlobalFlagAction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SearchAThing.Cmdline.CmdlineParseItem.html">CmdlineParseItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_GlobalFlagActionNested_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.GlobalFlagActionNested*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_GlobalFlagActionNested" data-uid="SearchAThing.Cmdline.CmdlineParseItem.GlobalFlagActionNested">
+  GlobalFlagActionNested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>if false global flag action will executed immeditaly; if true execution will deferred to nested parser</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GlobalFlagActionNested { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_HasLongName_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.HasLongName*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_HasLongName" data-uid="SearchAThing.Cmdline.CmdlineParseItem.HasLongName">
+  HasLongName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>states if this element has a long name ( used only for flags )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLongName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_HasShortName_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.HasShortName*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_HasShortName" data-uid="SearchAThing.Cmdline.CmdlineParseItem.HasShortName">
+  HasShortName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true if this item has a short name ( maybe a command, parameter or a flag with short name )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasShortName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_HasValueName_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.HasValueName*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_HasValueName" data-uid="SearchAThing.Cmdline.CmdlineParseItem.HasValueName">
+  HasValueName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>states if this flag requires a value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasValueName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_IsCommand_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsCommand*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_IsCommand" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsCommand">
+  IsCommand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true if this is a command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCommand { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_IsFlag_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsFlag*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_IsFlag" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsFlag">
+  IsFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true if this is a flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_IsGlobal_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsGlobal*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_IsGlobal" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsGlobal">
+  IsGlobal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>states if this parse item is a global flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGlobal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_IsParameter_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsParameter*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_IsParameter" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsParameter">
+  IsParameter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true if this is a parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParameter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_IsParameterArray_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsParameterArray*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_IsParameterArray" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsParameterArray">
+  IsParameterArray
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true is this is an array of parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParameterArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_IsParameterOrArray_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsParameterOrArray*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_IsParameterOrArray" data-uid="SearchAThing.Cmdline.CmdlineParseItem.IsParameterOrArray">
+  IsParameterOrArray
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true if this is a parameter or array of parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParameterOrArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_LongFlag_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.LongFlag*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_LongFlag" data-uid="SearchAThing.Cmdline.CmdlineParseItem.LongFlag">
+  LongFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>states if this item have a long name ( used only for flags )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_LongName_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.LongName*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_LongName" data-uid="SearchAThing.Cmdline.CmdlineParseItem.LongName">
+  LongName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>long name ( used only for flags )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_Mandatory_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Mandatory*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_Mandatory" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Mandatory">
+  Mandatory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>true if this item is mandatory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Mandatory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_MatchArgument_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.MatchArgument*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_MatchArgument" data-uid="SearchAThing.Cmdline.CmdlineParseItem.MatchArgument">
+  MatchArgument
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>original argument with that this parse item matches</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineArgument MatchArgument { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SearchAThing.Cmdline.CmdlineArgument.html">CmdlineArgument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_MatchParser_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.MatchParser*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_MatchParser" data-uid="SearchAThing.Cmdline.CmdlineParseItem.MatchParser">
+  MatchParser
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>used to distinguish sub parser for global flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineParser MatchParser { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SearchAThing.Cmdline.CmdlineParser.html">CmdlineParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_Matches_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Matches*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_Matches" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Matches">
+  Matches
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>states if this flag have a matching with required usage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Matches { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_Parser_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Parser*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_Parser" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Parser">
+  Parser
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>parser which this item belongs to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineParser Parser { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SearchAThing.Cmdline.CmdlineParser.html">CmdlineParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_ShortFlag_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ShortFlag*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_ShortFlag" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ShortFlag">
+  ShortFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>short flag final string ( without value if any )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_ShortLongFlag_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ShortLongFlag*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_ShortLongFlag" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ShortLongFlag">
+  ShortLongFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>short/long flag final string ( without value if any )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortLongFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_ShortName_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ShortName*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_ShortName" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ShortName">
+  ShortName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>short name of this element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_SortOrder_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.SortOrder*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_SortOrder" data-uid="SearchAThing.Cmdline.CmdlineParseItem.SortOrder">
+  SortOrder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>helper to sort items in groups with follow order Commands, Flags, Parameters, Parameters array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SortOrder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_Type_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Type*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_Type" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>type of this cmdline parser</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmdlineParseItemType Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SearchAThing.Cmdline.CmdlineParseItemType.html">CmdlineParseItemType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_ValueName_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ValueName*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_ValueName" data-uid="SearchAThing.Cmdline.CmdlineParseItem.ValueName">
+  ValueName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>symbolic name for the flag value to display in the usage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ValueName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_Values_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Values*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_Values" data-uid="SearchAThing.Cmdline.CmdlineParseItem.Values">
+  Values
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>values associated to this item (may a flag with value or parameter)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; Values { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_GetEnumerator_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.GetEnumerator*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_GetEnumerator" data-uid="SearchAThing.Cmdline.CmdlineParseItem.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;string&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_OnCompletion_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.OnCompletion*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_OnCompletion_System_Func_System_String_System_Collections_Generic_IEnumerable_System_String___" data-uid="SearchAThing.Cmdline.CmdlineParseItem.OnCompletion(System.Func{System.String,System.Collections.Generic.IEnumerable{System.String}})">
+  OnCompletion(Func&lt;string, IEnumerable&lt;string&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>set a runtime completion function ( used for parameter item types )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCompletion(Func&lt;string, IEnumerable&lt;string&gt;&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_op_Implicit_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.op_Implicit*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_op_Implicit_SearchAThing_Cmdline_CmdlineParseItem__System_Boolean" data-uid="SearchAThing.Cmdline.CmdlineParseItem.op_Implicit(SearchAThing.Cmdline.CmdlineParseItem)~System.Boolean">
+  implicit operator bool(CmdlineParseItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>helper to check if this parse item meet usage rules</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool(CmdlineParseItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="SearchAThing.Cmdline.CmdlineParseItem.html">CmdlineParseItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SearchAThing_Cmdline_CmdlineParseItem_op_Implicit_" data-uid="SearchAThing.Cmdline.CmdlineParseItem.op_Implicit*"></a>
+
+  <h3 id="SearchAThing_Cmdline_CmdlineParseItem_op_Implicit_SearchAThing_Cmdline_CmdlineParseItem__System_String" data-uid="SearchAThing.Cmdline.CmdlineParseItem.op_Implicit(SearchAThing.Cmdline.CmdlineParseItem)~System.String">
+  implicit operator string(CmdlineParseItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>helper to retrieve this item value ( used for flag value or single parameter )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string(CmdlineParseItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="SearchAThing.Cmdline.CmdlineParseItem.html">CmdlineParseItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/devel0/netcore-cmdline/blob/docs/src/cmdline/CmdlineParseItem.cs/#L33" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
