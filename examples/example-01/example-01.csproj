@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\..\netcore-cmdline\netcore-cmdline.csproj" />
+    <ProjectReference Include="..\..\src\cmdline\netcore-cmdline.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
